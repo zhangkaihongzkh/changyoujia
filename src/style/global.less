@@ -1,5 +1,6 @@
 @fontColor:#011726;	//通用字体颜色
 @comBGC:#EF8B1D;	//通用背景颜色
+@comWidth: 1000px;  //通用宽度
 body{
   font-family: "Helvetica Neue", 
   Helvetica, 
@@ -7,20 +8,38 @@ body{
   Hiragino Sans GB, 
   WenQuanYi Micro Hei, 
   sans-serif;
-  font-size: 16px;
+  font-size: 14px;
 
 }
 body,ul,ol,li,p,h1,h2,h3,h4,h5,h6,form,fieldset,table,td,img,div,dl,dt,dd,input{margin:0;padding: 0;border: 0;}
 ul,ol{list-style: none;}
 a{text-decoration: none;}
 /*common*/
-.comWidth{width: 1200px;margin: 0 auto;}
+.comWidth{width: 1000px;margin: 0 auto;}
 .fl{float: left;}
 .fr{float: right;}
 
 /*clear float*/
 .clearfix:after{content: "";display:block;clear:both;}
 .clearfix{zoom:1;}
+
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/iconfont.woff') format('woff'),
+  url('../fonts/iconfont.ttf') format('truetype'),
+  url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+
+.iconfont{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 /* 公用头部 */
 #header{
@@ -31,6 +50,7 @@ a{text-decoration: none;}
 		margin-left: 21px;
 		width: 67px;
 		height: 70px;
+		line-height: 70px;
 		background: url(../images/logo.png) no-repeat center center;
 	}
 	
@@ -39,7 +59,7 @@ a{text-decoration: none;}
 		margin: 0 30px 0 50px;
 		li{
 			float: left;
-			padding: 30px 15px;
+			padding: 30px 10px 31px 10px;
 			&:hover{
 				cursor: pointer;
 				background-color: @comBGC;
@@ -80,22 +100,124 @@ a{text-decoration: none;}
 	}
 }
 
-/* 字体图标 */
-@font-face {
-  font-family: 'iconfont';
-  src: url('../fonts/iconfont.eot');
-  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/iconfont.woff') format('woff'),
-  url('../fonts/iconfont.ttf') format('truetype'),
-  url('../fonts/iconfont.svg#iconfont') format('svg');
-}
 
-.iconfont{
-  font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
+
+
+/* 公用广告区域 */
+#main-ad{
+	height: 600px;
+	.swiper-container{
+		position: relative;
+		background-color: #E42E2E;
+		width: 100%;
+		height: 600px;
+		margin: 0 auto;
+		/* 文字部分 */	
+		.content-text{
+			text-align: center;
+			padding-top: 150px;
+			h2{
+
+				font-size: 32px;
+				font-weight: 100;
+				letter-spacing: 8px;
+			}
+			p{
+				font-size: 16px;
+				margin: 30px 0;
+			}
+			a{
+				cursor: pointer;
+				color: @mainAdFontCol; 
+				border: 1px solid @mainAdFontCol;
+				padding: 8px 13px;
+				transition: color 0.25s ease, background-color 0.25s ease;
+	  			-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+				&:hover{
+					color: #fff;
+					background-color: @mainAdFontCol;
+					transition: color 0.25s ease, background-color 0.25s ease;
+	  				-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+				}
+			}
+			
+		}
+		/* 搜索框 */
+		.searchbox{
+			position: absolute;
+			width: 960px;
+			margin-left: -480px;
+			background-color: rgb(107,33,33);
+			padding: 20px 20px;
+			border-radius: 5px;
+			left: 50%;
+			bottom: 40px;
+			/* 选择地点 */
+			.select-place{
+				position: absolute;
+				left: 20px;
+				top: 35px;
+				color: #fff;
+				.select-place-arrow{
+					position: absolute;
+					cursor: pointer;
+					left: 45px;
+					top: 6px;
+					width: 14px;
+					height: 8px;
+					background: url(../images/arrow.png) no-repeat center center;
+				}
+				/* 城市选择
+				.select-place-item{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 250px;
+					border: 1px solid @comBGC; 
+					background-color: @comBGC;
+					padding: 10px 15px;
+					border-radius: 5px;
+					li{
+						float: left;
+						cursor: pointer;
+					}
+				} */
+			}
+			#search-input{
+				padding: 18px;
+				margin-left: 80px;
+				width: 764px;
+				border-radius: 5px;
+			}
+			#search-btn{
+				cursor: pointer;
+				position: absolute;
+				right: 24px;
+				top: 17px;
+				width: 54px;
+				height: 54px;
+				background: url(../images/search.png) no-repeat center center;
+			}
+		}
+		/* 按钮部分 */
+		.btn{
+			margin: 0 auto;
+			width: 1200px;
+			height: 100%;
+			position: absolute;
+			top:0;
+			left: 50%;
+			margin-left: -600px;
+		}
+		.swiper-button-next{
+			background: url(../images/arrow-next.png) no-repeat center center;
+
+		}
+		.swiper-button-prev{
+			background: url(../images/arrow-prev.png) no-repeat center center;
+			
+		}
+	}
 }
 
 

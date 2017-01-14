@@ -16,6 +16,8 @@
       <script src="lib/html5shiv/html5shiv.min.js"></script>
       <script src="lib/respond/respond.js/respond.min.js"></script>
     <![endif]-->
+    <!-- 引入swiper插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css">
     <!-- 引入字体图标 -->
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
     <link rel="stylesheet" type="text/css" href="style/global.css">
@@ -85,41 +87,80 @@
 
     <!-- 轮播图区域 -->
     <section id="main-ad">
-        <div class="contentbox nav">
-            <ul class="img">
-                <li>
-                    <h2>好想来一场说走就走的旅行</h2>
-                    <p>带上背包以及你我的约定</p>
-                    <a href="">查看详情</a>
-                </li>
-            </ul>
-            <div class="btn btn_l">&lt;</div>
-            <div class="btn btn_r">&gt;</div>
-        </div>
-         <!-- 搜索框 -->
-        <div class="searchbox">
-            <!-- 地点选择 -->
-            <div class="select-place">
-                <div class="select-place-name">成都</div>
-                <div class="select-place-arrow"></div>
-                <ul class="select-place-item">
-                    <!-- <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li>
-                    <li>成都</li> -->
-                </ul>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="content-text">
+                        <h2>好想来一场说走就走的旅行</h2>
+                        <p>带上背包以及你我的约定</p>
+                        <a href="">查看详情</a>
+                    </div>   
+                    <!-- 搜索框 -->
+                    <div class="searchbox">
+                        <!-- 地点选择 -->
+                        <div class="select-place">
+                            <div class="select-place-name">成都</div>
+                            <div class="select-place-arrow"></div>
+                            <ul class="select-place-item">
+                                <!-- <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li> -->
+                            </ul>
+                        </div>
+                        <!-- /地点选择 -->
+                        <form id="search-form" action="" method="post"> 
+                            <input type="text" name="search-input" placeholder="搜索相关门票酒店目的地" id="search-input">
+                            <input type="submit" name="search-btn" id="search-btn" value="">
+                        </form>
+                    </div>
+                    <!-- /搜索框 -->
+                </div>
+                <div class="swiper-slide">
+                    <div class="content-text">
+                        <h2>好想来一场说走就走的旅行</h2>
+                        <p>带上背包以及你我的约定</p>
+                        <a href="">查看详情</a>
+                    </div>   
+                </div>
+                <div class="swiper-slide">   
+                    <!-- 搜索框 -->
+                    <div class="searchbox">
+                        <!-- 地点选择 -->
+                        <div class="select-place">
+                            <div class="select-place-name">成都</div>
+                            <div class="select-place-arrow"></div>
+                            <ul class="select-place-item">
+                                <!-- <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li>
+                                <li>成都</li> -->
+                            </ul>
+                        </div>
+                        <!-- /地点选择 -->
+                        <form id="search-form" action="" method="post"> 
+                            <input type="text" name="search-input" placeholder="搜索相关门票酒店目的地" id="search-input">
+                            <input type="submit" name="search-btn" id="search-btn" value="">
+                        </form>
+                    </div>
+                    <!-- /搜索框 -->
+                </div>
             </div>
-            <!-- /地点选择 -->
-            <form id="search-form" action="" method="post"> 
-                <input type="text" name="search-input" placeholder="搜索相关门票酒店目的地" id="search-input">
-                <input type="submit" name="search-btn" id="search-btn" value="">
-            </form>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
         </div>
-        <!-- /搜索框 -->
     </section>
     <!-- /轮播图区域 -->
 
@@ -163,9 +204,12 @@
         </div>
     </section>
     <!-- /单季热销 -->
+
+
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="js/home.js"></script>
