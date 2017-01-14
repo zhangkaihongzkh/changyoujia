@@ -1,0 +1,270 @@
+//引入全局less
+@import "global";
+@mainAdFontCol:#23194E;//广告区域字体颜色
+
+/* 侧边栏区域 */
+#sidebar{
+	position: fixed;
+	right: 0;
+	top: 0;
+	width: 60px;
+	background-color: #000;
+	z-index: 2;
+	padding-top: 9px;
+	li{
+		text-align: center;
+		cursor: pointer;
+		padding: 10px;
+		height: 40px;
+		border-bottom: 1px solid #17171D;
+		i{
+			font-size: 36px;
+			color: #fff;
+			&:hover{
+				color: @comBGC;
+			}
+		}
+	}
+	.sidebar-close{
+		color: #D9D8D8;
+	}
+	/* 个人中心 */
+	.sidebar-user{
+		position: relative;
+		.user-center{
+			opacity: 0;
+			z-index: -1;
+			position: absolute;
+			width: 108px;
+			height: 60px;
+			left: 0px;
+    		top: 0;
+			background: url(../images/sidebar-bg.png) no-repeat center center;
+			p{
+				color: #fff;
+				height: 60px;
+				line-height: 60px;
+			}
+		}
+	}
+	/* 联系方式 */
+	.sidebar-phone{
+		position: relative;
+		.contact-phone{
+			z-index: -1;
+			opacity: 0;
+			position: absolute;
+			left:0px;
+			top: 0;
+			width: 178px;
+			height: 110px;
+			background: url(../images/sidebar-bg2.png) repeat-y center center;
+			.contact-text{
+				padding-left: 21px;
+				padding-top: 5px;
+				p{
+					color: #fff;
+					text-align: left;
+					font-size: 16px;
+				}
+				p:nth-child(1){
+					font-size: 16px;
+					margin-bottom: 10px;
+				}
+				p:nth-child(2){
+					font-size: 20px;
+					margin-bottom: 15px;
+				}
+				p:nth-child(3){
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+/* 广告区域 */
+#main-ad{
+	position: relative;
+	height: 600px; 
+	background-color: #E42E2E;
+	width: 100%;
+	/* 文字部分 */	
+	.contentbox{
+		width: 1200px;
+		height: 450px;
+		margin: 0 auto;
+		padding-top: 150px;
+		text-align: center;
+		position: relative;
+		color: @mainAdFontCol;
+		h2{
+			font-size: 32px;
+			font-weight: 100;
+			letter-spacing: 8px;
+		}
+		p{
+			font-size: 16px;
+			margin: 30px 0;
+		}
+		a{
+			cursor: pointer;
+			color: @mainAdFontCol; 
+			border: 1px solid @mainAdFontCol;
+			padding: 8px 13px;
+			transition: color 0.25s ease, background-color 0.25s ease;
+  			-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+			&:hover{
+				color: #fff;
+				background-color: @mainAdFontCol;
+				transition: color 0.25s ease, background-color 0.25s ease;
+  				-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+			}
+		}
+		/* 轮播区域 */
+		/* 箭头 */
+		.btn{
+			position: absolute;
+			width: 21px;
+			height: 34px;
+			top: 50%;
+			margin-top: -17px;/* 让左右切换按钮垂直居中 */
+			color:#fff;
+			font-weight: bolder;
+			line-height: 50px;
+			font-size: 40px;
+			font-family: '宋体';
+			cursor: pointer;
+			text-align: center;
+		}
+		.btn_l{
+			left: 0;
+		}
+		.btn_r{
+			right: 0;
+		}
+	}
+
+	/* 搜索框 */
+	.searchbox{
+		position: absolute;
+		width: 960px;
+		margin-left: -480px;
+		background-color: rgb(107,33,33);
+		padding: 20px 20px;
+		border-radius: 5px;
+		left: 50%;
+		bottom: 40px;
+		/* 选择地点 */
+		.select-place{
+			position: absolute;
+			left: 20px;
+			top: 35px;
+			color: #fff;
+			.select-place-arrow{
+				position: absolute;
+				cursor: pointer;
+				left: 45px;
+				top: 6px;
+				width: 14px;
+				height: 8px;
+				background: url(../images/arrow.png) no-repeat center center;
+			}
+			/* 城市选择
+			.select-place-item{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 250px;
+				border: 1px solid @comBGC; 
+				background-color: @comBGC;
+				padding: 10px 15px;
+				border-radius: 5px;
+				li{
+					float: left;
+					cursor: pointer;
+				}
+			} */
+		}
+		#search-input{
+			padding: 18px;
+			margin-left: 80px;
+			width: 764px;
+			border-radius: 5px;
+		}
+		#search-btn{
+			cursor: pointer;
+			position: absolute;
+			right: 24px;
+			top: 17px;
+			width: 54px;
+			height: 54px;
+			background: url(../images/search.png) no-repeat center center;
+		}
+	}
+	
+
+}
+
+
+/* 特点介绍 */
+#feature{
+	padding-top: 50px;
+	padding-bottom: 70px;
+	.feature-title{
+		margin: 0 auto;
+		text-align: center;
+		h2{
+			font-weight: 36px;
+			color: #333333;
+			font-weight: normal;
+			letter-spacing: 8px;
+			margin-bottom: 20px;
+		}
+		p{
+			letter-spacing: 1px;
+			font-size: 24px;
+		}
+	}
+	/* 特点介绍内容 */
+	.feature-content{
+		margin-top: 30px;
+		
+		.feature-description{
+			float: left;
+			width: 356px;
+			h3{
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			p{
+				line-height: 1.5;
+				padding: 0 10px 15px 10px;
+			}
+			.description-img{
+				width: 82px;
+				height: 82px;	
+				text-align: center;
+				margin: 65px auto;
+			}	
+			.description-img1{
+				background: url(../images/feature1.png) no-repeat center center;
+			}
+			.description-img2{
+				background: url(../images/feature2.png) no-repeat center center;
+			}
+			.description-img3{
+				background: url(../images/feature3.png) no-repeat center center;
+			}
+		}
+		div + div{
+			margin-left: 65px;
+		}
+	}
+}
+
+/* 单季热销 */
+#single-hot{
+	padding: 40px 0;
+	background-color: #F7F3E9;
+}

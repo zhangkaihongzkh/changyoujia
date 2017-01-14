@@ -1,0 +1,121 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 16px;
+}
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*common*/
+.comWidth {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*clear float*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 公用头部 */
+#header {
+  background-color: #fff;
+  height: 80px;
+}
+#header .logo {
+  margin-left: 21px;
+  width: 67px;
+  height: 70px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+#header .navBar {
+  margin: 0 30px 0 50px;
+}
+#header .navBar li {
+  float: left;
+  padding: 30px 15px;
+}
+#header .navBar li:hover {
+  cursor: pointer;
+  background-color: #EF8B1D;
+}
+#header .navBar li:hover a {
+  color: #fff;
+}
+#header .navBar li a {
+  color: #011726;
+}
+#header .navBar li.active {
+  background-color: #EF8B1D;
+}
+#header .navBar li.active a {
+  color: #fff;
+}
+#header .header-right {
+  line-height: 80px;
+  height: 80px;
+  display: block;
+}
+#header .header-right a {
+  border: 1px solid #011726;
+  padding: 12px 10px;
+  border-radius: 5px;
+  color: #011726;
+}
+#header .header-right .register {
+  background-color: #EF8B1D;
+  color: #fff;
+  border-color: #EF8B1D;
+  margin-right: 10px;
+}
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}

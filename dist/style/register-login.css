@@ -1,0 +1,257 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 16px;
+}
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*common*/
+.comWidth {
+  width: 1200px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*clear float*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 公用头部 */
+#header {
+  background-color: #fff;
+  height: 80px;
+}
+#header .logo {
+  margin-left: 21px;
+  width: 67px;
+  height: 70px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+#header .navBar {
+  margin: 0 30px 0 50px;
+}
+#header .navBar li {
+  float: left;
+  padding: 30px 15px;
+}
+#header .navBar li:hover {
+  cursor: pointer;
+  background-color: #EF8B1D;
+}
+#header .navBar li:hover a {
+  color: #fff;
+}
+#header .navBar li a {
+  color: #011726;
+}
+#header .navBar li.active {
+  background-color: #EF8B1D;
+}
+#header .navBar li.active a {
+  color: #fff;
+}
+#header .header-right {
+  line-height: 80px;
+  height: 80px;
+  display: block;
+}
+#header .header-right a {
+  border: 1px solid #011726;
+  padding: 12px 10px;
+  border-radius: 5px;
+  color: #011726;
+}
+#header .header-right .register {
+  background-color: #EF8B1D;
+  color: #fff;
+  border-color: #EF8B1D;
+  margin-right: 10px;
+}
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 注册登陆界面背景 */
+#register-bg {
+  background: url(../images/register.png) no-repeat center center;
+  width: 100%;
+}
+/* 主体内容 */
+#main-content {
+  padding: 80px 0 45px 0;
+}
+#main-content .content-box {
+  position: relative;
+  padding: 20px 40px;
+  width: 1100px;
+  margin: 0 auto;
+  background-color: #fff;
+}
+#main-content .content-box .form-tab {
+  border-bottom: 2px solid #DEDCDC;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  /* 交互样式 */
+  /* 注册按钮 */
+  /* 登陆按钮 */
+}
+#main-content .content-box .form-tab li {
+  font-size: 20px;
+  padding: 0 48px 0 48px;
+  background-color: #f0f0f0;
+  border: 2px solid #DEDCDC;
+  position: absolute;
+  cursor: pointer;
+  top: -2px;
+}
+#main-content .content-box .form-tab li.active {
+  border: 2px solid #DEDCDC;
+  background-color: #fff;
+  z-index: 2;
+  padding-bottom: 2px;
+  border-bottom: none;
+}
+#main-content .content-box .form-tab .login-btn {
+  left: 200px;
+}
+#main-content .content-box form {
+  width: 600px;
+  margin: 0 auto;
+  padding: 40px 0 30px 0;
+  /* 协议复选框 */
+  /* 注册按钮 */
+  /* 登录按钮 */
+}
+#main-content .content-box form .form-group {
+  padding: 10px 0;
+}
+#main-content .content-box form .form-group label {
+  width: 85px;
+  display: inline-block;
+  text-align: right;
+  margin-right: 10px;
+}
+#main-content .content-box form .form-group input {
+  font-size: 16px;
+  padding: 8px 15px;
+  border: 1px solid #6E6E6E;
+  height: 25px;
+  width: 350px;
+  border-radius: 5px;
+}
+#main-content .content-box form .form-group input:active {
+  border-radius: 5px;
+}
+#main-content .content-box form .form-group #validate-num {
+  width: 220px;
+}
+#main-content .content-box form .form-group #send-validate {
+  width: 125px;
+  background-color: #F19927;
+  height: 44px;
+  padding: 0 20px 0 20px;
+  color: #fff;
+  border-color: #F19927;
+  cursor: pointer;
+}
+#main-content .content-box form .protocol-group {
+  position: relative;
+  height: 36px;
+  line-height: 36px;
+}
+#main-content .content-box form .protocol-group .protocol {
+  position: absolute;
+  left: 96px;
+}
+#main-content .content-box form .protocol-group .protocol input {
+  color: #005B99;
+}
+#main-content .content-box form .protocol-group .protocol a {
+  color: #005B99;
+}
+#main-content .content-box form .register-btn {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  padding: 18px 0;
+  background-color: #1D95E3;
+  box-shadow: 3px 3px 5px #1D95E3;
+  cursor: pointer;
+  margin-top: 60px;
+}
+#main-content .content-box form .register-btn:hover {
+  background-color: #1D85E3;
+}
+#main-content .content-box form .login-btn {
+  display: block;
+  width: 300px;
+  margin: 0 auto;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  padding: 18px 0;
+  background-color: #1D95E3;
+  box-shadow: 3px 3px 5px #1D95E3;
+  cursor: pointer;
+  margin-top: 20px;
+}
+#main-content .content-box form .login-btn:hover {
+  background-color: #1D85E3;
+}
+#main-content .content-box #login-form {
+  display: none;
+}
