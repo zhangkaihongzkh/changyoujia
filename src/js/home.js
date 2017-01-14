@@ -19,31 +19,44 @@ $(function(){
 	//侧边栏动画效果
 	(function(window){
 		//用户
-		$('#sidebar .sidebar-user').hover(function(){
-			$('.user-center').animate({
-				left:'-=100px',
+		$('#sidebar .sidebar-user').on('mouseover',function(){
+			$('.user-center').stop().animate({
 				opacity:1,
-
+				display:'block'
 			},400);
-		},function(){
-			$('.user-center').animate({
-				left:'+=100px',
+		});
+		$('#sidebar .sidebar-user').on('mouseout',function(){
+			$('.user-center').stop().animate({
 				opacity:0,
+				display:'none'
+			},400);
+		});
+
+		//客服中心联系
+		$('#sidebar .sidebar-phone').on('mouseover',function(){
+			$('.contact-phone').stop().animate({
+				opacity:1,
+				display:'block'
+			},400);
+		});
+		$('#sidebar .sidebar-phone').on('mouseout',function(){
+			$('.contact-phone').stop().animate({
+				opacity:0,
+				display:'none'
 			},400);
 		});
 		//客服中心联系
-		$('#sidebar .sidebar-phone').hover(function(){
+		/*$('#sidebar .sidebar-phone').hover(function(){
 			$('.contact-phone').animate({
 				left:'-=170px',
 				opacity:1,
-
 			},400);
 		},function(){
 			$('.contact-phone').animate({
 				left:'+=170px',
 				opacity:0,
 			},400);
-		});
+		});*/
 	})(window);
 
 	//单季热销轮播区域
@@ -56,6 +69,7 @@ $(function(){
 		    pagination: '.swiper-pagination',
 		    paginationClickable :true,
 		    speed:500,//速度
+		     simulateTouch:false,//鼠标无效
 
 		  })        
 	})(window);

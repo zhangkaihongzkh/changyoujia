@@ -37,6 +37,13 @@ gulp.task('imgCopy',function(){
 		.pipe(gulp.dest('./dist/images/'))
 });
 
+//拷贝插件
+gulp.task('plugCopy',function(){
+	gulp.src('./src/lib/*.*')
+		.pipe(gulp.dest('./dist/lib/'))
+		.pipe(gulp.dest('./lib/'))
+})
+
 //监听HTML文件变化
 gulp.task('htmlChange',function(){
 	gulp.watch('./src/*.html',['htmlDest']);
@@ -55,11 +62,15 @@ gulp.task('jsChange',function(){
 //监听图像变化
 gulp.task('imgChange',function(){
 	gulp.watch('./src/images/*.*',['imgCopy']);
-})
+});
+//监听插件变化
+gulp.task('plugChange',function(){
+	gulp.watch('./src/lib/*.*',['plugCopy']);
+});
 
 
 
 
 
 //定义默认任务
-gulp.task('default',['htmlChange','lessChang','jsChange','imgChange']);
+gulp.task('default',['htmlChange','lessChang','jsChange','imgChange','plugChange']);
