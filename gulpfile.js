@@ -7,6 +7,12 @@ var uglify = require('gulp-uglify');	//js压缩模块
 var rename = require('gulp-rename');	//重命名模块
 
 
+//复制拷贝HTML文件
+gulp.task('htmlDest',function(){
+	gulp.src('./src/*.html')
+		.pipe(gulp.dest('./dist/'))
+});
+
 
 //编译less文件 合并,压缩,重命名css文件
 gulp.task('lessCompress',function(){
@@ -25,6 +31,17 @@ gulp.task('jsCompress',function(){
 	.pipe(gulp.dest('./dist/js'))*/
 });
 
+//复制图片
+gulp.task('imgCopy',function(){
+	gulp.src('./src/images/*.*')
+		.pipe(gulp.dest('./dist/images/'))
+});
+
+//监听HTML文件变化
+gulp.task('htmlChange',function(){
+	gulp.watch('./src/*.html',['htmlDest']);
+});
+
 // 定义一个监控less变化的任务
 gulp.task('lessChang',function(){
 	gulp.watch('./src/style/*.less',['lessCompress']);
@@ -35,9 +52,14 @@ gulp.task('jsChange',function(){
 	gulp.watch('./src/js/*.js',['jsCompress']);
 });
 
+//监听图像变化
+gulp.task('imgChange',function(){
+	gulp.watch('./src/images/*.*',['imgCopy']);
+})
+
 
 
 
 
 //定义默认任务
-gulp.task('default',['lessChang','jsChange']);
+gulp.task('default',['htmlChange','lessChang','jsChange','imgChange']);
