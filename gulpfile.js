@@ -9,8 +9,8 @@ var rename = require('gulp-rename');	//重命名模块
 
 //复制拷贝HTML文件
 gulp.task('htmlDest',function(){
-	gulp.src('./src/*.html')
-		.pipe(gulp.dest('./dist/'))
+	gulp.src('./dist/*.html')
+		.pipe(gulp.dest('./src/'))
 });
 
 
@@ -44,9 +44,10 @@ gulp.task('plugCopy',function(){
 		.pipe(gulp.dest('./lib/'))
 })
 
+
 //监听HTML文件变化
 gulp.task('htmlChange',function(){
-	gulp.watch('./src/*.html',['htmlDest']);
+	gulp.watch('./dist/*.html',['htmlDest']);
 });
 
 // 定义一个监控less变化的任务

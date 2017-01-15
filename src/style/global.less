@@ -3,6 +3,9 @@
 @comWidth: 1000px;  //通用宽度
 @mainAdFontCol:#23194E;//广告区域字体颜色
 @comTitleFontSize:28px;//通用标题字体大小
+@comBtnWidth:1120px;	//通用按钮宽度
+@bottomDesColor:#252525;//底部声明部分颜色
+@bottomLinkBgc:#2C2C2C;//底部链接部分背景颜色
 body{
   font-family: "Helvetica Neue", 
   Helvetica, 
@@ -118,6 +121,7 @@ a{text-decoration: none;}
 		.content-text{
 			text-align: center;
 			padding-top: 150px;
+			color: @mainAdFontCol; 
 			h2{
 
 				font-size: 32px;
@@ -203,13 +207,13 @@ a{text-decoration: none;}
 		}
 		/* 按钮部分 */
 		.btn{
-			margin: 0 auto;
-			width: 1200px;
+		
+			width: @comBtnWidth;
 			height: 100%;
 			position: absolute;
 			top:0;
 			left: 50%;
-			margin-left: -600px;
+			margin-left: -(@comBtnWidth/2);
 		}
 		.swiper-button-next{
 			background: url(../images/arrow-next.png) no-repeat center center;
@@ -228,6 +232,64 @@ a{text-decoration: none;}
 	border-bottom: 2px solid #333333;
 	width: 80px;	
 	margin: 0 auto;
+}
+
+/* 公用底部 */
+#footer{
+	/* 底部主要内容 */
+	.footer-wrapper{
+		background-color: @bottomLinkBgc;
+		padding: 40px 0;
+		.footer-main-link{
+			margin-bottom: 30px;
+			ul{
+				width: 20%;
+				float: left;
+				h4{
+					color: @comBGC;
+					font-size: 16px;
+					font-weight: bold;
+					margin-bottom: 20px;
+				}
+				li{
+					padding: 5px 0;
+					a{
+						color: #DDDADA;
+					}
+				}
+			}
+		}
+		/* 友情链接 */
+		.footer-friendly-link{
+			p{
+				font-size: 16px;
+				font-weight: bold;
+				color: #fff;
+				margin-bottom: 20px;
+			}
+			ul{
+				li{
+					float: left;
+					a{
+						color: #DDD9D9;
+					}
+				}
+				li + li{
+					margin-left: 30px;
+				}
+			}
+		}
+	}
+	/* 底部声明部分 */
+	.footer-description{
+		background-color: @bottomDesColor;
+		padding: 30px 0;
+		p{
+			color:#DDDADA;
+			font-size: 12px;
+			text-align: center; 
+		}
+	}
 }
 
 

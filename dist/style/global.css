@@ -137,6 +137,7 @@ a {
 #main-ad .swiper-container .content-text {
   text-align: center;
   padding-top: 150px;
+  color: #23194E;
 }
 #main-ad .swiper-container .content-text h2 {
   font-size: 32px;
@@ -218,13 +219,12 @@ a {
   background: url(../images/search.png) no-repeat center center;
 }
 #main-ad .swiper-container .btn {
-  margin: 0 auto;
-  width: 1200px;
+  width: 1120px;
   height: 100%;
   position: absolute;
   top: 0;
   left: 50%;
-  margin-left: -600px;
+  margin-left: -560px;
 }
 #main-ad .swiper-container .swiper-button-next {
   background: url(../images/arrow-next.png) no-repeat center center;
@@ -238,4 +238,57 @@ a {
   border-bottom: 2px solid #333333;
   width: 80px;
   margin: 0 auto;
+}
+/* 公用底部 */
+#footer {
+  /* 底部主要内容 */
+  /* 底部声明部分 */
+}
+#footer .footer-wrapper {
+  background-color: #2C2C2C;
+  padding: 40px 0;
+  /* 友情链接 */
+}
+#footer .footer-wrapper .footer-main-link {
+  margin-bottom: 30px;
+}
+#footer .footer-wrapper .footer-main-link ul {
+  width: 20%;
+  float: left;
+}
+#footer .footer-wrapper .footer-main-link ul h4 {
+  color: #EF8B1D;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#footer .footer-wrapper .footer-main-link ul li {
+  padding: 5px 0;
+}
+#footer .footer-wrapper .footer-main-link ul li a {
+  color: #DDDADA;
+}
+#footer .footer-wrapper .footer-friendly-link p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#footer .footer-wrapper .footer-friendly-link ul li {
+  float: left;
+}
+#footer .footer-wrapper .footer-friendly-link ul li a {
+  color: #DDD9D9;
+}
+#footer .footer-wrapper .footer-friendly-link ul li + li {
+  margin-left: 30px;
+}
+#footer .footer-description {
+  background-color: #252525;
+  padding: 30px 0;
+}
+#footer .footer-description p {
+  color: #DDDADA;
+  font-size: 12px;
+  text-align: center;
 }

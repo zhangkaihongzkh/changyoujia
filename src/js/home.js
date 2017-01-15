@@ -7,7 +7,7 @@ $(function(){
 	    loop: true,
 	    simulateTouch:false,//鼠标无效
 	    speed:1000,//速度
-	   /* autoplay:2000,	//自动播放*/
+	    //autoplay:2000,//自动播放
 	    
 	    // 如果需要前进后退按钮
 	    nextButton: '#main-ad .swiper-button-next',
@@ -20,13 +20,13 @@ $(function(){
 	(function(window){
 		//用户
 		$('#sidebar .sidebar-user').on('mouseover',function(){
-			$('.user-center').stop().animate({
+			$('#sidebar .user-center').stop().animate({
 				opacity:1,
 				display:'block'
 			},400);
 		});
 		$('#sidebar .sidebar-user').on('mouseout',function(){
-			$('.user-center').stop().animate({
+			$('#sidebar .user-center').stop().animate({
 				opacity:0,
 				display:'none'
 			},400);
@@ -45,18 +45,7 @@ $(function(){
 				display:'none'
 			},400);
 		});
-		//客服中心联系
-		/*$('#sidebar .sidebar-phone').hover(function(){
-			$('.contact-phone').animate({
-				left:'-=170px',
-				opacity:1,
-			},400);
-		},function(){
-			$('.contact-phone').animate({
-				left:'+=170px',
-				opacity:0,
-			},400);
-		});*/
+
 	})(window);
 
 	//单季热销轮播区域
@@ -73,4 +62,20 @@ $(function(){
 
 		  })        
 	})(window);
-})
+
+	//精选优惠轮播区域
+	(function(window){
+		var carefulChosenSwiper = new Swiper ('#careful-chosen .swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    
+
+		    speed:500,//速度
+		    simulateTouch:false,//鼠标无效
+
+		   	// 如果需要前进后退按钮
+		    nextButton: '#careful-chosen .swiper-button-next',
+		    prevButton: '#careful-chosen .swiper-button-prev',
+		  });        
+	})(window);
+});

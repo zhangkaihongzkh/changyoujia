@@ -221,3 +221,223 @@
 	}
 }
 
+
+/* 精选优惠 */
+#careful-chosen{
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 110px;
+	background-color: #EAEAEA;
+	.careful-chosen-title{
+		margin-bottom: 50px;
+		h2{
+			font-size: 28px;
+			text-align: center;
+			font-size: @comTitleFontSize;
+			color: #333333;
+			letter-spacing: 4px;
+			font-weight: normal;
+		}
+		
+	}	
+	//精选轮播内容区域
+	.careful-chosen-content{
+		.swiper-container{
+			position: relative;
+			/* 内容公用部分*/
+			.careful-chosen-item{
+				
+				.careful-chosen-item-content{
+
+					background-repeat: no-repeat;
+					.careful-chosen-item-text{
+						background-color: #fff;
+						text-align: center;
+						padding: 25px 18px 16px 18px;
+						h3{
+							color: #333333;
+							font-size: 20px;
+							font-weight: normal;
+						}
+						p{
+							color: #636363;
+							margin: 28px 0 20px 0;
+
+						}
+						a{
+							color: #8F8F8F;
+							font-size: 12px;
+							text-decoration: underline;
+							font-family: '宋体';
+						}
+					} 
+					.careful-chosen-item-reserve{
+						font-size: 16px;
+						a{	
+							width: 50%;
+							float: left;
+							text-align: center;
+							color: #fff;
+					
+							padding: 15px 0;
+							background-color: @comBGC;
+						}
+						p{
+
+							width: 50%;
+							float: left;
+							background-color: #F7F3E9;
+							color: @comBGC;
+							padding: 15px 0;
+							text-align: center;
+							
+						}
+					}
+				}
+			}
+			/* 上箭头区域 */
+			.careful-chosen-item-top{
+				margin-right: 10px;
+				float: left;
+				width: 330px;
+				position: relative;
+				.careful-chosen-item-content{
+					top: 227px;
+					position: absolute;
+					width: 330px;
+					padding-top: 12px;
+					background-image: url(../images/triangle-top.png);
+					background-repeat: no-repeat;
+					.careful-chosen-item-text{
+						background-color: #fff;
+						padding: 30px 18px 24px 18px;
+					} 
+				}
+			}
+
+			/* 右键头区域 */
+			.careful-chosen-item-right{
+				position: relative;
+				float: right;
+				width: 660px;
+				.careful-chosen-item-content{
+					width: 330px;
+					float: left;
+					padding-right: 13px;
+					background-image: url(../images/triangle-right.png);
+					background-repeat: no-repeat;
+					background-position: right center;
+				}
+				img{
+					z-index: -1;
+					position: absolute;
+					top: 0;
+					left: 330px;
+				}
+			}
+			/* 左键头区域 */
+			.careful-chosen-item-left{
+				margin-top: 10px;
+				position: relative;
+				float: right;
+				width: 660px;
+				.careful-chosen-item-content{
+					position: absolute;
+					top: 0;
+					left: 317px;
+					width: 330px;
+					float: left;
+					padding-left: 13px;
+					background-image: url(../images/triangle-left.png);
+					background-repeat: no-repeat;
+					background-position: left center;
+
+				}
+			}
+
+			
+			
+		}
+		
+	}
+
+	/* 按钮部分 */
+	.btn{
+		width: @comBtnWidth;
+		height: 100%;
+		position: absolute;
+		top:0;
+		left: 50%;
+		margin-left: -(@comBtnWidth/2);
+		.swiper-button-next{
+
+			background: url(../images/arrow-next2.png) no-repeat center center;
+		}
+		.swiper-button-prev{
+
+			background: url(../images/arrow-prev2.png) no-repeat center center;	
+		}
+	}
+}
+
+/* 走过的风景 */
+#through-scenery{
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 110px;
+	background-color: #fff;
+	.through-scenery-title{
+		margin-bottom: 50px;
+		h2{
+			font-size: 28px;
+			text-align: center;
+			font-size: @comTitleFontSize;
+			color: #333333;
+			letter-spacing: 4px;
+			font-weight: normal;
+		}
+		
+	}
+}
+
+/* 游记 */
+#travel-notes{
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 110px;
+	background-color: #EBEBEB;
+	.travel-notes-title{
+		margin-bottom: 50px;
+		h2{
+			font-size: 28px;
+			text-align: center;
+			font-size: @comTitleFontSize;
+			color: #333333;
+			letter-spacing: 4px;
+			font-weight: normal;
+		}
+		
+	}
+}
+
+
+/* 领队 */
+#team-leader{
+	position: relative;
+	padding-top: 40px;
+	padding-bottom: 110px;
+	background-color: #ffffff;
+	.team-leader-title{
+		margin-bottom: 50px;
+		h2{
+			font-size: 28px;
+			text-align: center;
+			font-size: @comTitleFontSize;
+			color: #333333;
+			letter-spacing: 4px;
+			font-weight: normal;
+		}
+		
+	}
+}
+
