@@ -55,12 +55,12 @@ $(function(){
 		    loop: true,
 		    
 		    // 如果需要分页器
-		    pagination: '.swiper-pagination',
+		    pagination: '#single-hot .swiper-pagination',
 		    paginationClickable :true,
 		    speed:500,//速度
-		     simulateTouch:false,//鼠标无效
+		    simulateTouch:false,//鼠标无效
 
-		  })        
+		  });        
 	})(window);
 
 	//精选优惠轮播区域
@@ -68,8 +68,6 @@ $(function(){
 		var carefulChosenSwiper = new Swiper ('#careful-chosen .swiper-container', {
 		    direction: 'horizontal',
 		    loop: true,
-		    
-
 		    speed:500,//速度
 		    simulateTouch:false,//鼠标无效
 
@@ -77,5 +75,48 @@ $(function(){
 		    nextButton: '#careful-chosen .swiper-button-next',
 		    prevButton: '#careful-chosen .swiper-button-prev',
 		  });        
+	})(window);
+
+	//走过区域轮播
+	(function(window){
+		var throughScenerySwiper = new Swiper ('#through-scenery .swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    
+		    // 如果需要分页器
+		    pagination: '#through-scenery .swiper-pagination',
+		    paginationClickable :true,
+		    speed:500,//速度
+		    simulateTouch:false,//鼠标无效
+		    //自定义分页器
+
+		  });    
+	})(window);
+
+	//游记轮播区域
+	(function(window){
+		var travelNotes = new Swiper ('#travel-notes .swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    
+		    // 如果需要分页器
+
+		    paginationClickable :true,
+		    speed:600,//速度
+		    simulateTouch:false,//鼠标无效
+		    // 如果需要分页器
+   			pagination: '#travel-notes .swiper-pagination',
+		    
+   			effect : 'coverflow',
+			slidesPerView: 2,
+			centeredSlides: true,
+			coverflow: {
+	            rotate: 30,
+	            stretch: 10,
+	            depth: 250,
+	            modifier: 2,
+	            slideShadows : true
+	        }
+		  });   
 	})(window);
 });
