@@ -7,11 +7,7 @@ var uglify = require('gulp-uglify');	//js压缩模块
 var rename = require('gulp-rename');	//重命名模块
 
 
-//复制拷贝HTML文件
-gulp.task('htmlDest',function(){
-	gulp.src('./dist/*.html')
-		.pipe(gulp.dest('./src/'))
-});
+
 
 
 //编译less文件 合并,压缩,重命名css文件
@@ -45,10 +41,7 @@ gulp.task('plugCopy',function(){
 })
 
 
-//监听HTML文件变化
-gulp.task('htmlChange',function(){
-	gulp.watch('./dist/*.html',['htmlDest']);
-});
+
 
 // 定义一个监控less变化的任务
 gulp.task('lessChang',function(){
@@ -74,4 +67,4 @@ gulp.task('plugChange',function(){
 
 
 //定义默认任务
-gulp.task('default',['htmlChange','lessChang','jsChange','imgChange','plugChange']);
+gulp.task('default',['lessChang','jsChange','imgChange','plugChange']);

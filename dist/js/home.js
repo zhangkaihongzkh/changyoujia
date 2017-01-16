@@ -23,8 +23,14 @@ $(function(){
 		var windowHeight = $(window).height();
 		/*alert(windowWidth);*/
 		$('#sidebar').css({
-			left: (windowWidth/2 + 750) + 'px',
+			left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
 		});
+		$(window).resize(function(){
+			$('#sidebar').css({
+				left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
+			});
+		})
+		
 		//回到顶部
 		$(window).scroll(function(){
 			if($(window).scrollTop()>windowHeight){
