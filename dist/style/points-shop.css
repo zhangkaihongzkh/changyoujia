@@ -1,6 +1,7 @@
 body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
+  overflow-x: hidden;
 }
 body,
 ul,
@@ -293,13 +294,13 @@ a {
   text-align: center;
 }
 #points-shop-banner .banner-img-item {
-  /* background-size: cover; */
-  /* background: url('../images/points-shop-banner.png') no-repeat center center; */
+  background-size: cover;
+  height: 600px;
+  background: url('../images/points-shop-banner.png') no-repeat center center;
 }
 #points-shop-banner .banner-img-item .shop-banner-text {
   text-align: center;
-  position: relative;
-  bottom: 5%;
+  padding-top: 500px;
 }
 #points-shop-banner .banner-img-item .shop-banner-text h1 {
   color: #fff;

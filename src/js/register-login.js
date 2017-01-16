@@ -12,7 +12,7 @@ $(function(){
 	(function(window){
 		$('.form-tab li').on('click',function(){
 			var ind = $(this).index();//获取当前li的值
-			console.log(ind);
+			
 			$(this).addClass('active').siblings().removeClass('active');
 			tabs(".content-box",ind);
 		});
