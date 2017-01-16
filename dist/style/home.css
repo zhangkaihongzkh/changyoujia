@@ -294,8 +294,8 @@ a {
 }
 /* 侧边栏区域 */
 #sidebar {
-  position: absolute;
-  right: 140px;
+  position: fixed;
+  left: -40px;
   top: 0;
   width: 40px;
   background-color: #333333;
@@ -304,6 +304,8 @@ a {
   /* app */
   /* 个人中心 */
   /* 联系方式 */
+  /* 回到顶部 */
+  /* 下拉显示 */
 }
 #sidebar li {
   text-align: center;
@@ -331,18 +333,18 @@ a {
 }
 #sidebar .sidebar-user .user-center {
   opacity: 0;
-  display: block;
+  display: none;
   position: absolute;
-  width: 108px;
-  height: 60px;
+  width: 106px;
+  height: 40px;
   left: -100px;
   top: 0;
   background: url(../images/sidebar-bg.png) no-repeat center center;
 }
 #sidebar .sidebar-user .user-center p {
   color: #fff;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
 }
 #sidebar .sidebar-phone {
   border-top: 1px solid #17171D;
@@ -351,11 +353,12 @@ a {
 }
 #sidebar .sidebar-phone .contact-phone {
   opacity: 0;
+  display: none;
   position: absolute;
   left: -170px;
   top: 0;
-  width: 178px;
-  height: 110px;
+  width: 176px;
+  height: 100px;
   background: url(../images/sidebar-bg2.png) repeat-y center center;
 }
 #sidebar .sidebar-phone .contact-phone .contact-text {
@@ -377,6 +380,12 @@ a {
 }
 #sidebar .sidebar-phone .contact-phone .contact-text p:nth-child(3) {
   font-size: 14px;
+}
+#sidebar .sidebar-top {
+  display: none;
+}
+#sidebar .sidebar-list-down {
+  display: none;
 }
 /* 特点介绍 */
 #feature {
@@ -660,27 +669,26 @@ a {
   top: -50px;
 }
 #through-scenery .through-scenery-pagination .through-place-type {
-  width: 1000px;
-  margin: 0 auto;
-  text-align: center;
-  padding-left: 20px;
+  padding-left: 355px;
   margin-bottom: 20px;
 }
-#through-scenery .through-scenery-pagination .through-place-type span {
+#through-scenery .through-scenery-pagination .through-place-type p {
+  float: left;
+  display: block;
   text-align: center;
   font-size: 20px;
 }
-#through-scenery .through-scenery-pagination .through-place-type span + span {
+#through-scenery .through-scenery-pagination .through-place-type p + p {
   margin-left: 15px;
 }
 #through-scenery .through-scenery-pagination .through-place-line {
   position: absolute;
   top: 53px;
   left: 50%;
-  margin-left: -125px;
+  margin-left: -110px;
   z-index: 1;
   border-bottom: 1px dashed #8F8F8F;
-  width: 250px;
+  width: 220px;
 }
 #through-scenery .through-scenery-pagination .swiper-pagination {
   width: 1000px;
@@ -688,7 +696,7 @@ a {
 }
 #through-scenery .through-scenery-pagination .swiper-pagination .swiper-pagination-bullet {
   z-index: 2;
-  margin: 0 35px;
+  margin: 0 30px;
   width: 8px;
   height: 8px;
   border: 2px solid #8F8F8F;

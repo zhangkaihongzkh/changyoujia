@@ -18,31 +18,77 @@ $(function(){
 
 	//侧边栏动画效果
 	(function(window){
+		//动态修改侧边栏的值
+		var windowWidth = $(document).width();
+		var windowHeight = $(window).height();
+		/*alert(windowWidth);*/
+		$('#sidebar').css({
+			left: (windowWidth/2 + 750) + 'px',
+		});
+		//回到顶部
+		$(window).scroll(function(){
+			if($(window).scrollTop()>windowHeight){
+				$('#sidebar .sidebar-top').css({
+					'display':'block',
+
+				});
+			}else{
+				$('#sidebar .sidebar-top').css({
+					'display':'none',
+				});
+			}
+		});
+		
+		$('#sidebar .sidebar-top').on('click',function(){
+			$('body,html').animate({scrollTop:0},1000); 
+			return false; 
+		});
+
+		//关闭按钮
+		$('#sidebar .sidebar-close').on('click',function(){
+			$('#sidebar .sidebar-list').slideToggle();
+			$('#sidebar .sidebar-list-down').css({'display':'block'});
+		});
+		//下拉按钮
+		$('#sidebar .sidebar-down').on('click',function(){
+			$('#sidebar .sidebar-list-down').css({'display':'none'});
+			$('#sidebar .sidebar-list').slideToggle();
+	
+		});
+
 		//用户
 		$('#sidebar .sidebar-user').on('mouseover',function(){
+			$('.user-center').css({
+				'display':'block',
+			});
 			$('#sidebar .user-center').stop().animate({
 				opacity:1,
-				display:'block'
 			},400);
 		});
 		$('#sidebar .sidebar-user').on('mouseout',function(){
+			$('.user-center').css({
+				'display':'none',
+			});
 			$('#sidebar .user-center').stop().animate({
 				opacity:0,
-				display:'none'
 			},400);
 		});
 
 		//客服中心联系
 		$('#sidebar .sidebar-phone').on('mouseover',function(){
+			$('.contact-phone').css({
+				'display':'block',
+			});
 			$('.contact-phone').stop().animate({
 				opacity:1,
-				display:'block'
 			},400);
 		});
 		$('#sidebar .sidebar-phone').on('mouseout',function(){
+			$('.contact-phone').css({
+				'display':'none',
+			});
 			$('.contact-phone').stop().animate({
 				opacity:0,
-				display:'none'
 			},400);
 		});
 

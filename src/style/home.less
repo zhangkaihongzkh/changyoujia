@@ -5,8 +5,8 @@
 
 /* 侧边栏区域 */
 #sidebar{
-	position: absolute;
-	right: 140px;
+	position: fixed;
+	left: -40px;
 	top: 0;
 	width: 40px;
 	background-color: #333333;
@@ -38,18 +38,18 @@
 	.sidebar-user{
 		position: relative;
 		.user-center{
-			opacity: 0;
-			display: block;
+			opacity: 0; 
+			display: none;
 			position: absolute;
-			width: 108px;
-			height: 60px;
+			width: 106px;
+			height: 40px;
 			left: -100px;
     		top: 0;
 			background: url(../images/sidebar-bg.png) no-repeat center center;
 			p{
 				color: #fff;
-				height: 60px;
-				line-height: 60px;
+				height: 40px;
+				line-height: 40px;
 			}
 		}
 	}
@@ -60,11 +60,12 @@
 		position: relative;
 		.contact-phone{
 			opacity: 0;
+			display: none;
 			position: absolute;
 			left:-170px;
 			top: 0;
-			width: 178px;
-			height: 110px;
+			width: 176px;
+			height: 100px;
 			background: url(../images/sidebar-bg2.png) repeat-y center center;
 			.contact-text{
 				padding-left: 21px;
@@ -87,6 +88,15 @@
 				}
 			}
 		}
+	}
+	/* 回到顶部 */
+	.sidebar-top{
+		display: none;
+	}
+	/* 下拉显示 */
+	.sidebar-list-down{
+		display: none; 
+		
 	}
 }
 
@@ -410,16 +420,15 @@
 		position: relative;
 		top: -50px;
 		.through-place-type{
-			width: @comWidth;
-			margin: 0 auto;
-			text-align: center;
-			padding-left: 20px;
+			padding-left: 355px;
 			margin-bottom: 20px;
-			span{
+			p{
+				float: left;
+				display: block;
 				text-align: center;
 				font-size: 20px;
 			}
-			span + span{
+			p + p{
 				margin-left: 15px;
 			} 
 		}
@@ -428,10 +437,10 @@
 			position: absolute;
 			top: 53px;
 			left: 50%;
-			margin-left: -125px;
+			margin-left: -110px;
 			z-index: 1;
 			border-bottom: 1px dashed #8F8F8F;
-			width: 250px;
+			width: 220px;
 		}
 		//轮播按钮样式
 		.swiper-pagination{
@@ -439,7 +448,7 @@
 			text-align: center;
 			.swiper-pagination-bullet{
 				z-index: 2;
-				margin: 0 35px;
+				margin: 0 30px;
 				width: 8px;
 				height: 8px;
 				border: 2px solid #8F8F8F;

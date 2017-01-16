@@ -2,7 +2,7 @@
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
 <svg xmlns="http://www.w3.org/2000/svg">
 <metadata>
-Created by FontForge 20120731 at Thu Jan 12 20:26:05 2017
+Created by FontForge 20120731 at Mon Jan 16 11:42:14 2017
  By admin
 </metadata>
 <defs>
@@ -16,7 +16,7 @@ Created by FontForge 20120731 at Thu Jan 12 20:26:05 2017
     ascent="896"
     descent="-128"
     x-height="792"
-    bbox="0 -223 1025.02 896"
+    bbox="0 -223 1026 896"
     underline-thickness="0"
     underline-position="0"
     unicode-range="U+0078-E739"
@@ -69,5 +69,7 @@ t8.5 19.5v284h-31z" />
 d="M800 -64h-736v799h449l65 63l-2 1h-512q-27 0 -45.5 -18.5t-18.5 -45.5v-799q0 -27 18.5 -45.5t45.5 -18.5h736q26 0 44.5 18.5t18.5 45.5v468l-63 -61v-407v0zM974 854q-43 42 -94 42q-58 0 -103 -45q-62 -61 -439 -438q-5 -5 -7 -12q-3 -12 -11.5 -40t-18 -60
 t-18.5 -62t-15 -50.5l-6 -20.5q-5 -16 6 -27q8 -8 19 -8q5 0 8 1q166 55 229 73q6 2 11 7q435 429 441 436q50 51 49 104t-51 100v0zM930 695q-26 -28 -414 -410l-19 -19q-37 -11 -154 -49q36 117 47 158q406 405 432 431t58 26q25 0 50 -24q30 -29 31 -55q0 -27 -31 -58v0z
 " />
+    <glyph glyph-name="bottom" unicode="&#xe602;" horiz-adv-x="1026" 
+d="M1026 687l-513 -607l-513 607h76l437 -507l438 507h75z" />
   </font>
 </defs></svg>
