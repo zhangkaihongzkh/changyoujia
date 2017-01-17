@@ -292,6 +292,32 @@ a {
   font-size: 12px;
   text-align: center;
 }
+/* 公用分页组件 */
+.pagination-wrapper .pagination-container li + li {
+  margin-left: 20px;
+}
+.pagination-wrapper .pagination-container li {
+  float: left;
+  border: 1px solid #BFBFBF;
+  border-radius: 3px;
+}
+.pagination-wrapper .pagination-container li a {
+  padding: 10px 20px;
+  font-size: 12px;
+  color: #333333;
+  display: block;
+}
+.pagination-wrapper .pagination-container .pagination-prev-btn a,
+.pagination-wrapper .pagination-container .pagination-next-btn a {
+  padding: 10px 8px;
+}
+.pagination-wrapper .pagination-container li.active {
+  background-color: #EF8B1D;
+  border-color: #EF8B1D;
+}
+.pagination-wrapper .pagination-container li.active a {
+  color: #fff;
+}
 /* 注册登陆界面背景 */
 #register-bg {
   background: url(../images/register.png) no-repeat center center;

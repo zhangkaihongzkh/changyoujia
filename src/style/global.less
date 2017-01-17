@@ -7,7 +7,7 @@
 @bottomDesColor:#252525;//底部声明部分颜色
 @bottomLinkBgc:#2C2C2C;//底部链接部分背景颜色
 @comFontSize:14px;		//通用字体大小
-
+@comGrayColor:#E8E8E8;
 body{
   font-family: "Helvetica Neue", 
   Helvetica, 
@@ -293,6 +293,40 @@ a{text-decoration: none;}
 	}
 }
 
+/* 公用分页组件 */
+.pagination-wrapper{
+
+	.pagination-container{
+		li + li{
+			margin-left: 20px;
+		}
+		li{
+			float: left;
+			border:1px solid #BFBFBF;
+			border-radius: 3px;
+
+			a{
+				padding: 10px 20px;
+				font-size: 12px;
+				color:#333333;
+				display: block;
+			}
+		}
+		.pagination-prev-btn a,
+		.pagination-next-btn a,{
+			padding: 10px 8px;
+		}
+		li.active{
+			a{
+				color: #fff;
+			}
+			background-color: @comBGC;
+			border-color: @comBGC;
+		}
+	}
+	
+	
+}
 
 
 
