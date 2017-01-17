@@ -1,0 +1,154 @@
+//引入全局less
+@import "global";
+@borderColor:#DEDCDC;	//边框颜色
+
+/* 注册登陆界面背景 */
+#login-bg{
+	background: url(../images/login.png) no-repeat center center;
+	/* width: 100%; */
+	.logo{
+		margin-right: 25px;
+	}
+	.header-left{
+		padding: 25px 0;
+		h2{
+			font-size: 24px;
+			color: #333333;
+			font-weight: normal;
+			border-left: 2px solid #DCDCDA;
+			padding-left: 20px;
+		}
+	}
+	.header-right{
+		text-align: right;
+		padding-top: 16px;
+		padding-right: 7px;
+		p:nth-child(1){
+			color: #333;
+			line-height: 22px;
+			height: 22px;
+		}
+		p:nth-child(2){
+			color: @comBGC;
+			font-size: 20px;
+			font-weight: bold;
+			height: 30px;
+			line-height: 30px;
+		}
+	}
+	/* 主体内容 */
+	#main-content{
+		padding: 60px 0;
+		font-size: @comFontSize;
+		.content-box{
+			position: relative;
+			.content-box-left{
+				float: left;
+				color: #fff;
+				padding-top: 100px;
+
+				p{
+					margin-top: 30px;
+					letter-spacing: 1px;
+					font-size: 16px;
+				}
+			}
+			.content-box-right{
+				margin-right: 15px;
+				text-align: center;
+				float: right;
+				width: 240px;
+				background-color: #FFC028;
+				border-radius: 10px;
+				padding: 45px 30px 25px 30px;
+				box-shadow: -1px 1px 2px #555A5D;
+				.login-form-head{
+					margin: 0 auto 35px auto;
+					width: 117px;
+					height: 51px;
+					background: url('../images/login-form-head.png') center center no-repeat;
+					
+				}
+				form#login-form{
+					.form-group{
+						margin-bottom: 30px;	
+						width: 240px;
+						input{
+							padding: 14px 30px;
+							border-radius: 50px;
+						}
+						input:focus{
+							outline: none;
+						}
+						.login-btn{
+							display: block;
+							margin: 0 auto;
+							font-size: 12px;
+							width: 230px;
+							font-weight: bold;
+							color: #fff;
+							border-radius: 30px;
+							padding: 12px 0;
+							background-color: #1D95E3;
+							box-shadow: 3px 3px 5px #1D95E3;
+							cursor: pointer;
+							&:hover{
+								background-color: #1D85E3;
+							}
+						}
+					}
+				}
+			}
+			.login-form-link{
+				color: #EF8B1D;
+				a{
+					color: #EF8B1D;	
+					padding: 0 13px;				
+				}
+			}
+		}
+	}
+}
+
+
+/* 底部文字 */
+#login-bottom{
+	background-color: #fff;
+	padding: 35px 0 25px 0;
+	.login-text-left{
+		margin-right: 100px;
+		h2{
+			color: @comBGC;
+			font-size: 28px;
+			font-weight: normal;
+		}
+		p{
+			margin-top: 15px;
+		}
+		p:nth-of-type(1){
+			font-size: 20px;
+			color: #8F8F8F;
+		}
+		p:nth-of-type(2){
+			font-size: 28px;
+			color: #005B99;
+			letter-spacing: 3px;
+			span{
+				color: @comBGC;
+			}
+		}
+	}
+	.login-text-item{
+		color: #8F8F8F;
+		h2{
+			color: #636363;
+			font-size: 28px;
+			font-weight: normal;
+			margin-bottom: 15px;
+		}
+		p{
+			line-height: 1.8;
+			letter-spacing: 1px;
+		}
+	}
+}

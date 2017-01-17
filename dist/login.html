@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>登录-畅游家</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 引入swiper插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="style/global.css">
+    <link rel="stylesheet" type="text/css" href="style/login.css">
+  </head>
+  <body>
+
+    <!-- 登录背景 -->
+    <div id="login-bg">                            
+      <!-- 导航栏区域 -->                            
+      <nav id="header">
+          <div class="comWidth clearfix">
+              <div class="logo fl"></div>
+              <div class="header-left fl">
+                <h2>欢迎登录</h2>
+              </div>
+              <div class="header-right fr">
+                  <p>预订热线：9:00~17:00</p>
+                  <p>400-123-6890</p>
+              </div>
+          </div>
+      </nav>
+      <!-- /导航栏区域 --> 
+
+      <!-- 登录框 -->
+      <section id="main-content">
+          <div class="comWidth">
+              <div class="content-box clearfix">
+                <div class="content-box-left">
+                  <h2>我们只做一件事：带你去最好玩儿的地方</h2>
+                  <p>We just do one thing：Taking you to the most interesting place</p>
+                </div>
+                <div class="content-box-right">
+                  <div class="login-form-head"></div>
+                  <form id="login-form" name="login-form" method="post" action="" class="tabcon" >
+                    <div class="form-group">
+                      <label for="login-phone"></label>
+                      <input type="text" class="form-control" id="login-phone" name="login-phone" placeholder="请输入您的手机号码">
+                    </div> 
+                    <div class="form-group">
+                      <label for="login-password"></label>
+                      <input type="password" class="form-control" id="login-password" name="login-password" placeholder="请输入您的密码">
+                    </div> 
+                    <div class="form-group">
+                      <input type="hidden" name="ac" value="login">
+                      <input type="submit" class="login-btn" value="立即登录">
+                    </div>
+                  </form> 
+                  <div class="login-form-link">
+                    <a href="">立即注册</a>|
+                    <a href="">忘记密码</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+      </section>
+      <!-- /登陆框 -->
+    </div>
+    <!-- /登陆背景 -->
+
+    <!-- 登录底部 -->
+    <section id="login-bottom">
+      <div class="comWidth">
+        <div class="login-bottom-text clearfix">
+          <div class="login-text-left fl">
+            <h2>爱旅游,爱摄影</h2>
+            <p>那就来</p>
+            <p>畅游<span>家</span></p>
+          </div>
+          <div class="login-text-item fl">
+            <h2>你知道吗？</h2>
+            <p>·畅游家是中国最大的旅游社交网络</p>
+            <p>·畅游家的线路都是独家策划的</p>
+            <p>·加入畅游家多参加户外运动</p>
+            <p>·你可能会增加5年寿命,多交18个旅伴</p>   
+          </div>
+          <div class="login-text-item fr">   
+            <h2>加入畅游家</h2>
+            <p>·结识各种旅游狂人、户外大侠、摄影专家、自驾高手</p>
+            <p>·与朋友、同学、同事、家人保持密切的联络</p>
+            <p>·结伴出游，参加各种精彩的活动</p>
+            <p>·分享精彩的旅游生活、照片、游记</p>   
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+  </body>
+</html>

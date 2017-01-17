@@ -5,7 +5,7 @@
 /* 注册登陆界面背景 */
 #register-bg{
 	background: url(../images/register.png) no-repeat center center;
-	/* width: 100%; */
+
 	.logo{
 		margin-right: 25px;
 	}
@@ -88,37 +88,6 @@
 			
 		}
 
-		//登陆注册tab
-		.form-tab{
-			border-bottom: 2px solid @borderColor;
-			position: relative;
-			height: 60px;
-			line-height: 60px;
-			li{
-				font-size: 20px;
-				padding: 0 48px 0 48px;
-				background-color: #f0f0f0;
-				border: 2px solid @borderColor;
-				position: absolute;
-				cursor: pointer;
-				top: -2px;
-			}
-			/* 交互样式 */
-			li.active{
-				border: 2px solid @borderColor;
-				background-color: #fff;
-				z-index: 2;
-				padding-bottom: 2px;
-				border-bottom: none;
-			}
-			/* 注册按钮 */
-			.register-btn{
-			}
-			/* 登陆按钮 */
-			.login-btn{
-				left: 200px;
-			}
-		}
 		//表单
 		form{
 			width: 600px;
@@ -145,12 +114,13 @@
 				}
 				#validate-num{
 					width: 220px;
+					margin-right: 10px;
 				}	
 				#send-validate{
-					width: 125px;
+					width: 115px;
 					background-color: #F19927;
 					height: 44px;
-					padding: 0 20px 0 20px;
+					padding: 0 15px 0 15px;
 					color: #fff;
 					border-color:#F19927;
 					cursor: pointer;

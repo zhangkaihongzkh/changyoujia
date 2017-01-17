@@ -1,0 +1,438 @@
+body {
+  font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+  font-size: 14px;
+  overflow-x: hidden;
+}
+body,
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+table,
+td,
+img,
+div,
+dl,
+dt,
+dd,
+input {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+ul,
+ol {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/*common*/
+.comWidth {
+  width: 1000px;
+  margin: 0 auto;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+/*clear float*/
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.clearfix {
+  zoom: 1;
+}
+/* 字体图标 */
+@font-face {
+  font-family: 'iconfont';
+  src: url('../fonts/iconfont.eot');
+  src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'), url('../fonts/iconfont.woff') format('woff'), url('../fonts/iconfont.ttf') format('truetype'), url('../fonts/iconfont.svg#iconfont') format('svg');
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+/* 公用头部 */
+#header {
+  background-color: #fff;
+  height: 80px;
+}
+#header .logo {
+  width: 67px;
+  height: 70px;
+  line-height: 70px;
+  background: url(../images/logo.png) no-repeat center center;
+}
+#header .navBar {
+  margin: 0 30px 0 30px;
+}
+#header .navBar li {
+  float: left;
+  padding: 30px 12px 31px 12px;
+}
+#header .navBar li:hover {
+  cursor: pointer;
+  background-color: #EF8B1D;
+}
+#header .navBar li:hover a {
+  color: #fff;
+}
+#header .navBar li a {
+  color: #011726;
+}
+#header .navBar li.active {
+  background-color: #EF8B1D;
+}
+#header .navBar li.active a {
+  color: #fff;
+}
+#header .header-right {
+  line-height: 80px;
+  height: 80px;
+  display: block;
+}
+#header .header-right a {
+  border: 1px solid #011726;
+  padding: 12px 10px;
+  border-radius: 5px;
+  color: #011726;
+}
+#header .header-right .register {
+  background-color: #EF8B1D;
+  color: #fff;
+  border-color: #EF8B1D;
+  margin-right: 10px;
+}
+/* 公用广告轮播区域 */
+#main-ad {
+  height: 600px;
+}
+#main-ad .swiper-container {
+  position: relative;
+  background-color: #E42E2E;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  /* 文字部分 */
+  /* 搜索框 */
+  /* 按钮部分 */
+}
+#main-ad .swiper-container .content-text {
+  text-align: center;
+  padding-top: 150px;
+  color: #23194E;
+}
+#main-ad .swiper-container .content-text h2 {
+  font-size: 32px;
+  font-weight: 100;
+  letter-spacing: 8px;
+}
+#main-ad .swiper-container .content-text p {
+  font-size: 16px;
+  margin: 30px 0;
+}
+#main-ad .swiper-container .content-text a {
+  cursor: pointer;
+  color: #23194E;
+  border: 1px solid #23194E;
+  padding: 8px 13px;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
+#main-ad .swiper-container .content-text a:hover {
+  color: #fff;
+  background-color: #23194E;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
+#main-ad .swiper-container .searchbox {
+  position: absolute;
+  width: 960px;
+  margin-left: -480px;
+  background-color: #6b2121;
+  padding: 20px 20px;
+  border-radius: 5px;
+  left: 50%;
+  bottom: 40px;
+  /* 选择地点 */
+}
+#main-ad .swiper-container .searchbox .select-place {
+  position: absolute;
+  left: 20px;
+  top: 35px;
+  color: #fff;
+  /* 城市选择
+				.select-place-item{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 250px;
+					border: 1px solid @comBGC; 
+					background-color: @comBGC;
+					padding: 10px 15px;
+					border-radius: 5px;
+					li{
+						float: left;
+						cursor: pointer;
+					}
+				} */
+}
+#main-ad .swiper-container .searchbox .select-place .select-place-arrow {
+  position: absolute;
+  cursor: pointer;
+  left: 45px;
+  top: 6px;
+  width: 14px;
+  height: 8px;
+  background: url(../images/arrow.png) no-repeat center center;
+}
+#main-ad .swiper-container .searchbox #search-input {
+  padding: 18px;
+  margin-left: 80px;
+  width: 764px;
+  border-radius: 5px;
+}
+#main-ad .swiper-container .searchbox #search-btn {
+  cursor: pointer;
+  position: absolute;
+  right: 24px;
+  top: 17px;
+  width: 54px;
+  height: 54px;
+  background: url(../images/search.png) no-repeat center center;
+}
+#main-ad .swiper-container .btn {
+  width: 1120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -560px;
+}
+#main-ad .swiper-container .swiper-button-next {
+  background: url(../images/arrow-next.png) no-repeat center center;
+}
+#main-ad .swiper-container .swiper-button-prev {
+  background: url(../images/arrow-prev.png) no-repeat center center;
+}
+/* 公用标题下划线 */
+.title-line {
+  padding-bottom: 15px;
+  border-bottom: 2px solid #333333;
+  width: 80px;
+  margin: 0 auto;
+}
+/* 公用底部 */
+#footer {
+  /* 底部主要内容 */
+  /* 底部声明部分 */
+}
+#footer .footer-wrapper {
+  background-color: #2C2C2C;
+  padding: 40px 0;
+  /* 友情链接 */
+}
+#footer .footer-wrapper .footer-main-link {
+  margin-bottom: 30px;
+}
+#footer .footer-wrapper .footer-main-link ul {
+  width: 20%;
+  float: left;
+}
+#footer .footer-wrapper .footer-main-link ul h4 {
+  color: #EF8B1D;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+#footer .footer-wrapper .footer-main-link ul li {
+  padding: 5px 0;
+}
+#footer .footer-wrapper .footer-main-link ul li a {
+  color: #DDDADA;
+}
+#footer .footer-wrapper .footer-friendly-link p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 20px;
+}
+#footer .footer-wrapper .footer-friendly-link ul li {
+  float: left;
+}
+#footer .footer-wrapper .footer-friendly-link ul li a {
+  color: #DDD9D9;
+}
+#footer .footer-wrapper .footer-friendly-link ul li + li {
+  margin-left: 30px;
+}
+#footer .footer-description {
+  background-color: #252525;
+  padding: 30px 0;
+}
+#footer .footer-description p {
+  color: #DDDADA;
+  font-size: 12px;
+  text-align: center;
+}
+/* 注册登陆界面背景 */
+#login-bg {
+  background: url(../images/login.png) no-repeat center center;
+  /* width: 100%; */
+  /* 主体内容 */
+}
+#login-bg .logo {
+  margin-right: 25px;
+}
+#login-bg .header-left {
+  padding: 25px 0;
+}
+#login-bg .header-left h2 {
+  font-size: 24px;
+  color: #333333;
+  font-weight: normal;
+  border-left: 2px solid #DCDCDA;
+  padding-left: 20px;
+}
+#login-bg .header-right {
+  text-align: right;
+  padding-top: 16px;
+  padding-right: 7px;
+}
+#login-bg .header-right p:nth-child(1) {
+  color: #333;
+  line-height: 22px;
+  height: 22px;
+}
+#login-bg .header-right p:nth-child(2) {
+  color: #EF8B1D;
+  font-size: 20px;
+  font-weight: bold;
+  height: 30px;
+  line-height: 30px;
+}
+#login-bg #main-content {
+  padding: 60px 0;
+  font-size: 14px;
+}
+#login-bg #main-content .content-box {
+  position: relative;
+}
+#login-bg #main-content .content-box .content-box-left {
+  float: left;
+  color: #fff;
+  padding-top: 100px;
+}
+#login-bg #main-content .content-box .content-box-left p {
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+#login-bg #main-content .content-box .content-box-right {
+  margin-right: 15px;
+  text-align: center;
+  float: right;
+  width: 240px;
+  background-color: #FFC028;
+  border-radius: 10px;
+  padding: 45px 30px 25px 30px;
+  box-shadow: -1px 1px 2px #555A5D;
+}
+#login-bg #main-content .content-box .content-box-right .login-form-head {
+  margin: 0 auto 35px auto;
+  width: 117px;
+  height: 51px;
+  background: url('../images/login-form-head.png') center center no-repeat;
+}
+#login-bg #main-content .content-box .content-box-right form#login-form .form-group {
+  margin-bottom: 30px;
+  width: 240px;
+}
+#login-bg #main-content .content-box .content-box-right form#login-form .form-group input {
+  padding: 14px 30px;
+  border-radius: 50px;
+}
+#login-bg #main-content .content-box .content-box-right form#login-form .form-group input:focus {
+  outline: none;
+}
+#login-bg #main-content .content-box .content-box-right form#login-form .form-group .login-btn {
+  display: block;
+  margin: 0 auto;
+  font-size: 12px;
+  width: 230px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 30px;
+  padding: 12px 0;
+  background-color: #1D95E3;
+  box-shadow: 3px 3px 5px #1D95E3;
+  cursor: pointer;
+}
+#login-bg #main-content .content-box .content-box-right form#login-form .form-group .login-btn:hover {
+  background-color: #1D85E3;
+}
+#login-bg #main-content .content-box .login-form-link {
+  color: #EF8B1D;
+}
+#login-bg #main-content .content-box .login-form-link a {
+  color: #EF8B1D;
+  padding: 0 13px;
+}
+/* 底部文字 */
+#login-bottom {
+  background-color: #fff;
+  padding: 35px 0 25px 0;
+}
+#login-bottom .login-text-left {
+  margin-right: 100px;
+}
+#login-bottom .login-text-left h2 {
+  color: #EF8B1D;
+  font-size: 28px;
+  font-weight: normal;
+}
+#login-bottom .login-text-left p {
+  margin-top: 15px;
+}
+#login-bottom .login-text-left p:nth-of-type(1) {
+  font-size: 20px;
+  color: #8F8F8F;
+}
+#login-bottom .login-text-left p:nth-of-type(2) {
+  font-size: 28px;
+  color: #005B99;
+  letter-spacing: 3px;
+}
+#login-bottom .login-text-left p:nth-of-type(2) span {
+  color: #EF8B1D;
+}
+#login-bottom .login-text-item {
+  color: #8F8F8F;
+}
+#login-bottom .login-text-item h2 {
+  color: #636363;
+  font-size: 28px;
+  font-weight: normal;
+  margin-bottom: 15px;
+}
+#login-bottom .login-text-item p {
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
