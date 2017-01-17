@@ -22,14 +22,14 @@ $(function(){
 		var windowWidth = $(document).width();
 		var windowHeight = $(window).height();
 		/*alert(windowWidth);*/
-		$('#sidebar').css({
+		/*$('#sidebar').css({
 			left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
-		});
-		$(window).resize(function(){
+		});*/
+		/*$(window).resize(function(){
 			$('#sidebar').css({
 				left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
 			});
-		})
+		});*/
 		
 		//回到顶部
 		$(window).scroll(function(){

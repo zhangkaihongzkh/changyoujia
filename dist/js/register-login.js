@@ -1,5 +1,5 @@
 //TAB控制函数
-function tabs(tabId, tabNum){
+/*function tabs(tabId, tabNum){
 	//设置点击后的样式
 	$(tabId + " .form-tab li").removeClass('active');
 	$(tabId + " .form-tab li").eq(tabNum).addClass('active');
@@ -17,4 +17,4 @@ $(function(){
 			tabs(".content-box",ind);
 		});
 	})(window);
-})
+});*/
