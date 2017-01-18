@@ -85,7 +85,9 @@ a {
 }
 #header .navBar li {
   float: left;
-  padding: 30px 12px 31px 12px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 12px 0 12px;
 }
 #header .navBar li:hover {
   cursor: pointer;
@@ -293,30 +295,61 @@ a {
   text-align: center;
 }
 /* 公用分页组件 */
-.pagination-wrapper .pagination-container li + li {
-  margin-left: 20px;
+.pagination-wrapper {
+  /* .pagination-container{
+		li + li{
+			margin-left: 20px;
+		}
+		li{
+			float: left;
+			border:1px solid #BFBFBF;
+			border-radius: 3px;
+	
+			a{
+				padding: 10px 20px;
+				font-size: 12px;
+				color:#333333;
+				display: block;
+			}
+		}
+		.pagination-prev-btn a,
+		.pagination-next-btn a,{
+			padding: 10px 8px;
+		}
+		li.active{
+			a{
+				color: #fff;
+			}
+			background-color: @comBGC;
+			border-color: @comBGC;
+		}
+	} */
 }
-.pagination-wrapper .pagination-container li {
-  float: left;
-  border: 1px solid #BFBFBF;
-  border-radius: 3px;
-}
-.pagination-wrapper .pagination-container li a {
-  padding: 10px 20px;
+.pagination-wrapper span,
+.pagination-wrapper a {
+  text-align: center;
   font-size: 12px;
+  /* width: 50px; */
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #BFBFBF;
+  border-radius: 5px;
+  display: inline-block;
   color: #333333;
-  display: block;
+  background-color: #fff;
+  margin: 0 10px;
 }
-.pagination-wrapper .pagination-container .pagination-prev-btn a,
-.pagination-wrapper .pagination-container .pagination-next-btn a {
-  padding: 10px 8px;
-}
-.pagination-wrapper .pagination-container li.active {
+.pagination-wrapper span.current {
+  color: #fff;
   background-color: #EF8B1D;
   border-color: #EF8B1D;
 }
-.pagination-wrapper .pagination-container li.active a {
-  color: #fff;
+.pagination-wrapper span.prev,
+.pagination-wrapper span.next {
+  color: #333333;
+  border-color: #BFBFBF;
+  background-color: #fff;
 }
 #points-shop-banner .banner-img-item {
   background-size: cover;
@@ -349,7 +382,14 @@ a {
   padding: 30px 0 17px 0;
   border-bottom: 2px solid #EF8B1D;
 }
-#points-shop-main-content .points-shop-aside .user-info-content .user-content-top img {
+#points-shop-main-content .points-shop-aside .user-info-content .user-content-top .user-head {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background-color: #EF8B1D;
+}
+#points-shop-main-content .points-shop-aside .user-info-content .user-content-top .user-head img {
   width: 80px;
   height: 80px;
   border-radius: 50%;
@@ -501,18 +541,20 @@ a {
 #points-shop-main-content .points-shop-right .points-shop-tabs li {
   height: 40px;
   float: left;
-  cursor: pointer;
   font-size: 20px;
   color: #636363;
-  padding: 0 20px;
   font-weight: bold;
+}
+#points-shop-main-content .points-shop-right .points-shop-tabs li a {
+  cursor: pointer;
+  padding: 0 20px;
 }
 #points-shop-main-content .points-shop-right .points-shop-tabs li.active {
   color: #EF8B1D;
   border-bottom: 2px solid #EF8B1D;
 }
-#points-shop-main-content .points-shop-right .points-shop-tabs li + li {
-  border-left: 1px solid #D3D1D1;
+#points-shop-main-content .points-shop-right .points-shop-tabs li + li a {
+  border-left: 2px solid #D3D1D1;
 }
 #points-shop-main-content .points-shop-right .poins-shop-wrapper {
   margin-top: 30px;
@@ -522,6 +564,9 @@ a {
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange {
   position: relative;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item {
@@ -531,19 +576,34 @@ a {
   width: 223px;
   background-color: #fff;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item img,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item img,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item img,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item img,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item img,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item img {
   width: 225px;
   height: 141px;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item p,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item p,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item p {
   color: #333333;
   font-size: 14px;
   margin: 10px 0;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item .item-detail p,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item .item-detail p,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item .item-detail p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item .item-detail p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item .item-detail p,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item .item-detail p {
@@ -551,11 +611,17 @@ a {
   color: #EF8B1D;
   font-size: 14px;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item .item-detail p span,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item .item-detail p span,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item .item-detail p span,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item .item-detail p span,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item .item-detail p span,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item .item-detail p span {
   font-size: 16px;
 }
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-searchresult .exchange-item .item-detail a,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-searchresult .exchange-item .item-detail a,
+#points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-searchresult .exchange-item .item-detail a,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .entity-exchange .exchange-wrapper .exchange-item .item-detail a,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .souvenir-exchange .exchange-wrapper .exchange-item .item-detail a,
 #points-shop-main-content .points-shop-right .poins-shop-wrapper .coupon-exchange .exchange-wrapper .exchange-item .item-detail a {

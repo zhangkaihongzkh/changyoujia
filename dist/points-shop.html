@@ -18,6 +18,8 @@
     <![endif]-->
     <!-- 引入字体图标 -->
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
+    <!-- 分页插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/pagination/lib/pagination.css">
     <link rel="stylesheet" type="text/css" href="style/global.css">
     <link rel="stylesheet" type="text/css" href="style/points-shop.css">
   </head>
@@ -127,15 +129,16 @@
             </aside>
             <div class="points-shop-right fl">
                 <ul class="points-shop-tabs">
-                    <li class="active">优惠券兑换</li>
-                    <li>伴手礼兑换</li>
-                    <li>实物兑换</li>
+                    <li class="active"><a>优惠券兑换</a></li>
+                    <li><a>伴手礼兑换</a></li>
+                    <li><a>实物兑换</a></li>
                 </ul>
                 <!-- 主体内容 -->
                 <div class="poins-shop-wrapper">
                     <!-- 优惠券兑换 -->
                     <div class="coupon-exchange tabcon">
-                        <ul class="exchange-wrapper clearfix">
+                        <ul class="exchange-wrapper clearfix" style="display: none;">
+
                             <li class="exchange-item">
                                 <img src="images/ponts-shop-item.jpg">
                                 <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
@@ -162,7 +165,7 @@
                             </li>
                             <li class="exchange-item">
                                 <img src="images/ponts-shop-item.jpg">
-                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
+                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                                 <div class="item-detail clearfix">
                                     <p>¥<span>200</span>积分</p>
                                     <a href="">去兑换</a>
@@ -170,7 +173,7 @@
                             </li>
                             <li class="exchange-item">
                                 <img src="images/ponts-shop-item.jpg">
-                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
+                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                                 <div class="item-detail clearfix">
                                     <p>¥<span>200</span>积分</p>
                                     <a href="">去兑换</a>
@@ -178,7 +181,7 @@
                             </li>
                             <li class="exchange-item">
                                 <img src="images/ponts-shop-item.jpg">
-                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
+                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
                                 <div class="item-detail clearfix">
                                     <p>¥<span>200</span>积分</p>
                                     <a href="">去兑换</a>
@@ -209,18 +212,30 @@
                                 </div>
                             </li>
                         </ul>
+
+                        <ul class="exchange-searchresult clearfix">分页初始化完成后这里的内容会被替换。</ul>
+                        <!-- 分页按钮 -->
                         <div class="pagination-wrapper">
                             <ul class="pagination-container clearfix">
-                                <li class="pagination-prev-btn"><a href="">上一页</a></li>
+                                <!-- <li class="pagination-prev-btn"><a href="">上一页</a></li>
                                 <li class="active"><a href="">1</a></li>
-                                <li class="pagination-next-btn"><a href="">下一页</a></li>
+                                <li class="pagination-next-btn"><a href="">下一页</a></li> -->
                             </ul>
                         </div>
+                        <!-- /分页按钮 -->
                     </div> 
                     <!-- /优惠券兑换 -->
                     <!-- 伴手礼兑换 -->
                     <div class="souvenir-exchange tabcon">
                         <ul class="exchange-wrapper clearfix">
+                            <li class="exchange-item">
+                                <img src="images/ponts-shop-item.jpg">
+                                <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
+                                <div class="item-detail clearfix">
+                                    <p>¥<span>200</span>积分</p>
+                                    <a href="">去兑换</a>
+                                </div>
+                            </li>
                             <li class="exchange-item">
                                 <img src="images/ponts-shop-item.jpg">
                                 <p>途牛新年礼包+2017年定制台历途牛新年礼包+2017年</p>
@@ -397,6 +412,7 @@
     
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="lib/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="lib/pagination/lib/jquery.pagination.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
     <script type="text/javascript" src="js/points-shop.js"></script>

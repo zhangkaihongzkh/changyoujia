@@ -85,7 +85,9 @@ a {
 }
 #header .navBar li {
   float: left;
-  padding: 30px 12px 31px 12px;
+  height: 80px;
+  line-height: 80px;
+  padding: 0 12px 0 12px;
 }
 #header .navBar li:hover {
   cursor: pointer;
@@ -293,28 +295,59 @@ a {
   text-align: center;
 }
 /* 公用分页组件 */
-.pagination-wrapper .pagination-container li + li {
-  margin-left: 20px;
+.pagination-wrapper {
+  /* .pagination-container{
+		li + li{
+			margin-left: 20px;
+		}
+		li{
+			float: left;
+			border:1px solid #BFBFBF;
+			border-radius: 3px;
+	
+			a{
+				padding: 10px 20px;
+				font-size: 12px;
+				color:#333333;
+				display: block;
+			}
+		}
+		.pagination-prev-btn a,
+		.pagination-next-btn a,{
+			padding: 10px 8px;
+		}
+		li.active{
+			a{
+				color: #fff;
+			}
+			background-color: @comBGC;
+			border-color: @comBGC;
+		}
+	} */
 }
-.pagination-wrapper .pagination-container li {
-  float: left;
-  border: 1px solid #BFBFBF;
-  border-radius: 3px;
-}
-.pagination-wrapper .pagination-container li a {
-  padding: 10px 20px;
+.pagination-wrapper span,
+.pagination-wrapper a {
+  text-align: center;
   font-size: 12px;
+  /* width: 50px; */
+  padding: 0 15px;
+  height: 30px;
+  line-height: 30px;
+  border: 2px solid #BFBFBF;
+  border-radius: 5px;
+  display: inline-block;
   color: #333333;
-  display: block;
+  background-color: #fff;
+  margin: 0 10px;
 }
-.pagination-wrapper .pagination-container .pagination-prev-btn a,
-.pagination-wrapper .pagination-container .pagination-next-btn a {
-  padding: 10px 8px;
-}
-.pagination-wrapper .pagination-container li.active {
+.pagination-wrapper span.current {
+  color: #fff;
   background-color: #EF8B1D;
   border-color: #EF8B1D;
 }
-.pagination-wrapper .pagination-container li.active a {
-  color: #fff;
+.pagination-wrapper span.prev,
+.pagination-wrapper span.next {
+  color: #333333;
+  border-color: #BFBFBF;
+  background-color: #fff;
 }
