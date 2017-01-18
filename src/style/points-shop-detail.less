@@ -1,0 +1,257 @@
+//引入全局less
+@import "global";
+
+
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:350px;height:350px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+
+/*图片小图预览列表*/
+.spec-preview{width:250px;height:250px;border:1px solid #DFDFDF;}
+.spec-scroll{clear:both;margin-top:10px;width:250px;}
+.spec-scroll .prev{float:left;margin-right:4px;}
+.spec-scroll .next{float:right;}
+.spec-scroll .prev,.spec-scroll .next{color:#B6B3AD;font-size:26px;font-weight:bold;display:block;font-family:"宋体";text-align:center;width:18px;height:40px; line-height:40px;background:#fff;cursor:pointer;text-decoration:none;}
+.spec-scroll .items{float:left;position:relative;width:200px;height:56px;overflow:hidden;}
+.spec-scroll .items ul{position:absolute;width:999999px;height:56px;}
+.spec-scroll .items ul li{float:left;width:50px;text-align:center;}
+.spec-scroll .items ul li img{cursor:pointer;border:1px solid #CCC;padding:2px;width:40px;height:40px;}
+.spec-scroll .items ul li img:hover{border:2px solid #FF6600;padding:1px;}
+
+//商品兑换信息 
+#points-shop-detail-banner{
+	padding: 20px 0;
+	background-color: #F7F3E9;
+
+	.points-shop-head-box{
+		padding: 20px 18px;
+		background-color: #fff;
+		-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+
+		.head-box-img {
+			margin-right: 30px;
+		}
+		/* 头部文字区域 */
+		.head-box-content{
+			h2{
+				color: #011726;
+				font-weight: bold;
+				font-size: 16px;
+				margin-bottom: 15px;
+			}
+			p{
+				font-size: 14px;
+				color: #333333;
+				margin: 13px 0;
+			}
+			/* 商品介绍 */
+			p:nth-of-type(1){
+				font-size: 14px;
+				color: #636363;
+				line-height: 1.5;
+				margin-bottom: 20px;
+			}
+			p:nth-of-type(2){
+				span{
+					font-weight: bold;
+					color: @comBGC;
+					font-size: 24px;
+				}
+			}
+			form#points-shop-detail-exchange{
+				p.need-num{
+					p,span{
+						//不可选中文本
+						moz-user-select: -moz-none;
+						-moz-user-select: none;
+						-o-user-select:none;
+						-khtml-user-select:none;
+						-webkit-user-select:none;
+						-ms-user-select:none;
+						user-select:none;
+					}
+					span{
+						border:1px solid #D8D4D4;
+						width: 22px;
+						height: 23px;
+						line-height: 23px;
+						display: inline-block;
+						text-align: center;
+						cursor: pointer;
+					}
+					input{
+						width: 32px;
+						height: 23px;
+						line-height: 23px;
+						color: #000;
+						text-align: center;
+						border:1px solid #D8D4D4;
+						&:focus{
+							outline: none;
+						}
+					}
+				}
+				input#submit-num{
+					font-size: 16px;
+					color: #fff;
+					font-weight: bold;
+					padding: 10px 20px;
+					border-radius: 5px;
+					background-color: @comBGC;
+					cursor: pointer;
+				}
+			}	
+		}
+	}
+
+}
+
+//商品详细信息
+#points-shop-detail-wrapper{
+	background-color: #F7F3E9;
+	padding-bottom: 150px;
+	.points-shop-detail-container {
+		//侧边栏
+		.points-shop-detail-info{
+			padding: 0 20px 100px 20px;
+			width: 685px;
+			margin-right: 25px;
+			background-color: #fff;
+			.points-shop-detail-title{
+				position: relative;
+				height: 35px;
+				border-bottom: 2px solid #E7E5E5;
+				li{
+					height: 35px;
+					line-height: 35px;
+					float: left;
+					color: @comBGC;
+					border-bottom: 2px solid @comBGC;
+					font-weight: bold;
+					a{
+						cursor: pointer;
+						padding: 0 10px;
+					}
+				}
+			}
+			.points-detail-info-content{
+				padding-top: 10px;
+				text-align: center;
+				img{
+					margin: 10px 0;
+					width: 685px;
+				}
+
+			}	
+		}
+		.points-shop-aside{
+			width: 250px;
+			.hot-exchange{
+				background-color: #fff;
+				border-top: 4px solid #005B98;
+				padding-bottom: 50px;
+				-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+
+				/* 标题 */
+				.hot-exchange-title{
+					position: relative;
+					text-align: center;
+					padding: 25px 10px;
+					h2{
+						color: #636363;
+						font-size: 20px;
+						font-weight: bold;
+						display: block;
+						position: absolute;
+						padding: 0 10px;
+						width: 80px;
+						height: 26px;
+						top: 50%;
+						left: 50%;					
+						margin-left: -50px;
+						margin-top: -13px;
+						display: block;
+						background-color: #fff;
+					}
+					.hot-title-line{
+						height: 2px;
+						width: 100%;
+						background-color: #E6E6E5;
+						
+					}
+				}
+				/* 热门兑换内容区域 */
+				.hot-exchange-wrapper{
+					padding-left: 10px;
+					.hot-exchange-item + .hot-exchange-item{
+						border-top: 2px solid #E6E6E5;					
+					}
+					.hot-exchange-item{
+						position: relative;
+						padding: 10px 0;
+
+						img{
+							width: 84px;
+							height: 84px;
+							float: left;
+						}
+						a{
+							display: block;
+							color: #333333;
+							padding: 10px 10px 0 10px;
+							//多出部分省略号显示
+							display: -webkit-box !important;  
+			                overflow: hidden;  
+			                text-overflow: ellipsis;  
+			                word-break: break-all;  
+			                -webkit-box-orient: vertical;  
+			                -webkit-line-clamp: 2;
+						}
+					}
+					.hot-exchange-item::before{
+						content: '1';
+						text-align: center;
+					  	width: 16px;
+					  	height: 16px;
+					  	background-color: #A9A9A9;
+					  	color: #000;
+					  	position: absolute;
+					  	left: 0px;
+					 	top: 10px;
+					}
+					.hot-exchange-item:nth-of-type(1)::before{
+						content: '1';
+						background-color: #EA2121;
+						color: #fff;
+					}
+					.hot-exchange-item:nth-of-type(2)::before{
+						content: '2';
+						background-color: #EF8B1D;
+						color: #fff;
+					}
+					.hot-exchange-item:nth-of-type(3)::before{
+						content: '3';
+					}
+					.hot-exchange-item:nth-of-type(4)::before{
+						content: '4';
+					}
+					.hot-exchange-item:nth-of-type(5)::before{
+						content: '5';
+					}
+					.hot-exchange-item:nth-of-type(6)::before{
+						content: '6';
+					}
+					.hot-exchange-item:nth-of-type(7)::before{
+						content: '7';
+					}
+					.hot-exchange-item:nth-of-type(8)::before{
+						content: '8';
+					}
+				}
+
+			}
+		}
+	
+	}
+}

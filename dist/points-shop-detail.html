@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <title>积分商城详情-畅游家</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"> -->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!-- 条件注释 -->
+    <!--[if lt IE 9]>
+      <script src="lib/html5shiv/html5shiv.min.js"></script>
+      <script src="lib/respond/respond.js/respond.min.js"></script>
+    <![endif]-->
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" type="text/css" href="style/iconfont.css">
+
+    <link rel="stylesheet" type="text/css" href="style/global.css">
+    <link rel="stylesheet" type="text/css" href="style/points-shop-detail.css">
+  </head>
+  <body>
+     
+    <!-- 导航栏区域 -->                                
+    <nav id="header">
+        <div class="comWidth clearfix">
+            <div class="logo fl"></div>
+            <ul class="navBar fl clearfix">
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="">国内游</a></li>
+                <li><a href="">国外游</a></li>
+                <li><a href="">周边游</a></li>
+                <li><a href="">户外游</a></li>
+                <li><a href="">定制游</a></li>
+                <li><a href="">酒店</a></li>
+                <li><a href="">门票</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">领队</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="" class="register">注册</a>
+                <a href="" class="login">登陆</a>
+            </div>
+        </div>
+    </nav>
+    <!-- /导航栏区域 --> 
+        
+    <!-- 商品详情信息 -->
+    <section id="points-shop-detail-banner">
+        <div class="comWidth"> 
+            <div class="points-shop-head-box clearfix">
+                <div class="head-box-img clearfix fl">
+                    <div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" /></span> </div>
+                    <!--缩图开始-->
+                    <div class="spec-scroll">
+                        <a class="prev">&lt;</a> <a class="next">&gt;</a>
+                        <div class="items">
+                            <ul>
+                              <li><img alt="" bimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" onmousemove="preview(this);"></li>
+                              <li><img alt="" bimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" onmousemove="preview(this);"></li>
+                              <li><img alt="" bimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" onmousemove="preview(this);"></li>
+                              <li><img alt="" bimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" onmousemove="preview(this);"></li>
+                              <li><img alt="" bimg="images/points-shop-item-lg.jpg" src="images/points-shop-item-md.jpg" onmousemove="preview(this);"></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="head-box-content">
+                    <h2>DIY创意萌宠兔子暖手宝充电迷你可爱USB防爆暖宝宝卡通热宝usb充电热手宝创意礼品</h2>
+                    <p>4500mAh / 暖手3-4小时 / 2.0A输入输出 / 荣获金点设计奖 / 智能充电保护 / 55度恰当好处的温度 / 4500mAh / 暖手3-4小时 / </p>
+                    <p>所需积分：<span>￥1000 </span>积分</p>
+                    <p>当前库存：<span>199 </span>件</p>
+                    <form id="points-shop-detail-exchange" action="">
+                        <p class="need-num">所需数量：<span class="num-decrease">-</span><input type="text" value="1" id="need-num-input"><span class="num-add">+</span></p>
+                        <input type="submit" name="submit-num" id="submit-num" value="立即兑换">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /商品兑换信息 -->
+
+    <!-- 商品兑换信息 -->
+    <section id="points-shop-detail-wrapper">
+        <div class="comWidth">
+            <div class="points-shop-detail-container clearfix">
+                <main class="points-shop-detail-info fl">
+                   <ul class="points-shop-detail-title">
+                        <li><a>宝贝详情</a></li>
+                    </ul>
+                    <div class="points-detail-info-content">
+                        <img src="images/points-shop-detail1.jpg">
+                        <img src="images/points-shop-detail2.jpg">
+                        <img src="images/points-shop-detail3.jpg">
+                        <img src="images/points-shop-detail4.jpg">
+                        <img src="images/points-shop-detail5.jpg">
+                    </div>
+                </main>
+                <aside class="points-shop-aside fl">
+                    <div class="hot-exchange">
+                        <div class="hot-exchange-title">
+                            <h2>热门兑换</h2>
+                            <div class="hot-title-line"></div>
+                        </div>
+                        <div class="hot-exchange-wrapper">
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">途牛新年礼包+2017年定制台历途牛新年礼包+2017年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">途牛新年礼包+2017年定制台历途牛新年礼包+2017年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">2016-2017直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">【双面柬埔寨-上海出发】直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">2016-2017直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">【双面柬埔寨-上海出发】直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">2016-2017直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                            <div class="hot-exchange-item clearfix">
+                                <img src="images/hot-exchange-img.jpg" alt="">
+                                <a href="">【双面柬埔寨-上海出发】直飞柬埔寨暹粒，暹粒内飞西哈努克；千年</a>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            
+        </div>
+    </section>
+    <!-- /商品兑换信息 -->
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="comWidth">
+                <div class="footer-main-link clearfix">
+                    <ul class="index-link">
+                        <h4>首页</h4>
+                        <li><a href="">单季热销</a></li>
+                        <li><a href="">精选特惠</a></li>
+                        <li><a href="">我们走过的那些风景</a></li>
+                        <li><a href="">那些我们都喜欢的故事</a></li>
+                    </ul>
+                    <ul class="travel-type">
+                        <h4>旅游方式</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="hotel">
+                        <h4>酒店</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="ticket">
+                        <h4>门票</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="about-us">
+                        <h4>关于我们</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                </div>
+                <div class="footer-friendly-link">
+                    <p>友情链接 </p>
+                    <ul class="clearfix">                            
+                        <li><a href="">绿野户外网俱乐部</a></li>
+                        <li><a href="">无忧户外</a></li>
+                        <li><a href="">蚂蜂窝</a></li>
+                        <li><a href="">中国户外资料网</a></li>
+                        <li><a href="">山野中国户外</a></li>
+                        <li><a href="">腾讯户外</a></li>
+                        <li><a href="">驴时代</a></li>
+                        <li><a href="">火山时代</a></li>
+                        <li><a href="">溜溜康巴网</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-description">
+            <div class="comWidth">
+                <p>成都起点户外旅行社 版权所有　蜀ICP备12016649号</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /底部 -->
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- 放大镜插件 -->
+    <script type="text/javascript" src="lib/jqzoom/jquery.jqzoom.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script type="text/javascript" src="js/points-shop-detail.js"></script>
+  </body>
+</html>

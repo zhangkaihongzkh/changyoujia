@@ -434,7 +434,9 @@ a {
   background-color: #fff;
   border-top: 4px solid #005B98;
   padding-bottom: 50px;
-  box-shadow: 1px 2px 2px #aaaaaa;
+  -moz-box-shadow: 1px 3px 1px #D3D3D3;
+  -webkit-box-shadow: 1px 3px 1px #D3D3D3;
+  box-shadow: 1px 3px 1px #D3D3D3;
   /* 标题 */
   /* 热门兑换内容区域 */
 }
