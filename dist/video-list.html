@@ -2,20 +2,11 @@
 <html lang="zh-cn">
   <head>
     <meta charset="utf-8">
-    <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+   
     <title>视频列表-畅游家</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- Bootstrap -->
-    <!-- <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css"> -->
+	  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!-- 条件注释 -->
-    <!--[if lt IE 9]>
-      <script src="lib/html5shiv/html5shiv.min.js"></script>
-      <script src="lib/respond/respond.js/respond.min.js"></script>
-    <![endif]-->
+
     <!-- 引入字体图标 -->
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
 
@@ -49,9 +40,29 @@
         </div>
     </nav>
     <!-- /导航栏区域 --> 
+
         
     <section id="video-list-banner">
-        
+        <div class="video-banner-wrapper">
+          <!-- Swiper -->
+          <ul class="big-img-container">
+            <li class="swiper-slide"><img src="images/home-banner-img2.png"></li>
+            <li class="swiper-slide"><img src="images/home-banner-img1.png"></li>
+            <li class="swiper-slide"><img src="images/home-banner-img3.png"></li>
+            <li class="swiper-slide"><img src="images/home-banner-img2.png"></li>
+            <li class="swiper-slide"><img src="images/home-banner-img1.png"></li>
+          </ul>
+          <div class="small-img-bg">
+            <ul class="small-img-container clearfix">
+                <li class="small-img-item"><img src="images/home-banner-img2.png"></li>
+                <li class="small-img-item"><img src="images/home-banner-img1.png"></li>
+                <li class="small-img-item"><img src="images/home-banner-img3.png"></li>
+                <li class="small-img-item"><img src="images/home-banner-img2.png"></li>
+                <li class="small-img-item"><img src="images/home-banner-img1.png"></li>
+            </ul>
+          </div>
+          <div class="video-list-banner-title"></div>
+        </div>
     </section>
 
     <!-- 底部 -->
@@ -119,11 +130,9 @@
     </footer>
     <!-- /底部 -->
     
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="lib/jquery/jquery.min.js"></script>
 
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="lib/bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="lib/jquery/jquery.min.js"></script>
+    
     <script type="text/javascript" src="js/video-list.js"></script>
   </body>
 </html>

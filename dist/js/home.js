@@ -11,7 +11,7 @@ $(function(){
 		fade: {
 		  crossFade: false,
 		},
-	    //autoplay:2000,//自动播放
+	    autoplay:2000,//自动播放
 	    
 	    // 如果需要前进后退按钮
 	    nextButton: '#main-ad .swiper-button-next',
