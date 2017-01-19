@@ -115,16 +115,19 @@ a{text-decoration: none;}
 /* 公用广告轮播区域 */
 #main-ad{
 	height: 600px;
-	.swiper-container{
-		position: relative;
-		background-color: #E42E2E;
-		width: 100%;
-		height: 600px;
-		margin: 0 auto;
+	position: relative;
+	.main-ad-content{
+		z-index: 1000;
+		width: @comWidth;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin-left: -(@comWidth/2);
 		/* 文字部分 */	
 		.content-text{
 			text-align: center;
 			padding-top: 150px;
+			padding-bottom: 130px;
 			color: @mainAdFontCol; 
 			h2{
 
@@ -154,14 +157,14 @@ a{text-decoration: none;}
 		}
 		/* 搜索框 */
 		.searchbox{
-			position: absolute;
+			position: relative;
 			width: 960px;
-			margin-left: -480px;
+			margin-left: -500px; 
 			background-color: rgb(107,33,33);
 			padding: 20px 20px;
 			border-radius: 5px;
 			left: 50%;
-			bottom: 40px;
+			bottom: 0; 
 			/* 选择地点 */
 			.select-place{
 				position: absolute;
@@ -209,9 +212,12 @@ a{text-decoration: none;}
 				background: url(../images/search.png) no-repeat center center;
 			}
 		}
+	}
+	/* 公用样式 */	
+	.swiper-container{
+		margin: 0 auto;
 		/* 按钮部分 */
 		.btn{
-		
 			width: @comBtnWidth;
 			height: 100%;
 			position: absolute;
@@ -226,6 +232,15 @@ a{text-decoration: none;}
 		.swiper-button-prev{
 			background: url(../images/arrow-prev.png) no-repeat center center;
 			
+		}
+	}
+	.main-ad-container{
+		overflow: hidden;
+		height: 600px;
+		.main-ad-wrapper{
+			height: 600px;
+			img{
+			}
 		}
 	}
 }

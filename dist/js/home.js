@@ -7,6 +7,10 @@ $(function(){
 	    loop: true,
 	    simulateTouch:false,//鼠标无效
 	    speed:1000,//速度
+	    effect : 'fade',
+		fade: {
+		  crossFade: false,
+		},
 	    //autoplay:2000,//自动播放
 	    
 	    // 如果需要前进后退按钮
