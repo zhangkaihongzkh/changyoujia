@@ -1,7 +1,138 @@
 //引入全局less
 @import "global";
 
+/* 广告轮播区域 */
+#main-ad{
+	height: 600px;
+	position: relative;
+	.main-ad-content{
+		z-index: 1000;
+		width: @comWidth;
+		position: absolute;
+		left: 50%;
+		top: 0;
+		margin-left: -(@comWidth/2);
+		/* 文字部分 */	
+		.content-text{
+			text-align: center;
+			padding-top: 150px;
+			padding-bottom: 130px;
+			color: @mainAdFontCol; 
+			h2{
 
+				font-size: 32px;
+				font-weight: 100;
+				letter-spacing: 8px;
+			}
+			p{
+				font-size: 16px;
+				margin: 30px 0;
+			}
+			a{
+				cursor: pointer;
+				color: @mainAdFontCol; 
+				border: 1px solid @mainAdFontCol;
+				padding: 8px 13px;
+				transition: color 0.25s ease, background-color 0.25s ease;
+	  			-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+				&:hover{
+					color: #fff;
+					background-color: @mainAdFontCol;
+					transition: color 0.25s ease, background-color 0.25s ease;
+	  				-webkit-transition: color 0.25s ease, background-color 0.25s ease;
+				}
+			}
+			
+		}
+		/* 搜索框 */
+		.searchbox{
+			position: relative;
+			width: 960px;
+			margin-left: -500px; 
+			background-color: rgba(0,0,0,0.5);
+			padding: 20px 20px;
+			border-radius: 5px;
+			left: 50%;
+			bottom: 0; 
+			/* 选择地点 */
+			.select-place{
+				position: absolute;
+				left: 20px;
+				top: 35px;
+				color: #fff;
+				.select-place-arrow{
+					position: absolute;
+					cursor: pointer;
+					left: 45px;
+					top: 6px;
+					width: 14px;
+					height: 8px;
+					background: url(../images/arrow.png) no-repeat center center;
+				}
+				/* 城市选择
+				.select-place-item{
+					position: absolute;
+					left: 0;
+					top: 0;
+					width: 250px;
+					border: 1px solid @comBGC; 
+					background-color: @comBGC;
+					padding: 10px 15px;
+					border-radius: 5px;
+					li{
+						float: left;
+						cursor: pointer;
+					}
+				} */
+			}
+			#search-input{
+				padding: 18px;
+				margin-left: 80px;
+				width: 764px;
+				border-radius: 5px;
+			}
+			#search-btn{
+				cursor: pointer;
+				position: absolute;
+				right: 24px;
+				top: 17px;
+				width: 54px;
+				height: 54px;
+				background: url(../images/search.png) no-repeat center center;
+			}
+		}
+	}
+	/* 公用样式 */	
+	.swiper-container{
+		margin: 0 auto;
+		/* 按钮部分 */
+		.btn{
+			width: @comBtnWidth;
+			height: 100%;
+			position: absolute;
+			top:0;
+			left: 50%;
+			margin-left: -(@comBtnWidth/2);
+		}
+		.swiper-button-next{
+			background: url(../images/arrow-next.png) no-repeat center center;
+
+		}
+		.swiper-button-prev{
+			background: url(../images/arrow-prev.png) no-repeat center center;
+			
+		}
+	}
+	.main-ad-container{
+		overflow: hidden;
+		height: 600px;
+		.main-ad-wrapper{
+			height: 600px;
+			img{
+			}
+		}
+	}
+}
 
 /* 侧边栏区域 */
 #sidebar{
