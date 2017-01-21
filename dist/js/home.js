@@ -25,15 +25,6 @@ $(function(){
 		//动态修改侧边栏的值
 		var windowWidth = $(document).width();
 		var windowHeight = $(window).height();
-		/*alert(windowWidth);*/
-		/*$('#sidebar').css({
-			left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
-		});*/
-		/*$(window).resize(function(){
-			$('#sidebar').css({
-				left: (windowWidth/2 + 500 + windowWidth/10) + 'px',
-			});
-		});*/
 		
 		//回到顶部
 		$(window).scroll(function(){
@@ -151,7 +142,7 @@ $(function(){
 
 	//游记轮播区域
 	(function(window){
-		var travelNotes = new Swiper ('#travel-notes .swiper-container', {
+		var travelNotesSwiper = new Swiper ('#travel-notes .swiper-container', {
 		    direction: 'horizontal',
 		    loop: true,
 		    
@@ -174,5 +165,18 @@ $(function(){
 	            slideShadows : true
 	        }
 		  });   
+	})(window);
+
+	//领队轮播区域
+	(function(window){
+		var teamLeaderSwiper = new Swiper('#team-leader .swiper-container', {
+	        pagination: '#team-leader .swiper-pagination',
+	        paginationClickable: true,
+	        slidesPerView: 5,
+	        simulateTouch:false,//鼠标无效
+	        nextButton: '#team-leader .swiper-button-next',
+		    prevButton: '#team-leader .swiper-button-prev',
+	        
+	    });
 	})(window);
 });

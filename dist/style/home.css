@@ -855,3 +855,52 @@ a {
   letter-spacing: 4px;
   font-weight: normal;
 }
+#team-leader .team-leader-content .team-leader-wrapper {
+  width: 200px;
+  height: 320px;
+  position: relative;
+  display: block;
+}
+#team-leader .team-leader-content .team-leader-wrapper:hover .team-leader-text {
+  bottom: 0;
+}
+#team-leader .team-leader-content .team-leader-wrapper img {
+  width: 200px;
+  height: 320px;
+  margin: 0;
+}
+#team-leader .team-leader-content .team-leader-wrapper .team-leader-text {
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: 200px;
+  height: 320px;
+  bottom: -320px;
+  left: 0;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: bottom .4s ease;
+  transition: bottom .4s ease;
+}
+#team-leader .team-leader-content .team-leader-wrapper .team-leader-text h2 {
+  padding-top: 100px;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 35px;
+}
+#team-leader .team-leader-content .team-leader-wrapper .team-leader-text p {
+  line-height: 2;
+}
+#team-leader .btn {
+  width: 1120px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -560px;
+}
+#team-leader .btn .swiper-button-next {
+  background: url(../images/arrow-next2.png) no-repeat center center;
+}
+#team-leader .btn .swiper-button-prev {
+  background: url(../images/arrow-prev2.png) no-repeat center center;
+}

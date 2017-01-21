@@ -539,6 +539,11 @@ a {
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item:nth-of-type(3)::before {
   content: '3';
+  background-color: #005c99;
+  color: #fff;
+}
+#points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item:nth-of-type(3)::before {
+  content: '3';
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item:nth-of-type(4)::before {
   content: '4';
