@@ -303,6 +303,7 @@ a {
 #travel-notes-detail-content {
   background-color: #f8f3e9;
   padding-top: 20px;
+  padding-bottom: 80px;
 }
 #travel-notes-detail-content .travel-notes-detail-container {
   position: relative;
@@ -367,4 +368,170 @@ a {
 #travel-notes-detail-content .travel-notes-detail-container .travel-day-content .travel-notes-info span i {
   color: #EF8B1D;
   padding-right: 5px;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message {
+  padding: 20px 0;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message p {
+  text-align: right;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message #travel-notes-message-form textarea {
+  resize: none;
+  max-width: 701px;
+  width: 701px;
+  padding: 10px;
+  border: 2px solid #a8a7a5;
+  color: #333333;
+  border-radius: 5px;
+  line-height: 1.5;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message #travel-notes-message-form textarea:focus {
+  outline: none;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message #travel-notes-message-form #message-submit-btn {
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: right;
+  float: right;
+  padding: 14px 22px;
+  background-color: #EF8B1D;
+  color: #fff;
+  border-radius: 5px;
+  font-weight: bold;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li {
+  padding: 15px 0;
+  border-bottom: 2px solid #e6e5e5;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li img {
+  float: left;
+  width: 84px;
+  height: 84px;
+  margin-right: 20px;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-detail {
+  padding: 10px 0;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-detail .comment-name {
+  color: #EF8B1D;
+  margin-right: 10px;
+}
+#travel-notes-detail-content .travel-notes-detail-aside {
+  width: 250px;
+  float: right;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation {
+  background-color: #fff;
+  border-top: 4px solid #005B98;
+  -moz-box-shadow: 1px 3px 1px #D3D3D3;
+  -webkit-box-shadow: 1px 3px 1px #D3D3D3;
+  box-shadow: 1px 3px 1px #D3D3D3;
+  /* 标题 */
+  /* 热门兑换内容区域 */
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-title {
+  position: relative;
+  text-align: center;
+  padding: 25px 10px;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-title h2 {
+  color: #636363;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  padding: 0 10px;
+  width: 80px;
+  height: 26px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -13px;
+  display: block;
+  background-color: #fff;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-title .hot-title-line {
+  height: 2px;
+  width: 100%;
+  background-color: #E6E6E5;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper {
+  padding-left: 10px;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item + .activity-recommendation-item {
+  border-top: 2px solid #E6E6E5;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item {
+  position: relative;
+  padding: 10px 0;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item img {
+  width: 84px;
+  height: 84px;
+  float: left;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item a {
+  display: block;
+  color: #333333;
+  padding: 10px 10px 0 10px;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item::before {
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  background-color: #A9A9A9;
+  color: #000;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation {
+  margin-top: 20px;
+  background-color: #fff;
+  border-top: 4px solid #834aeb;
+  -moz-box-shadow: 1px 3px 1px #D3D3D3;
+  -webkit-box-shadow: 1px 3px 1px #D3D3D3;
+  box-shadow: 1px 3px 1px #D3D3D3;
+  /* 标题 */
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-title {
+  position: relative;
+  text-align: center;
+  padding: 25px 10px;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-title h2 {
+  color: #636363;
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  padding: 0 10px;
+  width: 80px;
+  height: 26px;
+  top: 50%;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -13px;
+  display: block;
+  background-color: #fff;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-title .hot-title-line {
+  height: 2px;
+  width: 100%;
+  background-color: #E6E6E5;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-wrapper .travel-notes-recommendation-item a img {
+  width: 250px;
+  height: 150px;
+  display: block;
+}
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-wrapper .travel-notes-recommendation-item a p {
+  color: #333;
+  margin: 10px 0;
+  padding: 5px 10px;
+  border-bottom: 2px solid #e1e0df;
 }

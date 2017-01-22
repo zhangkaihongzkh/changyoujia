@@ -72,10 +72,12 @@
 #travel-notes-detail-content{
 	background-color: @comContentGBC;
 	padding-top: 20px;
+	padding-bottom: 80px;
 	.travel-notes-detail-container{
 		position: relative;
 		width: 725px;
 		float: left;
+		//margin-right: 25px;
 		.travel-notes-container-anchor{
 			display: none;
 			position: absolute;
@@ -113,6 +115,7 @@
 			li.active::after{
 				background-color:  @comBGC;
 			}
+
 			li + li{
 				margin-top: 40px;
 			}
@@ -141,5 +144,194 @@
 			}
 		}
 
+		//发布留言区域
+		.travel-notes-detail-message{
+			padding: 20px 0;
+			p{
+				text-align: right;
+			}
+			#travel-notes-message-form{
+				textarea{
+					resize:none;
+					max-width: 701px;
+					width: 701px;
+
+					padding: 10px;
+					border: 2px solid #a8a7a5;
+					color: #333333;
+					border-radius: 5px;
+					line-height: 1.5;
+					&:focus{
+						outline: none;
+					}
+				}
+				#message-submit-btn{
+					cursor: pointer;
+					margin-top: 20px;
+					text-align: right;
+					float: right;
+					padding: 14px 22px;
+					background-color: @comBGC;
+					color: #fff;
+					border-radius: 5px;
+					font-weight: bold;
+				}
+			}
+		}
+		//留言部分
+		.travel-notes-detail-comments{
+			.travel-notes-comments-wrapper{
+				li{
+					padding: 15px 0;
+					border-bottom: 2px solid #e6e5e5;
+					img{
+						float: left;
+						width: 84px;
+						height: 84px;
+						margin-right: 20px;
+					}
+					.comment-detail{
+						padding: 10px 0;
+						.comment-name{
+							color: @comBGC;
+							margin-right: 10px;
+						}
+					}
+				}
+			}
+		}	
+	}
+
+	//侧边栏
+	.travel-notes-detail-aside{
+		width: 250px;
+		float: right;
+		//活动推荐
+		.activity-recommendation{
+			background-color: #fff;
+			border-top: 4px solid #005B98;
+			-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+			/* 标题 */
+			.activity-recommendation-title{
+				position: relative;
+				text-align: center;
+				padding: 25px 10px;
+				h2{
+					color: #636363;
+					font-size: 20px;
+					font-weight: bold;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 80px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -50px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			/* 热门兑换内容区域 */
+			.activity-recommendation-wrapper{
+				padding-left: 10px;
+				.activity-recommendation-item + .activity-recommendation-item{
+					border-top: 2px solid #E6E6E5;					
+				}
+				.activity-recommendation-item{
+					position: relative;
+					padding: 10px 0;
+
+					img{
+						width: 84px;
+						height: 84px;
+						float: left;
+					}
+					a{
+						display: block;
+						color: #333333;
+						padding: 10px 10px 0 10px;
+						//多出部分省略号显示
+						display: -webkit-box !important;  
+		                overflow: hidden;  
+		                text-overflow: ellipsis;  
+		                word-break: break-all;  
+		                -webkit-box-orient: vertical;  
+		                -webkit-line-clamp: 3;
+					}
+				}
+				.activity-recommendation-item::before{
+					
+					text-align: center;
+				  	width: 16px;
+				  	height: 16px;
+				  	background-color: #A9A9A9;
+				  	color: #000;
+				  	position: absolute;
+				  	left: 0px;
+				 	top: 10px;
+				}
+			}
+		}
+		//推荐游记
+		.travel-notes-recommendation{
+			margin-top: 20px;
+			background-color: #fff;
+			border-top: 4px solid #834aeb;
+			-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+			/* 标题 */
+			.travel-notes-recommendation-title{
+				position: relative;
+				text-align: center;
+				padding: 25px 10px;
+				h2{
+					color: #636363;
+					font-size: 20px;
+					font-weight: bold;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 80px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -50px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			.travel-notes-recommendation-wrapper{
+				.travel-notes-recommendation-item{
+					a{
+						img{
+							width: 250px;
+							height: 150px;
+							display: block;
+						}
+						p{
+							color: #333;
+							margin: 10px 0;
+							padding: 5px 10px;
+							border-bottom: 2px solid #e1e0df;
+						}
+					}
+				}
+				
+			}
+		}
 	}
 }
