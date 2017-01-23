@@ -3,21 +3,21 @@ $(function(){
 	(function(window){
 		
 		var mainAdSwiper = new Swiper ('#main-ad .swiper-container', {
-	    direction: 'horizontal',
-	    loop: true,
-	    simulateTouch:false,//鼠标无效
-	    speed:1000,//速度
-	    effect : 'fade',
-		fade: {
-		  crossFade: false,
-		},
-	    autoplay:2000,//自动播放
-	    
-	    // 如果需要前进后退按钮
-	    nextButton: '#main-ad .swiper-button-next',
-	    prevButton: '#main-ad .swiper-button-prev',
-	    
-	  })        
+		    direction: 'horizontal',
+		    loop: true,
+		    simulateTouch:false,//鼠标无效
+		    speed:1000,//速度
+		    effect : 'fade',
+			fade: {
+			  crossFade: false,
+			},
+		    autoplay:2000,//自动播放
+		    
+		    // 如果需要前进后退按钮
+		    nextButton: '#main-ad .swiper-button-next',
+		    prevButton: '#main-ad .swiper-button-prev',
+		    
+		})       
 	})(window);
 
 	//侧边栏动画效果

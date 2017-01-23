@@ -1,19 +1,44 @@
 $(function(){
 	//左侧滚动条固定
 	(function(window){
-		var $travelNotesAnchor = $('#travel-notes-detail-content .travel-notes-container-anchor')
-		var anchorTop = $travelNotesAnchor.offset().top;
-		var $travelNotesContent = $('#travel-notes-detail-content .travel-notes-detail-text');
-		var travelNotesContentHeight = $travelNotesContent.height();
-		console.log(travelNotesContentHeight);
-
+		
+		var $travelNotesAnchor = $('#travel-notes-detail-content .travel-notes-container-anchor');//锚链接容器
+		
+		var anchorTop = $travelNotesAnchor.offset().top;//锚链接顶部距离
+		var $travelNotesContent = $('#travel-notes-detail-content .travel-notes-detail-text');//游记内容容器
+		var travelNotesContentHeight = $travelNotesContent.height();//游记内容高度
+		
+		var dTop = $(document).scrollTop();//文档高度
+		//console.log(travelNotesContentHeight);
+		var currentId = ""; //滚动条现在所在位置的item id
+		var $travelNotesitem = $('.travel-day-content');	//每天的游记内容
+		
 		$(window).scroll(function(){
-			//console.log(anchorTop);
-			//console.log(anchorLeft);
+
 			anchorTop = $travelNotesAnchor.offset().top;
+			dTop = $(document).scrollTop();
+
+			//滑到对应区域过度
+			$travelNotesitem.each(function(){
+				var m = $(this);
+				//注意：m.offset().top代表每一个item的顶部位置
+				if(dTop > m.offset().top - 100){
+					currentId = '#' + m.attr('id');
+					console.log(currentId);
+				}else{
+					return false;
+				}
+			});
+			//根据滑动距离修改锚链接的active样式
+			var currentLink = $travelNotesAnchor.find('.active');
+			if(currentLink && currentLink.attr("href") != currentId){
+				currentLink.removeClass('active');
+				$travelNotesAnchor.find("[href=" + currentId + "]").parent().addClass('active');
+			}
+
 			if($(window).scrollTop()>750 ){
 				//console.log(anchorLeft);
-				//	修改为绝对定位
+				//	修改为绝对定位，兼容不同分辨率用户，位置通过初始化获取到
 				$travelNotesAnchor.css({
 					'display':'block',
 				});
