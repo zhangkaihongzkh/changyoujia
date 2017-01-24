@@ -1,0 +1,169 @@
+//引入全局less
+@import "global";
+
+#person-center-points-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 800px;
+	.person-center-points-aside{
+		float: left;
+		width: 250px;
+		background-color: #fff;
+		.person-center-aside-wrapper{
+			.person-center-item{
+				p{
+					padding-left: 18px;
+					font-size: 18px;
+					color: #333;
+					height: 55px;
+					line-height: 55px;
+					-moz-user-select: none;
+					-khtml-user-select: none;
+					user-select: none;
+					cursor: default;
+					i{
+						padding-right: 15px;
+						font-size: 18px;
+					}
+				}
+				ul{
+					li{
+						font-size: 14px;
+						padding-left: 50px;
+						padding-top: 14px;
+						padding-bottom: 14px;
+						a{
+							color: #333;
+							display: block;
+						}
+					}
+					li.active{
+						background-color: @comBGC;
+						a{
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+
+	}
+	//内容部分
+	.person-center-points-main{
+		float: right;
+		width: 725px;
+		//个人信息
+		.person-center-points-info{
+			background-color: #fff;
+			padding: 20px 50px;
+			.person-user-head{
+				float: left;
+				img{
+					width: 80px;
+					height: 80px;
+					
+				}
+			}
+			
+			.person-info-text{
+				float: right;
+				width: 510px;
+				p.person-info-contact{
+					font-size: 18px;
+					padding-top: 10px;
+					span{
+						margin-right: 35px;
+					}
+				}
+				ul.person-num-wrapper{
+					margin-top: 25px;
+					li{
+						float: left;
+						text-align: center;
+						
+						
+						padding: 0 20px;
+						p{
+							margin-top: -10px;
+						}
+						a{
+							display: block;
+							font-size: 18px;
+							margin-top: 5px;
+							margin-bottom: -10px;
+						}
+						
+					}
+					li + li{
+						
+							border-left: 2px solid #dfdfdf;
+					}
+					li:nth-of-type(1){
+						padding-left: 0;
+						a{
+							color: #ef3a4f;
+						}
+					}
+					li:nth-of-type(2){
+						a{
+							color: @comBGC;
+						}
+					}
+					li:nth-of-type(3){
+						a{
+							color: #1183d3;
+						}
+					}
+					li:nth-of-type(4){
+						a{
+							color: #679b55;
+						}
+					}
+				}
+			}
+		}
+		//积分信息
+		.person-center-points-num{
+			background-color: #fff;
+			margin-top: 15px;
+			h2{
+				padding: 15px 0 15px 20px;
+				font-size: 18px;
+				color: @comBGC;
+				border-bottom: 2px solid #e7e6e5;
+			}
+			.num-detail{
+				padding: 25px 0 25px 20px;
+				p{
+					float: left;
+					margin-right: 40px;
+					span{
+						color: @comBGC;
+						padding-left: 10px;
+						font-size: 18px;
+						font-weight: bold;
+					}
+				}
+			}
+		}
+		//积分说明
+		.person-center-points-description{
+			background-color: #fff;
+			margin-top: 15px;
+			h2{
+				padding: 15px 0 15px 20px;
+				font-size: 18px;
+				color: @comBGC;
+				border-bottom: 2px solid #e7e6e5;
+			}
+			.points-description-wrapper{
+				padding-left: 20px;
+				li{
+					padding: 15px 20px 15px 0;
+				}
+				li + li{
+					border-top: 2px solid #e7e6e5;
+				}
+			}
+		}
+	}
+}

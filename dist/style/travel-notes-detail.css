@@ -122,6 +122,20 @@ a {
   border-color: #EF8B1D;
   margin-right: 10px;
 }
+/* 公用阴影 */
+#grad-gray {
+  height: 15px;
+  width: 100%;
+  background: -webkit-linear-gradient(#bbb, #f0f0f0);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(#bbb, #f0f0f0);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(#bbb, #f0f0f0);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(#bbb, #f0f0f0);
+  /* 标准的语法（必须放在最后） */
+  background-color: transparent;
+}
 /* 公用广告轮播区域 */
 #main-ad {
   height: 600px;

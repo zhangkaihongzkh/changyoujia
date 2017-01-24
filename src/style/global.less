@@ -8,7 +8,9 @@
 @bottomLinkBgc:#2C2C2C;//底部链接部分背景颜色
 @comFontSize:14px;		//通用字体大小
 @comGrayColor:#E8E8E8;
-@comContentGBC:#f8f3e9;//通用背景颜色
+@comContentBGC:#f8f3e9;//通用内容背景颜色
+@comCenterBGC:#f0f0f0;	//通用个人中心背景颜色
+
 body{
   font-family: "Helvetica Neue", 
   Helvetica, 
@@ -108,6 +110,17 @@ a{text-decoration: none;}
 			margin-right: 10px;
 		}
 	}
+}
+
+/* 公用阴影 */
+#grad-gray{
+    height: 15px;
+    width: 100%;
+    background: -webkit-linear-gradient(#bbb, #f0f0f0); /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(#bbb, #f0f0f0); /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(#bbb, #f0f0f0); /* Firefox 3.6 - 15 */
+    background: linear-gradient(#bbb, #f0f0f0); /* 标准的语法（必须放在最后） */
+	background-color: transparent;
 }
 
 /* 公用广告轮播区域 */
@@ -367,8 +380,6 @@ a{text-decoration: none;}
 			border-color: @comBGC;
 		}
 	} */
-	
-	
 }
 
 
