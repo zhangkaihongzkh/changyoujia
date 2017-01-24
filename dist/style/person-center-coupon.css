@@ -524,34 +524,152 @@ a {
 .person-center-points-main .person-center-points-description .points-description-wrapper li + li {
   border-top: 2px solid #e7e6e5;
 }
-#person-center-points-content {
+#person-center-coupon-content {
   background-color: #f0f0f0;
-  padding-bottom: 800px;
+  padding-bottom: 140px;
 }
-#person-center-points-content .person-center-points-main {
-  float: right;
-  width: 725px;
-}
-#person-center-points-content .person-center-points-main .person-center-points-num {
+#person-center-coupon-content .person-center-coupon-num {
   background-color: #fff;
   margin-top: 15px;
 }
-#person-center-points-content .person-center-points-main .person-center-points-num h2 {
+#person-center-coupon-content .person-center-coupon-num h2 {
   padding: 15px 0 15px 20px;
   font-size: 18px;
   color: #EF8B1D;
   border-bottom: 2px solid #e7e6e5;
 }
-#person-center-points-content .person-center-points-main .person-center-points-num .num-detail {
-  padding: 25px 0 25px 20px;
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content {
+  padding: 0 25px;
+  /* 卡券 */
 }
-#person-center-points-content .person-center-points-main .person-center-points-num .num-detail p {
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-num-tabs {
+  position: relative;
+  height: 40px;
+  border-bottom: 2px solid #E7E5E5;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-num-tabs li {
   float: left;
-  margin-right: 40px;
+  color: #333;
+  margin-right: 20px;
+  text-align: center;
 }
-#person-center-points-content .person-center-points-main .person-center-points-num .num-detail p a {
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-num-tabs li a {
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 10px 0 11px 0;
+  cursor: pointer;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-num-tabs li.active a {
   color: #EF8B1D;
-  padding-left: 10px;
-  font-size: 18px;
-  font-weight: bold;
+  border-bottom: 2px solid #EF8B1D;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper {
+  padding: 30px 40px;
+  /* 可使用样式 */
+  /* 已使用样式 */
+  /* 已过期样式 */
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item {
+  position: relative;
+  float: left;
+  width: 250px;
+  height: 120px;
+  color: #fff;
+  margin-right: 25px;
+  margin-bottom: 40px;
+  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 5px, #d0cfcf 5px);
+  background-size: 15px 15px;
+  background-position: 8px 0;
+  padding: 0 10px;
+  z-index: 0;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-left {
+  position: relative;
+  float: left;
+  width: 150px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-left h3 {
+  font-size: 24px;
+  padding-top: 18px;
+  padding-left: 25px;
+  margin-bottom: 15px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-left h3 span {
+  font-size: 30px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-right {
+  padding-top: 40px;
+  padding-left: 8px;
+  padding-right: 5px;
+  float: right;
+  border-left: 2px dashed #fff;
+  height: 80px;
+  position: relative;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-right::before,
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-right::after {
+  content: ' ';
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  background-color: #fff;
+  color: #fff;
+  border-radius: 50%;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-right::before {
+  left: -7px;
+  top: -7px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item .item-content-right::after {
+  left: -7px;
+  bottom: -7px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper ul li.coupon-item::before {
+  background-color: #d0cfcf;
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  z-index: -1;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-viable ul li {
+  background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 5px, #EF8B1D 5px);
+  background-size: 15px 15px;
+  background-position: 8px 0;
+  padding: 0 10px;
+  overflow: hidden;
+  z-index: 0;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-viable ul li .item-content-right {
+  padding-top: 40px;
+  padding-left: 8px;
+  padding-right: 5px;
+  float: right;
+  border-left: 2px dashed #ffc171;
+  height: 80px;
+  position: relative;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-viable ul li.coupon-item::before {
+  background-color: #EF8B1D;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-used ul li .item-content-left::after {
+  content: ' ';
+  position: absolute;
+  width: 71px;
+  height: 73px;
+  background: url('../images/person-center-coupon-used.png') center center no-repeat;
+  top: 75px;
+  left: 170px;
+}
+#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-expired ul li .item-content-left::after {
+  content: ' ';
+  position: absolute;
+  width: 71px;
+  height: 73px;
+  background: url('../images/person-center-coupon-expired.png') center center no-repeat;
+  top: 75px;
+  left: 170px;
 }

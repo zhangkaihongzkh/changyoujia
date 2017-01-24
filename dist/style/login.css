@@ -379,6 +379,151 @@ a {
   border-color: #BFBFBF;
   background-color: #fff;
 }
+/* 个人中心公用左侧边栏 */
+.person-center-aside {
+  float: left;
+  width: 250px;
+  background-color: #fff;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item p {
+  padding-left: 18px;
+  font-size: 18px;
+  color: #333;
+  height: 55px;
+  line-height: 55px;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item p i {
+  padding-right: 15px;
+  font-size: 18px;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover {
+  background-color: #EF8B1D;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover a {
+  color: #fff;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item ul li a {
+  color: #333;
+  display: block;
+  font-size: 14px;
+  padding-left: 50px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item ul li.active {
+  background-color: #EF8B1D;
+}
+.person-center-aside .person-center-aside-wrapper .person-center-item ul li.active a {
+  color: #fff;
+}
+/* 个人中心公用右侧内容 */
+.person-center-points-main {
+  float: right;
+  width: 725px;
+}
+.person-center-points-main .person-center-info {
+  background-color: #fff;
+  padding: 20px 50px;
+}
+.person-center-points-main .person-center-info .person-user-head {
+  float: left;
+}
+.person-center-points-main .person-center-info .person-user-head img {
+  width: 80px;
+  height: 80px;
+}
+.person-center-points-main .person-center-info .person-info-text {
+  float: right;
+  width: 510px;
+}
+.person-center-points-main .person-center-info .person-info-text p.person-info-contact {
+  font-size: 18px;
+  padding-top: 10px;
+}
+.person-center-points-main .person-center-info .person-info-text p.person-info-contact span {
+  margin-right: 35px;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper {
+  margin-top: 25px;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li {
+  float: left;
+  text-align: center;
+  padding: 0 20px;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li p {
+  margin-top: -10px;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li a {
+  display: block;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-bottom: -10px;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li + li {
+  border-left: 2px solid #dfdfdf;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li:nth-of-type(1) {
+  padding-left: 0;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li:nth-of-type(1) a {
+  color: #ef3a4f;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li:nth-of-type(2) a {
+  color: #EF8B1D;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li:nth-of-type(3) a {
+  color: #1183d3;
+}
+.person-center-points-main .person-center-info .person-info-text ul.person-num-wrapper li:nth-of-type(4) a {
+  color: #679b55;
+}
+.person-center-points-main .person-center-points-num {
+  background-color: #fff;
+  margin-top: 15px;
+}
+.person-center-points-main .person-center-points-num h2 {
+  padding: 15px 0 15px 20px;
+  font-size: 18px;
+  color: #EF8B1D;
+  border-bottom: 2px solid #e7e6e5;
+}
+.person-center-points-main .person-center-points-num .num-detail {
+  padding: 25px 0 25px 20px;
+}
+.person-center-points-main .person-center-points-num .num-detail p {
+  float: left;
+  margin-right: 40px;
+}
+.person-center-points-main .person-center-points-num .num-detail p a {
+  color: #EF8B1D;
+  padding-left: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.person-center-points-main .person-center-points-description {
+  background-color: #fff;
+  margin-top: 15px;
+}
+.person-center-points-main .person-center-points-description h2 {
+  padding: 15px 0 15px 20px;
+  font-size: 18px;
+  color: #EF8B1D;
+  border-bottom: 2px solid #e7e6e5;
+}
+.person-center-points-main .person-center-points-description .points-description-wrapper {
+  padding-left: 20px;
+}
+.person-center-points-main .person-center-points-description .points-description-wrapper li {
+  padding: 15px 20px 15px 0;
+}
+.person-center-points-main .person-center-points-description .points-description-wrapper li + li {
+  border-top: 2px solid #e7e6e5;
+}
 /* 注册登陆界面背景 */
 #login-bg {
   background: url(../images/login.png) no-repeat center center;
