@@ -4,11 +4,11 @@
 #points-shop-banner{
 	.banner-img-item{
 		background-size: cover; 
-		height: 500px;
+		height: 600px;
 		background: url('../images/points-shop-banner.png') no-repeat center center;
 		.shop-banner-text{
 			text-align: center;
-			padding-top: 400px;
+			padding-top: 500px;
 			h1{
 				color: #fff;
 				font-size: 38px;
@@ -21,7 +21,7 @@
 	background-color: #f8f3e9;
 	padding: 40px 0 260px 0; 
 	.points-shop-aside{
-		width: 250px;
+		width: @comAsideWidth;
 		.user-info-content{
 			background-color: #fff;
 			text-align: center;
@@ -57,12 +57,14 @@
 			}
 			/* 底部 */
 			.user-content-bottom{
-				padding: 10px 0;
+				padding: 20px 0;
 				.user-order,.user-points{
 					width: 49.5%;
 					float: left;
+					height: 30px;
 					p{
 						color: #636363;
+						margin-top: -10px;
 						margin-bottom: 8px;
 					}
 					a{
@@ -84,7 +86,7 @@
 		}
 		.hot-exchange{
 			background-color: #fff;
-			border-top: 4px solid #005B98;
+			border-top: 4px solid @comBGC;
 			padding-bottom: 50px;
 			-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
 			/* 标题 */
@@ -93,9 +95,9 @@
 				text-align: center;
 				padding: 25px 10px;
 				h2{
-					color: #636363;
+					color: @comBGC;
 					font-size: 20px;
-					font-weight: bold;
+					font-weight: normal;
 					display: block;
 					position: absolute;
 					padding: 0 10px;
@@ -133,14 +135,14 @@
 					a{
 						display: block;
 						color: #333333;
-						padding: 10px 10px 0 10px;
+						padding: 8px 10px 0 10px;
 						//多出部分省略号显示
 						display: -webkit-box !important;  
 		                overflow: hidden;  
 		                text-overflow: ellipsis;  
 		                word-break: break-all;  
 		                -webkit-box-orient: vertical;  
-		                -webkit-line-clamp: 2;
+		                -webkit-line-clamp: 3;
 					}
 				}
 				.hot-exchange-item::before{
@@ -190,8 +192,8 @@
 	}
 	/* 选项卡内容区域 */
 	.points-shop-right{
-		width: 725px;
-		margin-left: 25px; 
+		width: @comMainWidth;
+		float: right;
 		.points-shop-tabs{
 			position: relative;
 			height: 40px;
@@ -199,12 +201,12 @@
 			li{
 				height: 40px;
 				float: left;
-				font-size: 20px;
+				font-size: 16px;
 				color: #636363;
 				font-weight: bold;
 				a{
 					cursor: pointer;
-					padding: 0 20px;
+					padding: 0 30px;
 				}
 			}
 			li.active{
@@ -234,18 +236,19 @@
 				.exchange-wrapper{
 					.exchange-item{
 						float: left;
-						padding: 8px;
+						padding: 10px;
 						border:1px solid #D3D2D2;
 						width: 223px;
 						background-color: #fff;
 						img{
 							width: 225px;
-							height: 141px;
+							height: 225px;
 						}
 						p{
 							color: #333333;
 							font-size: 14px;
-							margin: 10px 0;
+							margin-top: 10px;
+							margin-bottom: 5px;
 							display: -webkit-box !important;  
 			                overflow: hidden;  
 			                text-overflow: ellipsis;  
@@ -255,11 +258,13 @@
 						}
 						.item-detail{
 							p{
+								margin-top: 0;
 								float: left;
 								color: @comBGC;
 								font-size: 14px;
 								span{
-									font-size: 16px;
+									padding-left: 5px;
+									font-size: 20px;
 								}
 							}
 							a{

@@ -1,3 +1,7 @@
+.color-change {
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
@@ -382,23 +386,22 @@ a {
 /* 个人中心公用左侧边栏 */
 .person-center-aside {
   float: left;
-  width: 250px;
+  width: 240px;
   background-color: #fff;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p {
-  padding-left: 18px;
   font-size: 18px;
   color: #333;
-  height: 55px;
-  line-height: 55px;
+  height: 60px;
+  line-height: 60px;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p i {
-  padding-right: 15px;
-  font-size: 18px;
+  padding: 0 30px 0 30px;
+  font-size: 24px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover {
   background-color: #EF8B1D;
@@ -410,9 +413,9 @@ a {
   color: #333;
   display: block;
   font-size: 14px;
-  padding-left: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li.active {
   background-color: #EF8B1D;
@@ -423,7 +426,7 @@ a {
 /* 个人中心公用右侧内容 */
 .person-center-points-main {
   float: right;
-  width: 725px;
+  width: 740px;
 }
 .person-center-points-main .person-center-info {
   background-color: #fff;
@@ -433,8 +436,8 @@ a {
   float: left;
 }
 .person-center-points-main .person-center-info .person-user-head img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;
@@ -541,29 +544,32 @@ a {
   bottom: 0;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-head {
-  width: 112px;
-  height: 112px;
-  border-radius: 50%;
   background-color: #fff;
   text-align: center;
   float: left;
-  margin-right: 30px;
+  width: 110px;
+  height: 110px;
+  margin: 0;
+  vertical-align: middle;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #fff;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-head img {
   width: 110px;
   height: 110px;
-  margin: 0;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text {
   width: 1000px;
   height: 112px;
+  margin-left: 150px;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text h2 {
   color: #fff;
   font-size: 28px;
   height: 50px;
   line-height: 50px;
-  font-weight: bold;
+  font-weight: normal;
   letter-spacing: 8px;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text p {
@@ -576,6 +582,7 @@ a {
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text p span i {
   color: #909090;
   padding-right: 5px;
+  font-size: 22px;
 }
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text p span.user-name,
 #travel-notes-detail-banner .travel-notes-user-info .travel-notes-user-detail .travel-notes-user-text p span.user-love {
@@ -588,11 +595,11 @@ a {
 #travel-notes-detail-content {
   background-color: #f8f3e9;
   padding-top: 20px;
-  padding-bottom: 80px;
+  padding-bottom: 250px;
 }
 #travel-notes-detail-content .travel-notes-detail-container {
   position: relative;
-  width: 725px;
+  width: 740px;
   float: left;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-notes-container-anchor {
@@ -635,10 +642,10 @@ a {
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-day-content {
   margin-bottom: 20px;
+  width: 740px;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-day-content img {
-  width: 725px;
-  height: 400px;
+  width: 100%;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-day-content p {
   margin: 20px 0 40px 0;
@@ -653,6 +660,7 @@ a {
 #travel-notes-detail-content .travel-notes-detail-container .travel-day-content .travel-notes-info span i {
   color: #EF8B1D;
   padding-right: 5px;
+  font-size: 22px;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message {
   padding: 20px 0;
@@ -662,8 +670,8 @@ a {
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-message #travel-notes-message-form textarea {
   resize: none;
-  max-width: 701px;
-  width: 701px;
+  max-width: 716px;
+  width: 716px;
   padding: 10px;
   border: 2px solid #a8a7a5;
   color: #333333;
@@ -678,31 +686,31 @@ a {
   margin-top: 20px;
   text-align: right;
   float: right;
-  padding: 14px 22px;
+  padding: 16px 22px;
   background-color: #EF8B1D;
   color: #fff;
   border-radius: 5px;
   font-weight: bold;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li {
-  padding: 15px 0;
+  padding: 20px 0;
   border-bottom: 2px solid #e6e5e5;
 }
 #travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li img {
   float: left;
-  width: 84px;
-  height: 84px;
-  margin-right: 20px;
 }
-#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-detail {
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-content {
+  margin-left: 120px;
+}
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-content .comment-detail {
   padding: 10px 0;
 }
-#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-detail .comment-name {
+#travel-notes-detail-content .travel-notes-detail-container .travel-notes-detail-comments .travel-notes-comments-wrapper li .comment-content .comment-detail .comment-name {
   color: #EF8B1D;
   margin-right: 10px;
 }
 #travel-notes-detail-content .travel-notes-detail-aside {
-  width: 250px;
+  width: 240px;
   float: right;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation {
@@ -720,9 +728,9 @@ a {
   padding: 25px 10px;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-title h2 {
-  color: #636363;
+  color: #005B98;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -740,7 +748,7 @@ a {
   background-color: #E6E6E5;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper {
-  padding-left: 10px;
+  padding: 0 10px;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item + .activity-recommendation-item {
   border-top: 2px solid #E6E6E5;
@@ -750,14 +758,14 @@ a {
   padding: 10px 0;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item img {
-  width: 84px;
-  height: 84px;
+  width: 80px;
+  height: 80px;
   float: left;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .activity-recommendation .activity-recommendation-wrapper .activity-recommendation-item a {
   display: block;
   color: #333333;
-  padding: 10px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -790,9 +798,9 @@ a {
   padding: 25px 10px;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-title h2 {
-  color: #636363;
+  color: #834aeb;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -809,14 +817,15 @@ a {
   width: 100%;
   background-color: #E6E6E5;
 }
+#travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-wrapper .travel-notes-recommendation-item {
+  margin-top: 10px;
+}
 #travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-wrapper .travel-notes-recommendation-item a img {
-  width: 250px;
-  height: 150px;
+  width: 100%;
   display: block;
 }
 #travel-notes-detail-content .travel-notes-detail-aside .travel-notes-recommendation .travel-notes-recommendation-wrapper .travel-notes-recommendation-item a p {
   color: #333;
-  margin: 10px 0;
   padding: 5px 10px;
   border-bottom: 2px solid #e1e0df;
 }

@@ -1,3 +1,7 @@
+.color-change {
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
@@ -382,23 +386,22 @@ a {
 /* 个人中心公用左侧边栏 */
 .person-center-aside {
   float: left;
-  width: 250px;
+  width: 240px;
   background-color: #fff;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p {
-  padding-left: 18px;
   font-size: 18px;
   color: #333;
-  height: 55px;
-  line-height: 55px;
+  height: 60px;
+  line-height: 60px;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p i {
-  padding-right: 15px;
-  font-size: 18px;
+  padding: 0 30px 0 30px;
+  font-size: 24px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover {
   background-color: #EF8B1D;
@@ -410,9 +413,9 @@ a {
   color: #333;
   display: block;
   font-size: 14px;
-  padding-left: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li.active {
   background-color: #EF8B1D;
@@ -423,7 +426,7 @@ a {
 /* 个人中心公用右侧内容 */
 .person-center-points-main {
   float: right;
-  width: 725px;
+  width: 740px;
 }
 .person-center-points-main .person-center-info {
   background-color: #fff;
@@ -433,8 +436,8 @@ a {
   float: left;
 }
 .person-center-points-main .person-center-info .person-user-head img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;
@@ -529,7 +532,7 @@ a {
   background-color: #f8f3e9;
 }
 #travel-parameter-select .travel-parameter-wrapper {
-  padding: 20px 25px;
+  padding: 25px 20px;
   background-color: #fff;
 }
 #travel-parameter-select .travel-parameter-wrapper #travel-parameter-form .form-control {
@@ -596,7 +599,7 @@ a {
 }
 #product-list-content .product-list-main .product-list-searchresult,
 #product-list-content .product-list-main .product-list-wrapper {
-  width: 725px;
+  width: 740px;
   padding-bottom: 30px;
 }
 #product-list-content .product-list-main .product-list-searchresult .product-list-item,
@@ -615,12 +618,12 @@ a {
 #product-list-content .product-list-main .product-list-searchresult .product-list-item .product-item-top img,
 #product-list-content .product-list-main .product-list-wrapper .product-list-item .product-item-top img {
   float: left;
-  width: 250px;
-  height: 250px;
+  width: 260px;
+  height: 260px;
 }
 #product-list-content .product-list-main .product-list-searchresult .product-list-item .product-item-top .product-item-text,
 #product-list-content .product-list-main .product-list-wrapper .product-list-item .product-item-top .product-item-text {
-  padding-top: 15px;
+  padding-top: 8px;
   position: relative;
   max-width: 430px;
   height: 235px;
@@ -685,7 +688,7 @@ a {
   text-align: center;
 }
 #product-list-content .product-list-aside {
-  width: 250px;
+  width: 240px;
   float: right;
 }
 #product-list-content .product-list-aside .hot-exchange {
@@ -701,12 +704,12 @@ a {
 #product-list-content .product-list-aside .hot-exchange .hot-exchange-title {
   position: relative;
   text-align: center;
-  padding: 25px 10px;
+  padding: 25px 10px 16px 10px;
 }
 #product-list-content .product-list-aside .hot-exchange .hot-exchange-title h2 {
-  color: #636363;
+  color: #005B98;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -734,14 +737,14 @@ a {
   padding: 10px 0;
 }
 #product-list-content .product-list-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item img {
-  width: 84px;
-  height: 84px;
+  width: 80px;
+  height: 80px;
   float: left;
 }
 #product-list-content .product-list-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item a {
   display: block;
   color: #333333;
-  padding: 10px 10px 0 10px;
+  padding: 8px 10px 0 10px;
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -833,9 +836,9 @@ a {
   padding: 25px 10px;
 }
 #product-list-content .product-list-aside .recommended-videos .recommended-videos-title h2 {
-  color: #636363;
+  color: #834aeb;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -857,7 +860,6 @@ a {
   position: relative;
   margin-bottom: 20px;
   padding: 0;
-  height: 180px;
   opacity: 0.9;
   filter: alpha(opacity=90);
   -moz-box-shadow: 1px 3px 1px #D3D3D3;
@@ -870,8 +872,7 @@ a {
 }
 #product-list-content .product-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item img {
   display: block;
-  width: 250px;
-  height: 150px;
+  width: 100%;
 }
 #product-list-content .product-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item .video-list-play-btn2 {
   position: absolute;
@@ -884,10 +885,7 @@ a {
   margin-left: -18px;
 }
 #product-list-content .product-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item .hot-activity-item-text {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0;
   text-align: center;
   background-color: #834aeb;
 }
@@ -895,4 +893,25 @@ a {
   color: #fff;
   height: 30px;
   line-height: 30px;
+}
+#product-list-content .product-list-aside .recommended-videos .recommended-videos-wrapper a.hot-activity-more {
+  margin: 20px auto;
+  display: block;
+  width: 120px;
+  text-align: center;
+  border: 1px solid #909090;
+  color: #909090;
+  padding: 8px 0;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+  /* &:hover{
+						background-color: #909090;
+						color: #fff;
+					} */
+}
+#product-list-content .product-list-aside .recommended-videos .recommended-videos-wrapper a.hot-activity-more:hover {
+  background-color: #909090;
+  color: #fff;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
 }

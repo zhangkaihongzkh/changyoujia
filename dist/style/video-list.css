@@ -1,3 +1,7 @@
+.color-change {
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
@@ -382,23 +386,22 @@ a {
 /* 个人中心公用左侧边栏 */
 .person-center-aside {
   float: left;
-  width: 250px;
+  width: 240px;
   background-color: #fff;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p {
-  padding-left: 18px;
   font-size: 18px;
   color: #333;
-  height: 55px;
-  line-height: 55px;
+  height: 60px;
+  line-height: 60px;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p i {
-  padding-right: 15px;
-  font-size: 18px;
+  padding: 0 30px 0 30px;
+  font-size: 24px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover {
   background-color: #EF8B1D;
@@ -410,9 +413,9 @@ a {
   color: #333;
   display: block;
   font-size: 14px;
-  padding-left: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li.active {
   background-color: #EF8B1D;
@@ -423,7 +426,7 @@ a {
 /* 个人中心公用右侧内容 */
 .person-center-points-main {
   float: right;
-  width: 725px;
+  width: 740px;
 }
 .person-center-points-main .person-center-info {
   background-color: #fff;
@@ -433,8 +436,8 @@ a {
   float: left;
 }
 .person-center-points-main .person-center-info .person-user-head img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;
@@ -554,24 +557,25 @@ a {
   overflow: hidden;
   text-align: center;
   margin: 0 auto;
+  padding: 25px 0;
 }
 #video-list-banner .video-banner-wrapper .small-img-bg .small-img-container li + li {
-  margin-left: 18px;
+  margin-left: 40px;
 }
 #video-list-banner .video-banner-wrapper .small-img-bg .small-img-container li.small-img-item {
-  border: 1px solid transparent;
   cursor: pointer;
   opacity: 0.6;
-  width: 183px;
-  height: 83px;
+  width: 212px;
+  height: 92px;
   float: left;
+  border: 4px solid #fff;
 }
 #video-list-banner .video-banner-wrapper .small-img-bg .small-img-container li.small-img-item:hover {
   opacity: 1;
 }
 #video-list-banner .video-banner-wrapper .small-img-bg .small-img-container li.small-img-item img {
-  width: 183px;
-  height: 83px;
+  width: 212px;
+  height: 92px;
 }
 #video-list-banner .video-banner-wrapper .video-list-banner-title {
   position: absolute;
@@ -589,9 +593,8 @@ a {
   /* 侧边栏 */
 }
 #video-list-content .video-list-main {
-  width: 725px;
+  width: 740px;
   float: left;
-  margin-right: 25px;
   /* 视频列表公用分页器 */
 }
 #video-list-content .video-list-main .video-list-tabs {
@@ -602,13 +605,13 @@ a {
 #video-list-content .video-list-main .video-list-tabs li {
   height: 40px;
   float: left;
-  font-size: 20px;
+  font-size: 16px;
   color: #636363;
   font-weight: bold;
 }
 #video-list-content .video-list-main .video-list-tabs li a {
   cursor: pointer;
-  padding: 0 20px;
+  padding: 0 30px;
 }
 #video-list-content .video-list-main .video-list-tabs li.active {
   color: #EF8B1D;
@@ -641,8 +644,6 @@ a {
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-left {
   position: relative;
   z-index: 10;
-  width: 330px;
-  height: 200px;
   float: left;
   margin-right: 20px;
   opacity: 0.9;
@@ -669,20 +670,22 @@ a {
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-left img,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-left img,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-left img {
-  width: 330px;
-  height: 200px;
+  width: 300px;
+  height: 180px;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right {
   position: relative;
-  height: 200px;
+  padding-bottom: 50px;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right h2,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right h2,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right h2 {
-  font-size: 18px;
+  font-size: 20px;
+  line-height: 1.5;
   color: #011726;
+  font-weight: normal;
   margin-bottom: 20px;
   display: -webkit-box !important;
   overflow: hidden;
@@ -696,20 +699,23 @@ a {
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right p {
   font-size: 14px;
   color: #333333;
+  line-height: 2;
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 2;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right div.video-item-detail,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right div.video-item-detail,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right div.video-item-detail {
   position: absolute;
   bottom: 0;
-  left: 350px;
+  left: 320px;
   margin-bottom: 0;
+  line-height: 24px;
+  height: 24px;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right div.video-item-detail span,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right div.video-item-detail span,
@@ -719,31 +725,36 @@ a {
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right div.video-item-detail span i,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right div.video-item-detail span i,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right div.video-item-detail span i {
+  font-size: 20px;
   margin-right: 5px;
   color: #909090;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most .video-item .video-item-right div.video-item-detail span.time,
 #video-list-content .video-list-main .video-list-wrapper .comment-most .video-item .video-item-right div.video-item-detail span.time,
 #video-list-content .video-list-main .video-list-wrapper .latest-release .video-item .video-item-right div.video-item-detail span.time {
-  padding-left: 170px;
+  padding-left: 200px;
 }
 #video-list-content .video-list-main .video-list-wrapper .watch-most,
 #video-list-content .video-list-main .video-list-wrapper .comment-most {
   display: none;
 }
 #video-list-content .video-list-main .pagination-wrapper {
+  width: 100%;
+  text-align: center;
   position: absolute;
   bottom: 0;
   right: 0;
 }
 #video-list-content .video-list-aside {
-  width: 250px;
-  float: left;
+  width: 240px;
+  float: right;
+  padding-top: 40px;
 }
 #video-list-content .video-list-aside .recommended-videos {
-  margin-top: 62px;
+  margin-top: 20px;
   background-color: #fff;
   border-top: 4px solid #834aeb;
+  padding-bottom: 1px;
 }
 #video-list-content .video-list-aside .recommended-videos .recommended-videos-title {
   position: relative;
@@ -751,9 +762,9 @@ a {
   padding: 25px 10px;
 }
 #video-list-content .video-list-aside .recommended-videos .recommended-videos-title h2 {
-  color: #636363;
+  color: #834aeb;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -775,7 +786,6 @@ a {
   position: relative;
   margin-bottom: 20px;
   padding: 0;
-  height: 180px;
   opacity: 0.9;
   filter: alpha(opacity=90);
   -moz-box-shadow: 1px 3px 1px #D3D3D3;
@@ -788,8 +798,7 @@ a {
 }
 #video-list-content .video-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item img {
   display: block;
-  width: 250px;
-  height: 150px;
+  width: 100%;
 }
 #video-list-content .video-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item .video-list-play-btn2 {
   position: absolute;
@@ -802,10 +811,7 @@ a {
   margin-left: -18px;
 }
 #video-list-content .video-list-aside .recommended-videos .recommended-videos-wrapper .hot-activity-item .hot-activity-item-text {
-  position: absolute;
   width: 100%;
-  bottom: 0;
-  left: 0;
   text-align: center;
   background-color: #834aeb;
 }
@@ -814,7 +820,29 @@ a {
   height: 30px;
   line-height: 30px;
 }
+#video-list-content .video-list-aside .recommended-videos .recommended-videos-wrapper a.hot-activity-more {
+  margin: 20px auto;
+  display: block;
+  width: 120px;
+  text-align: center;
+  border: 1px solid #909090;
+  color: #909090;
+  padding: 8px 0;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+  /* &:hover{
+						background-color: #909090;
+						color: #fff;
+					} */
+}
+#video-list-content .video-list-aside .recommended-videos .recommended-videos-wrapper a.hot-activity-more:hover {
+  background-color: #909090;
+  color: #fff;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
 #video-list-content .video-list-aside .hot-exchange {
+  margin-top: 20px;
   background-color: #fff;
   border-top: 4px solid #005B98;
   padding-bottom: 50px;
@@ -830,9 +858,9 @@ a {
   padding: 25px 10px;
 }
 #video-list-content .video-list-aside .hot-exchange .hot-exchange-title h2 {
-  color: #636363;
+  color: #005B98;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -860,14 +888,14 @@ a {
   padding: 10px 0;
 }
 #video-list-content .video-list-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item img {
-  width: 84px;
-  height: 84px;
+  width: 80px;
+  height: 80px;
   float: left;
 }
 #video-list-content .video-list-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item a {
   display: block;
   color: #333333;
-  padding: 10px 10px 0 10px;
+  padding: 8px 10px 0 10px;
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;

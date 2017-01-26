@@ -1,3 +1,7 @@
+.color-change {
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
+}
 body {
   font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
   font-size: 14px;
@@ -382,23 +386,22 @@ a {
 /* 个人中心公用左侧边栏 */
 .person-center-aside {
   float: left;
-  width: 250px;
+  width: 240px;
   background-color: #fff;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p {
-  padding-left: 18px;
   font-size: 18px;
   color: #333;
-  height: 55px;
-  line-height: 55px;
+  height: 60px;
+  line-height: 60px;
   -moz-user-select: none;
   -khtml-user-select: none;
   user-select: none;
   cursor: default;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item p i {
-  padding-right: 15px;
-  font-size: 18px;
+  padding: 0 30px 0 30px;
+  font-size: 24px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li:hover {
   background-color: #EF8B1D;
@@ -410,9 +413,9 @@ a {
   color: #333;
   display: block;
   font-size: 14px;
-  padding-left: 50px;
-  padding-top: 14px;
-  padding-bottom: 14px;
+  padding-left: 85px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .person-center-aside .person-center-aside-wrapper .person-center-item ul li.active {
   background-color: #EF8B1D;
@@ -423,7 +426,7 @@ a {
 /* 个人中心公用右侧内容 */
 .person-center-points-main {
   float: right;
-  width: 725px;
+  width: 740px;
 }
 .person-center-points-main .person-center-info {
   background-color: #fff;
@@ -433,8 +436,8 @@ a {
   float: left;
 }
 .person-center-points-main .person-center-info .person-user-head img {
-  width: 80px;
-  height: 80px;
+  width: 100px;
+  height: 100px;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;
@@ -704,12 +707,11 @@ a {
 }
 #points-shop-detail-wrapper {
   background-color: #F7F3E9;
-  padding-bottom: 150px;
+  padding-bottom: 650px;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-detail-info {
-  padding: 0 20px 100px 20px;
-  width: 685px;
-  margin-right: 25px;
+  padding-bottom: 100px ;
+  width: 740px;
   background-color: #fff;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-detail-info .points-shop-detail-title {
@@ -727,7 +729,8 @@ a {
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-detail-info .points-shop-detail-title li a {
   cursor: pointer;
-  padding: 0 10px;
+  padding: 0 25px 0 25px;
+  font-size: 16px;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-detail-info .points-detail-info-content {
   padding-top: 10px;
@@ -735,14 +738,15 @@ a {
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-detail-info .points-detail-info-content img {
   margin: 10px 0;
-  width: 685px;
+  width: 700px;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside {
-  width: 250px;
+  width: 240px;
+  float: right;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange {
   background-color: #fff;
-  border-top: 4px solid #005B98;
+  border-top: 4px solid #EF8B1D;
   padding-bottom: 50px;
   -moz-box-shadow: 1px 3px 1px #D3D3D3;
   -webkit-box-shadow: 1px 3px 1px #D3D3D3;
@@ -756,9 +760,9 @@ a {
   padding: 25px 10px;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-title h2 {
-  color: #636363;
+  color: #EF8B1D;
   font-size: 20px;
-  font-weight: bold;
+  font-weight: normal;
   position: absolute;
   padding: 0 10px;
   width: 80px;
@@ -786,20 +790,20 @@ a {
   padding: 10px 0;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item img {
-  width: 84px;
-  height: 84px;
+  width: 80px;
+  height: 80px;
   float: left;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item a {
   display: block;
   color: #333333;
-  padding: 10px 10px 0 10px;
+  padding: 5px 10px 0 10px;
   display: -webkit-box !important;
   overflow: hidden;
   text-overflow: ellipsis;
   word-break: break-all;
   -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 3;
 }
 #points-shop-detail-wrapper .points-shop-detail-container .points-shop-aside .hot-exchange .hot-exchange-wrapper .hot-exchange-item::before {
   content: '1';

@@ -110,13 +110,13 @@
 //商品详细信息
 #points-shop-detail-wrapper{
 	background-color: #F7F3E9;
-	padding-bottom: 150px;
+	padding-bottom: 650px;
 	.points-shop-detail-container {
 		//侧边栏
 		.points-shop-detail-info{
-			padding: 0 20px 100px 20px;
-			width: 685px;
-			margin-right: 25px;
+			padding-bottom: 100px ;
+			width: @comMainWidth;
+
 			background-color: #fff;
 			.points-shop-detail-title{
 				position: relative;
@@ -131,7 +131,8 @@
 					font-weight: bold;
 					a{
 						cursor: pointer;
-						padding: 0 10px;
+						padding: 0 25px 0 25px;
+						font-size: 16px;
 					}
 				}
 			}
@@ -140,16 +141,17 @@
 				text-align: center;
 				img{
 					margin: 10px 0;
-					width: 685px;
+					width: 700px;
 				}
 
 			}	
 		}
 		.points-shop-aside{
-			width: 250px;
+			width: @comAsideWidth;
+			float: right;
 			.hot-exchange{
 				background-color: #fff;
-				border-top: 4px solid #005B98;
+				border-top: 4px solid @comBGC;
 				padding-bottom: 50px;
 				-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
 
@@ -159,9 +161,9 @@
 					text-align: center;
 					padding: 25px 10px;
 					h2{
-						color: #636363;
+						color: @comBGC;
 						font-size: 20px;
-						font-weight: bold;
+						font-weight: normal;
 						display: block;
 						position: absolute;
 						padding: 0 10px;
@@ -192,21 +194,21 @@
 						padding: 10px 0;
 
 						img{
-							width: 84px;
-							height: 84px;
+							width: 80px;
+							height: 80px;
 							float: left;
 						}
 						a{
 							display: block;
 							color: #333333;
-							padding: 10px 10px 0 10px;
+							padding: 5px 10px 0 10px;
 							//多出部分省略号显示
 							display: -webkit-box !important;  
 			                overflow: hidden;  
 			                text-overflow: ellipsis;  
 			                word-break: break-all;  
 			                -webkit-box-orient: vertical;  
-			                -webkit-line-clamp: 2;
+			                -webkit-line-clamp: 3;
 						}
 					}
 					.hot-exchange-item::before{

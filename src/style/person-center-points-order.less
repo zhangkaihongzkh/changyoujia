@@ -1,0 +1,59 @@
+//引入全局less
+@import "global";
+
+#person-center-points-order-content{
+	background-color: @comCenterBGC;
+	//订单区域
+	.person-center-points-order-wrapper{
+		.points-order-title{
+			margin-top: 15px;
+			h3{
+				padding: 15px;
+				display: inline-block;
+				color: @comBGC;
+				font-size: 18px;
+				font-weight: bold;
+				border-bottom: 2px solid  @comBGC;
+				margin-bottom:-3px;
+			}
+		}
+		.points-order-table{
+			width: 100%;
+			border: none;
+			padding: 0;
+			
+			//background-color: #fff;
+			thead{
+				display: block;
+				font-size: 14px;
+				color: #646464;
+				border-top: 2px solid #e7e6e5;
+				border-bottom: 2px solid #e7e6e5;
+				
+				margin-bottom: 15px;
+				background-color: #fff;
+				tr{
+					padding-left: 15px;
+					background-color: #fff;
+				}
+				th{
+					margin: 0;
+					text-align: center;
+					background-color: #fff;
+					line-height: 30px;
+					height: 30px;
+					width: 60px;
+					font-weight: normal;
+				}
+				th:nth-of-type(1){
+					padding-left: 10px;
+					width: 300px;
+					text-align: left;
+				}
+			}
+			tbody{
+
+			}
+		}
+	}
+}

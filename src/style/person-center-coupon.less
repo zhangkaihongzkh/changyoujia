@@ -16,21 +16,19 @@
 			border-bottom: 2px solid #e7e6e5;
 		}
 		.coupon-num-content{
-			padding: 0 25px;
 			.coupon-num-tabs{
 				position: relative;
-				height: 40px;
+				height: 50px;
 				border-bottom: 2px solid #E7E5E5;
 				li{
 					float: left;
 					color: #333;
-					margin-right: 20px;
 					text-align: center;
 					a{
 						display: block;
 						color: #333;
 						text-align: center;
-						padding: 10px 0 11px 0;
+						padding: 15px 20px 15px 20px;
 						cursor: pointer;
 					}
 				}
@@ -43,35 +41,38 @@
 			}	
 			/* 卡券 */
 			.coupon-content-wrapper{
-				padding: 30px 40px;
+				padding: 30px 30px;
 				ul{
 					//礼券通用样式
 					li.coupon-item{
 						position: relative;
 						float: left;
-						width: 250px;
-						height: 120px;
+						width: 290px;
+						height: 137px;
 						color: #fff;
-						margin-right: 25px;
 						margin-bottom: 40px;
-						background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 5px, #d0cfcf 5px);
-					    background-size: 15px 15px;
-					    background-position: 8px 0;
+						background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 8px, #d0cfcf 8px);
+					    background-size: 22px 22px;
+					    background-position: 11px 2px;
 					    padding: 0 10px;
 					    //overflow: hidden;
 					    z-index:0; 
 						.item-content-left{
 							position: relative;
 							float: left;
-							width: 150px;
+							width: 180px;
 							h3{
 								font-size: 24px;
 								padding-top: 18px;
-								padding-left: 25px;
+								padding-left: 34px;
 								margin-bottom: 15px;
 								span{
-									font-size: 30px;
+									padding-left: 15px;
+									font-size: 36px;
 								}
+							}
+							p{
+								padding-left: 15px;
 							}
 
 						}
@@ -81,8 +82,9 @@
 							padding-right: 5px;
 							float: right;
 							border-left: 2px dashed #fff;
-							height: 80px;
+							height: 97px;
 							position: relative;
+							width: 95px;
 						}
 						.item-content-right::before,
 						.item-content-right::after{
@@ -103,6 +105,9 @@
 							bottom:-7px;
 						}
 					}
+					li:nth-child(odd){
+						margin-right: 60px;
+					}
 					li.coupon-item::before{
 						background-color: #d0cfcf;
 						content: '';
@@ -118,9 +123,9 @@
 				.coupon-viable{
 					ul{
 						li{
-							background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 5px, @comBGC 5px);
-						    background-size: 15px 15px;
-						    background-position: 8px 0;
+							background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 8px, @comBGC 8px);
+						    background-size: 22px 22px;
+						    background-position: 11px 2px;
 						    padding: 0 10px;
 						    overflow: hidden;
 						    z-index:0; 
@@ -150,8 +155,8 @@
 							   	width: 71px;
 							   	height: 73px;
 							   	background: url('../images/person-center-coupon-used.png') center center no-repeat;
-							    top: 75px;
-							    left: 170px
+							    top: 100px;
+							    left: 208px
 							}
 						}
 					}
@@ -166,8 +171,8 @@
 							   	width: 71px;
 							   	height: 73px;
 							   	background: url('../images/person-center-coupon-expired.png') center center no-repeat;
-							    top: 75px;
-							    left: 170px
+							    top: 100px;
+							    left: 208px
 							}
 						}
 					}
