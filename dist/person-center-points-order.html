@@ -5,10 +5,12 @@
 
     <title>个人中心积分订单-畅游家</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-
+    
 
     <!-- 引入字体图标 -->
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
+    <!-- 分页插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/pagination/lib/pagination.css">
     <link rel="stylesheet" type="text/css" href="style/global.css">
     <link rel="stylesheet" type="text/css" href="style/person-center-points-order.css">
   </head>
@@ -103,9 +105,9 @@
                     <div class="points-order-title">
                         <h3>积分订单</h3>
                     </div>  
-                    <table class="points-order-table">
+                    <table class="points-order-table" style="display: none;">
                         <thead>
-                            <tr>
+                            <tr class="order-info">
                                 <th>订单信息</th>
                                 <th>订单单价</th>
                                 <th>订单数量</th>
@@ -114,17 +116,260 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>sdasd</td>
-                                <td>sdasd</td>
-                                <td>sdasd</td>
-                                <td>sdasd</td>
-                                <td>sdasd</td>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr class="sep-row"></tr>
+                            <tr class="order-num-time-wrapper">
+                                <td colspan="5">
+                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
+                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
+                                </td>
+                            </tr>
+                            <tr class="order-detail">
+                                <td>
+                                    <a class="points-orderr-item-info" href="">
+                                        <img src="images/points-order-item.png">
+                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
+                                    </a> 
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-univalent">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-order-item-num">1</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-total">￥<span>199</span>积分</div>
+                                </td>
+                                <td>
+                                    <div class="points-orderr-item-state">已兑换</div>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
+                    <table class="points-order-table-searchresult">
+                      <thead>
+                            <tr class="order-info">
+                                <th>订单信息</th>
+                                <th>订单单价</th>
+                                <th>订单数量</th>
+                                <th>订单总额</th>
+                                <th>订单状态</th>
+                            </tr>
+                        </thead>
+                    </table>
+                    <!-- 分页 -->
+                    <!-- 分页按钮 -->
+                    <div class="pagination-wrapper">
+                        <ul class="pagination-container clearfix">
+                            <!-- <li class="pagination-prev-btn"><a href="">上一页</a></li>
+                            <li class="active"><a href="">1</a></li>
+                            <li class="pagination-next-btn"><a href="">下一页</a></li> -->
+                        </ul>
+                    </div>
+                    <!-- /分页按钮 -->
                 </div>
-                
             </main>
         </div>
     </section>
@@ -197,6 +442,8 @@
     
 
     <script src="lib/jquery/jquery.min.js"></script>
+    <!-- 分页插件 -->
+    <script type="text/javascript" src="lib/pagination/lib/jquery.pagination.js"></script>
     <script type="text/javascript" src="js/person-center-points-order.js"></script>
   </body>
 </html>

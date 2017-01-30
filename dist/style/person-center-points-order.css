@@ -59,6 +59,10 @@ a {
 .clearfix {
   zoom: 1;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* 字体图标 */
 @font-face {
   font-family: 'iconfont';
@@ -434,10 +438,13 @@ a {
 }
 .person-center-points-main .person-center-info .person-user-head {
   float: left;
-}
-.person-center-points-main .person-center-info .person-user-head img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffe4bc;
+}
+.person-center-points-main .person-center-info .person-user-head img {
+  border-radius: 50%;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;
@@ -529,6 +536,7 @@ a {
 }
 #person-center-points-order-content {
   background-color: #f0f0f0;
+  padding-bottom: 250px;
 }
 #person-center-points-order-content .person-center-points-order-wrapper .points-order-title {
   margin-top: 15px;
@@ -542,35 +550,89 @@ a {
   border-bottom: 2px solid #EF8B1D;
   margin-bottom: -3px;
 }
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult,
 #person-center-points-order-content .person-center-points-order-wrapper .points-order-table {
   width: 100%;
   border: none;
   padding: 0;
 }
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult thead,
 #person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead {
-  display: block;
   font-size: 14px;
   color: #646464;
   border-top: 2px solid #e7e6e5;
   border-bottom: 2px solid #e7e6e5;
-  margin-bottom: 15px;
   background-color: #fff;
 }
-#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead tr {
-  padding-left: 15px;
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult thead tr.order-info,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead tr.order-info {
   background-color: #fff;
 }
-#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead th {
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult thead tr.order-info th,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead tr.order-info th {
   margin: 0;
   text-align: center;
   background-color: #fff;
-  line-height: 30px;
-  height: 30px;
-  width: 60px;
+  line-ehight: 40px;
+  height: 40px;
+  width: 95px;
   font-weight: normal;
 }
-#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead th:nth-of-type(1) {
-  padding-left: 10px;
-  width: 300px;
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult thead tr.order-info th:nth-of-type(1),
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table thead tr.order-info th:nth-of-type(1) {
+  width: 320px;
   text-align: left;
+  padding-left: 20px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.sep-row,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.sep-row {
+  height: 10px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-num-time-wrapper,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-num-time-wrapper {
+  background-color: #fff;
+  text-align: left;
+  border-bottom: 2px solid #f0f0f0;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-num-time-wrapper td,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-num-time-wrapper td {
+  color: #646464;
+  padding-left: 20px;
+  line-height: 42px;
+  height: 42px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-num-time-wrapper td span.order-num,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-num-time-wrapper td span.order-num {
+  margin-right: 35px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-num-time-wrapper td span.order-num a,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-num-time-wrapper td span.order-num a {
+  color: #646464;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-detail,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-detail {
+  background-color: #fff;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-detail td:nth-of-type(1),
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-detail td:nth-of-type(1) {
+  text-align: left;
+  padding-left: 20px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-detail td,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-detail td {
+  padding: 20px 0;
+  text-align: center;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-detail td a img,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-detail td a img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table-searchresult tbody tr.order-detail td a p,
+#person-center-points-order-content .person-center-points-order-wrapper .points-order-table tbody tr.order-detail td a p {
+  padding-top: 15px;
+  color: #333333;
+  padding-right: 30px;
 }

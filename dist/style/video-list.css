@@ -59,6 +59,10 @@ a {
 .clearfix {
   zoom: 1;
 }
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
 /* 字体图标 */
 @font-face {
   font-family: 'iconfont';
@@ -434,10 +438,13 @@ a {
 }
 .person-center-points-main .person-center-info .person-user-head {
   float: left;
-}
-.person-center-points-main .person-center-info .person-user-head img {
   width: 100px;
   height: 100px;
+  border-radius: 50%;
+  border: 3px solid #ffe4bc;
+}
+.person-center-points-main .person-center-info .person-user-head img {
+  border-radius: 50%;
 }
 .person-center-points-main .person-center-info .person-info-text {
   float: right;

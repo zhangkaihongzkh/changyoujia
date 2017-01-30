@@ -41,6 +41,7 @@ a{text-decoration: none;}
 /*clear float*/
 .clearfix:after{content: "";display:block;clear:both;}
 .clearfix{zoom:1;}
+table{border-collapse:collapse;border-spacing:0}
 
 /* 字体图标 */
 @font-face {
@@ -453,9 +454,12 @@ a{text-decoration: none;}
 		padding: 20px 50px;
 		.person-user-head{
 			float: left;
+			width: 100px;
+			height: 100px;
+			border-radius: 50%;
+			border: 3px solid #ffe4bc;
 			img{
-				width: 100px;
-				height: 100px;
+				border-radius: 50%;
 				
 			}
 		}
