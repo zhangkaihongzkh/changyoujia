@@ -42,6 +42,13 @@ a{text-decoration: none;}
 .clearfix:after{content: "";display:block;clear:both;}
 .clearfix{zoom:1;}
 table{border-collapse:collapse;border-spacing:0}
+select,
+textarea,
+input{
+	&:focus{
+		outline: none;
+	}
+}
 
 /* 字体图标 */
 @font-face {

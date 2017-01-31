@@ -1,0 +1,172 @@
+//引入全局less
+@import "global";
+
+#person-center-person-info-content{
+	background-color:  @comCenterBGC;
+	padding-bottom: 160px;
+
+	//主体内容
+	.person-info-change-wrapper{
+		margin-top: 20px;
+		.person-info-change-title{
+			background-color: #fff;
+			height: 50px;
+			line-height: 50px;
+			border-bottom: 2px solid @comCenterBGC;
+			h2{
+				color: @comBGC;
+				padding-left: 20px;
+				font-size: 14px;
+				
+			}
+		}
+		/* 修改表单 */
+		.person-info-change-detail{
+			background-color: #fff;
+			padding: 20px 20px 100px 20px;
+			form{
+				.form-control{
+					margin-bottom: 20px;
+					position: relative;
+					label:nth-of-type(1){
+						width: 70px;
+						color: #333333;
+						text-align: right;
+						display: inline-block;
+					}
+					input{
+						border: 2px solid #d8d5d5;
+						border-radius: 5px;
+						color: #333333;
+						padding: 15px;
+						line-height: 10px;
+						height: 10px;
+						width: 255px;
+					}
+					span{
+						color: #f13f3f;
+						font-size: 20px;
+						vertical-align: middle;
+					}
+					select{
+						border: 2px solid #d8d5d5;
+						width: 290px;
+						padding: 10px 15px;
+						border-radius: 5px;
+
+					}
+					textarea{
+						border: 2px solid #d8d5d5;
+						border-radius: 5px;
+						color: #333333;
+						padding: 15px;
+						width: 255px;
+						resize: none;
+					}
+					span#phoneNumber{
+						display: inline-block;
+						padding: 15px;
+						line-height: 10px;
+						height: 10px;
+						width: 259px;
+						color: #333333;
+						font-size: 14px;
+					}
+					.signature-num{
+						text-align: right;
+						width: 380px;
+					}
+					.info-remind{
+						display: inline-block;
+						margin-left: 20px;
+						span{
+							margin-right: 10px;
+							vertical-align: middle;
+						}
+						p{
+							
+							font-size: 12px;
+							color: #333333;
+							display: inline-block;
+						}
+					}
+					//保存按钮
+					#user-save{
+						margin-top: 15px;
+						background-color: @comBGC;
+						border-color: @comBGC;
+						color: #fff;
+						line-height: 44px;
+						height: 44px;
+						padding: 0 ;
+						cursor: pointer;
+						font-weight: bold;
+						font-size: 16px;
+						width: 200px;
+						display: inline-block;
+					}
+				}
+				.e-mail-text{
+					position: relative;
+					p{
+						padding-left: 75px;
+						color: #909090;
+						font-size: 12px;
+						margin-top: 20px;
+					}
+
+				}
+				//出生日期选择
+				.user-date{
+					select{
+						border: 2px solid #d8d5d5;
+						width: 88px;
+						padding: 10px 15px;
+						border-radius: 5px;
+					}
+					select + select{
+						margin-left: 10px;	
+					}
+				}
+				//出生地 居住地选择
+				.user-place{
+					select{
+						border: 2px solid #d8d5d5;
+						width: 134px;
+						padding: 10px 15px;
+						border-radius: 5px;
+					}
+					select:nth-of-type(1){
+						margin-right: 20px;
+					}
+				}
+				//错误信息提示
+				label.error {
+					position: absolute;
+					left: 380px;
+					top: 12px;
+					background:url("../images/wrong.png") no-repeat 0px 0px;
+
+					padding-left: 20px;
+
+					padding-bottom: 2px;
+
+					font-weight: bold;
+
+					color: #EA5200;
+				}
+				//隐私选择
+				select.hide-select{
+					position: absolute;
+					right: 0;
+					top: 0;
+					border: 2px solid #d8d5d5;
+					width: 80px;
+					padding: 10px 10px;
+					border-radius: 5px;
+				}
+			}
+		}
+		
+	}
+}

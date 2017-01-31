@@ -63,6 +63,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
 /* 字体图标 */
 @font-face {
   font-family: 'iconfont';

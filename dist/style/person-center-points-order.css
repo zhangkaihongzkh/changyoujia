@@ -63,6 +63,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+select:focus,
+textarea:focus,
+input:focus {
+  outline: none;
+}
 /* 字体图标 */
 @font-face {
   font-family: 'iconfont';
@@ -538,6 +543,9 @@ table {
   background-color: #f0f0f0;
   padding-bottom: 250px;
 }
+#person-center-points-order-content .person-center-points-order-wrapper {
+  /* 分页 */
+}
 #person-center-points-order-content .person-center-points-order-wrapper .points-order-title {
   margin-top: 15px;
 }
@@ -635,4 +643,8 @@ table {
   padding-top: 15px;
   color: #333333;
   padding-right: 30px;
+}
+#person-center-points-order-content .person-center-points-order-wrapper .pagination-wrapper {
+  margin-top: 40px;
+  text-align: right;
 }
