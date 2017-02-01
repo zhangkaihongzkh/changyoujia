@@ -1,0 +1,258 @@
+//引入全局less
+@import "global";
+
+#leader-info-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 50px;
+	.path-navigation{
+		padding: 20px 0;
+		li{
+			display: inline-block;
+			a{
+				color: #646464;
+			}
+		}
+		li + li:before{
+			content: '>';
+			color:#646464;
+			padding: 0 5px;
+		}
+	}
+	/* 领队信息 */
+	.leader-info-wrapper{
+		padding: 60px 25px 60px 80px;
+		background-image: url('../images/leader-info-bg.png');
+		background-color: #fff;
+		background-repeat: no-repeat;
+		.leader-info-img{
+			float: left;
+			width: 300px;
+			border: 20px solid #fff;
+			//阴影效果
+			.boxshadow(3px,3px,1px,#D3D3D3);
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.leader-info-text{
+			float: right;
+			width: 530px;
+			h3{
+				font-size: 28px;
+				letter-spacing: 15px;
+				margin: 40px 0 20px 0;
+				color: #333333;
+			}
+			p.leader-info-signature{
+				font-size: 20px;
+				color: #333333;
+				line-height: 1.5;
+				border-bottom: 1px solid #b0b0b0;
+				padding-bottom: 40px;
+				span{
+					color: #909090;
+					font-size: 36px;
+				}
+			}
+			p.leader-info-parameter{
+				margin: 35px 0 25px 0;
+				color: #333333;
+				span{
+					margin-right: 20px;
+					i{
+						color: @comBGC;
+						padding-right: 5px;
+						font-size: 20px;
+					}
+				}
+			}
+			/* 印象 */
+			.leader-info-impression{
+				li{
+					padding:10px 20px;
+					float: left;
+					color: #fff;
+					border-radius: 5px;
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+				li:nth-child(3n+1){
+					background-color: #82d1e4;
+				}
+				li:nth-child(3n+2){
+					background-color: @comBGC;
+				}
+				li:nth-child(3n){
+					background-color: #f67c89;
+				}
+			}
+		}
+	}
+}
+
+/* 添加标签 */
+#leader-add-tags-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 50px;
+	.leader-add-tags-wrapper{
+		padding: 20px 5px 20px 25px;
+		background-color: #fff;
+		.leader-add-tags-title{
+			margin: 0 auto;
+			width: 185px;
+			height: 18px;
+			background-image: url("../images/leader-add-tags-title.png");
+			margin-bottom: 25px;
+		}
+		.leader-add-tags-text{
+			.add-tags-wrapper{
+				a.add-tags-button,
+				li.add-tags-item{
+					float: left;
+					line-height: 40px;
+					height: 40px;
+					padding: 0 25px;
+					margin-right: 19px;
+					margin-bottom: 20px;
+					cursor: pointer;
+					border-radius: 5px;
+					background-color: #dcdbdb;
+					color: #646464;
+				}
+				li.selected:nth-child(3n){
+					color: #fff;
+					background-color: @comBGC;
+				}
+				li.selected:nth-child(3n+1){
+					color: #fff;
+					background-color: #f67c89;
+				}
+				li.selected:nth-child(3n+2){
+					color: #fff;
+					background-color: #82d1e4;
+				}
+			}
+			.tags-submit-btn{
+				text-align: center;
+				width: 160px;
+				display: block;
+				padding: 15px 0;
+				background-color: @comBGC;
+				color: #fff;
+				margin:15px auto 5px auto;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
+/* 内容部分 */
+#leader-tourist-review-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 190px;
+	.leader-tourist-review-wrapper{
+		background-color: #fff;
+		.leader-line-title{
+			padding-top: 15px;
+			border-bottom: 2px solid  @comContentBGC;
+			li{
+				display: inline-block;
+				padding-bottom: 15px;
+				a{
+					padding: 0 35px;
+					color: #646464;
+					font-size: 16px;
+					font-weight: normal;
+				}
+			}
+			li.active{
+				border-bottom: 2px solid  @comBGC;
+				margin-bottom: -3px;
+				a{
+					color:@comBGC;
+				}
+			}
+			li + li{
+				a{
+					border-left: 2px solid #d4d2d2;
+				}
+			}
+		}
+		/* 主要内容区域 */
+		.leader-tourist-review-container{
+			li.leader-tourist-review-item{
+				padding: 20px;
+				.classic-blogs-item-img{
+					float: left;
+					width: 100px;
+					img{
+						width: 100%;
+					}
+				}
+				.classic-blogs-item-text{
+					padding-top: 10px;
+					width: 835px;
+					float: right;
+					color: #333333;
+					p.item-main-content{
+						margin-top: 5px;
+						.textOverflow(4);
+					}
+					p.item-content-parameter{
+						span{
+							margin-right: 20px;
+						}
+						span.user-name{
+							color: @comBGC;
+						}
+					}
+				}
+			}
+			li + li{
+				border-top: 2px solid  @comContentBGC;
+			}
+
+			/* 分页 */
+			.pagination-wrapper{
+				margin-top: 50px;
+				text-align: center;
+				padding-bottom: 50px;
+			}
+		}
+	}
+	.leader-leave-message{
+		padding: 0 20px;
+		padding-bottom: 25px;
+		color: #333333;
+		h4{
+			font-size: 16px;
+			font-weight: bold;
+		}
+		p{
+			text-align: right;
+			margin-bottom: 10px;
+		}
+		form{
+			textarea{
+				resize:none;
+				border-radius: 5px;
+				padding: 20px;
+				width: 920px;
+			}
+			.submitBtnWrapper{
+				text-align: right;
+			}
+			#messageFormSubmit{
+				margin-right: 0;
+				cursor: pointer;
+				margin-top: 25px;
+				text-align: center;
+				padding: 15px 20px;
+				border-radius: 5px;
+				background-color: @comBGC;
+				color: #fff;
+			}
+		}
+	}
+}
