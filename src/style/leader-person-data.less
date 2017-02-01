@@ -1,0 +1,160 @@
+//引入全局less
+@import "global";
+
+#leader-info-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 50px;
+	.path-navigation{
+		padding: 20px 0;
+		li{
+			display: inline-block;
+			a{
+				color: #646464;
+			}
+		}
+		li + li:before{
+			content: '>';
+			color:#646464;
+			padding: 0 5px;
+		}
+	}
+	/* 领队信息 */
+	.leader-info-wrapper{
+		padding: 60px 25px 60px 80px;
+		background-image: url('../images/leader-info-bg.png');
+		background-color: #fff;
+		background-repeat: no-repeat;
+		.leader-info-img{
+			float: left;
+			width: 300px;
+			border: 20px solid #fff;
+			//阴影效果
+			.boxshadow(3px,3px,1px,#D3D3D3);
+			img{
+				display: block;
+				width: 100%;
+			}
+		}
+		.leader-info-text{
+			float: right;
+			width: 530px;
+			h3{
+				font-size: 28px;
+				letter-spacing: 15px;
+				margin: 40px 0 20px 0;
+				color: #333333;
+			}
+			p.leader-info-signature{
+				font-size: 20px;
+				color: #333333;
+				line-height: 1.5;
+				border-bottom: 1px solid #b0b0b0;
+				padding-bottom: 40px;
+				span{
+					color: #909090;
+					font-size: 36px;
+				}
+			}
+			p.leader-info-parameter{
+				margin: 35px 0 25px 0;
+				color: #333333;
+				span{
+					margin-right: 20px;
+					i{
+						color: @comBGC;
+						padding-right: 5px;
+						font-size: 20px;
+					}
+				}
+			}
+			/* 印象 */
+			.leader-info-impression{
+				li{
+					padding:10px 20px;
+					float: left;
+					color: #fff;
+					border-radius: 5px;
+					margin-right: 20px;
+					margin-bottom: 10px;
+				}
+				li:nth-child(3n+1){
+					background-color: #82d1e4;
+				}
+				li:nth-child(3n+2){
+					background-color: @comBGC;
+				}
+				li:nth-child(3n){
+					background-color: #f67c89;
+				}
+				
+			}
+		}
+	}
+}
+
+/* 内容部分 */
+#leader-person-data-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 190px;
+	.leader-person-data-wrapper{
+		background-color: #fff;
+		padding-bottom: 55px;
+		.leader-line-title{
+			padding-top: 15px;
+			border-bottom: 2px solid  @comContentBGC;
+			li{
+				display: inline-block;
+				padding-bottom: 15px;
+				a{
+					padding: 0 35px;
+					color: #646464;
+					font-size: 16px;
+					font-weight: normal;
+				}
+			}
+			li.active{
+				border-bottom: 2px solid  @comBGC;
+				margin-bottom: -3px;
+				a{
+					color:@comBGC;
+				}
+			}
+			li + li{
+				a{
+					border-left: 2px solid #d4d2d2;
+				}
+			}
+		}
+		/* 主要内容区域 */
+		.leader-person-data-container{
+			.leader-person-data-detail{
+				margin-top: 40px;
+				h3{
+					border-left: 3px solid @comBGC;
+					padding-left: 15px;
+					font-size: 16px;
+					font-weight: normal;
+					margin-bottom: 30px;
+				}
+				dl{
+					padding-left: 20px;
+					font-size: 14px;
+					line-height: 2;
+					dt{
+						display: inline-block;
+						max-width: 65px;
+						width: 65px;
+						text-align: left;
+						color: #909090;
+						vertical-align: top;
+					}
+					dd{
+						display: inline-block;
+						max-width: 500px;
+						color: #333333;
+					}
+				}
+			}
+		}
+	}
+}
