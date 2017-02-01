@@ -961,6 +961,7 @@ input:focus {
   position: relative;
   /* 上方 */
   /* 下方 */
+  /* 文字定位 */
 }
 #through-scenery .through-scenery-content .through-scenery-top {
   margin-bottom: 20px;
@@ -974,6 +975,38 @@ input:focus {
 }
 #through-scenery .through-scenery-content .through-scenery-bottom div + div {
   margin-left: 20px;
+}
+#through-scenery .through-scenery-content .through-scenery-top a,
+#through-scenery .through-scenery-content .through-scenery-bottom a {
+  position: relative;
+  display: block;
+}
+#through-scenery .through-scenery-content .through-scenery-top h3,
+#through-scenery .through-scenery-content .through-scenery-bottom h3 {
+  position: absolute;
+  color: #fff;
+  font-size: 28px;
+  font-weight: bold;
+}
+#through-scenery .through-scenery-content .through-scenery-top .scenery-top-left h3 {
+  top: 30px;
+  left: 30px;
+}
+#through-scenery .through-scenery-content .through-scenery-top .scenery-top-right h3 {
+  top: 30px;
+  right: 30px;
+}
+#through-scenery .through-scenery-content .through-scenery-bottom .scenery-bottom-left h3 {
+  bottom: 30px;
+  left: 30px;
+}
+#through-scenery .through-scenery-content .through-scenery-bottom .scenery-bottom-middle h3 {
+  bottom: 30px;
+  left: 135px;
+}
+#through-scenery .through-scenery-content .through-scenery-bottom .scenery-bottom-right h3 {
+  bottom: 30px;
+  right: 30px;
 }
 /* 游记 */
 #travel-notes {
@@ -994,6 +1027,68 @@ input:focus {
 }
 #travel-notes .travel-notes-content .swiper-slide a {
   display: block;
+  width: 560px;
+  /* 内容 */
+}
+#travel-notes .travel-notes-content .swiper-slide a img {
+  width: 100%;
+  display: block;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper {
+  background-color: #fff;
+  padding: 0 20px 35px 20px;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper .travel-notes-text-title {
+  position: relative;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper .travel-notes-text-title h3 {
+  padding-top: 20px;
+  font-size: 20px;
+  font-weight: normal;
+  color: #EF8B1D;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper .travel-notes-text-title .travel-notes-head-box {
+  position: absolute;
+  right: 0;
+  top: -50px;
+  text-align: right;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper .travel-notes-text-title .travel-notes-head-box img {
+  width: 75px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-wrapper .travel-notes-text-title .travel-notes-head-box p {
+  color: #646464;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail {
+  margin-top: 20px;
+  color: #909090;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail p.notes-text-wrapper {
+  margin-bottom: 20px;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail p.notes-text-wrapper span {
+  margin-right: 20px;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail p.notes-text-wrapper i {
+  margin-right: 10px;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail p.notes-text-content {
+  color: #333333;
+  display: -webkit-box !important;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  letter-spacing: 1px;
+}
+#travel-notes .travel-notes-content .swiper-slide a .travel-notes-text-detail span.see-more {
+  display: block;
+  text-align: right;
+  text-decoration: underline;
+  margin-top: 10px;
 }
 #travel-notes .travel-notes-content .swiper-pagination {
   margin: 50px 0 40px 0;
