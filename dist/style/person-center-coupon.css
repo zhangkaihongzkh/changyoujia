@@ -663,15 +663,6 @@ input:focus {
   overflow: hidden;
   z-index: 0;
 }
-#person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-viable ul li .item-content-right {
-  padding-top: 40px;
-  padding-left: 8px;
-  padding-right: 5px;
-  float: right;
-  border-left: 2px dashed #ffc171;
-  height: 80px;
-  position: relative;
-}
 #person-center-coupon-content .person-center-coupon-num .coupon-num-content .coupon-content-wrapper .coupon-viable ul li.coupon-item::before {
   background-color: #EF8B1D;
 }

@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
 
-    <title>个人中心积分订单-畅游家</title>
-	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    <title>个人中心出游订单-畅游家</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
     
 
     <!-- 引入字体图标 -->
@@ -12,7 +12,7 @@
     <!-- 分页插件 -->
     <link rel="stylesheet" type="text/css" href="lib/pagination/lib/pagination.css">
     <link rel="stylesheet" type="text/css" href="style/global.css">
-    <link rel="stylesheet" type="text/css" href="style/person-center-points-order.css">
+    <link rel="stylesheet" type="text/css" href="style/person-center-travel-order.css">
   </head>
   <body>
      
@@ -21,8 +21,8 @@
         <div class="comWidth clearfix">
             <div class="logo fl"></div>
             <ul class="navBar fl clearfix">
-                <li class="active"><a href="">首页</a></li>
-                <li><a href="">国内游</a></li>
+                <li classr="active"><a href="">首页</a></li>
+                <li><a hef="">国内游</a></li>
                 <li><a href="">国外游</a></li>
                 <li><a href="">周边游</a></li>
                 <li><a href="">户外游</a></li>
@@ -47,7 +47,7 @@
     <!-- /阴影区域 -->
 
     <!-- 主要内容区域 -->
-    <section id="person-center-points-order-content">
+    <section id="person-center-travel-order-content">
         <div class="comWidth clearfix">
             <aside class="person-center-aside">
                 <ul class="person-center-aside-wrapper">
@@ -61,8 +61,8 @@
                     <li class="person-center-item order-center">
                         <p class="item-title"><i class="iconfont icon-order"></i>订单中心</p>
                         <ul>
-                            <li><a href="">出游订单</a></li>
-                            <li class="active"><a href="">积分订单</a></li>
+                            <li class="active"><a href="">出游订单</a></li>
+                            <li><a href="">积分订单</a></li>
                         </ul>
                     </li>
                     <li class="person-center-item asset-center">
@@ -101,21 +101,23 @@
                         </ul>
                     </div>
                 </div>
-                <div class="person-center-points-order-wrapper">
-                    <div class="points-order-title">
-                        <h3>积分订单</h3>
-                    </div>  
-                    <table class="points-order-table" style="display: none;">
+                <div class="person-center-travel-order-wrapper">
+                    <ul class="travel-order-title">
+                        <li class="active"><a href="">全部订单</a></li>
+                        <li><a href="">待付款</a></li>
+                        <li><a href="">待出行</a></li>
+                    </ul>
+                    <table class="travel-order-table" style="display: none;">
                         <thead>
                             <tr class="order-info">
                                 <th>订单信息</th>
-                                <th>订单单价</th>
-                                <th>订单数量</th>
-                                <th>订单总额</th>
+                                <th>订单金额</th>
+                                <th>出行日期</th>
                                 <th>订单状态</th>
+                                <th>其他</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="order-obligation-item">
                             <tr class="sep-row"></tr>
                             <tr class="order-num-time-wrapper">
                                 <td colspan="5">
@@ -125,26 +127,27 @@
                             </tr>
                             <tr class="order-detail">
                                 <td>
-                                    <a class="points-order-item-info" href="">
+                                    <a class="travel-order-item-info" href="">
                                         <img src="images/points-order-item.png">
                                         <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
                                     </a> 
                                 </td>
                                 <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-amount">￥<span>199</span>积分</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-num">1</div>
+                                    <div class="travel-order-item-date">2016-09-21</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-state">已兑换</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-state">已兑换</div>
+                                    <div class="travel-order-item-other"><a href="">去付款</a></div>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody>
+
+                        <tbody class="order-to-travel-item">
                             <tr class="sep-row"></tr>
                             <tr class="order-num-time-wrapper">
                                 <td colspan="5">
@@ -154,26 +157,27 @@
                             </tr>
                             <tr class="order-detail">
                                 <td>
-                                    <a class="points-order-item-info" href="">
+                                    <a class="travel-order-item-info" href="">
                                         <img src="images/points-order-item.png">
                                         <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
                                     </a> 
                                 </td>
                                 <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-amount">￥<span>199</span>积分</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-num">1</div>
+                                    <div class="travel-order-item-date">2016-09-21</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-state">待出行</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-state">已兑换</div>
+                                    <div class="travel-order-item-other"></div>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody>
+
+                        <tbody class="order-already-travel-item">
                             <tr class="sep-row"></tr>
                             <tr class="order-num-time-wrapper">
                                 <td colspan="5">
@@ -183,26 +187,27 @@
                             </tr>
                             <tr class="order-detail">
                                 <td>
-                                    <a class="points-order-item-info" href="">
+                                    <a class="travel-order-item-info" href="">
                                         <img src="images/points-order-item.png">
                                         <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
                                     </a> 
                                 </td>
                                 <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-amount">￥<span>199</span>积分</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-num">1</div>
+                                    <div class="travel-order-item-date">2016-09-21</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-state">已出行</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-state">已兑换</div>
+                                    <div class="travel-order-item-other"></div>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody>
+
+                        <tbody class="order-canceled-item ">
                             <tr class="sep-row"></tr>
                             <tr class="order-num-time-wrapper">
                                 <td colspan="5">
@@ -212,26 +217,27 @@
                             </tr>
                             <tr class="order-detail">
                                 <td>
-                                    <a class="points-order-item-info" href="">
+                                    <a class="travel-order-item-info" href="">
                                         <img src="images/points-order-item.png">
                                         <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
                                     </a> 
                                 </td>
                                 <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-amount">￥<span>199</span>积分</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-num">1</div>
+                                    <div class="travel-order-item-date">2016-09-21</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-state">已取消</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-state">已兑换</div>
+                                    <div class="travel-order-item-other"></div>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody>
+
+                        <tbody class="order-already-travel-item">
                             <tr class="sep-row"></tr>
                             <tr class="order-num-time-wrapper">
                                 <td colspan="5">
@@ -241,114 +247,28 @@
                             </tr>
                             <tr class="order-detail">
                                 <td>
-                                    <a class="points-order-item-info" href="">
+                                    <a class="travel-order-item-info" href="">
                                         <img src="images/points-order-item.png">
                                         <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
                                     </a> 
                                 </td>
                                 <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-amount">￥<span>199</span>积分</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-num">1</div>
+                                    <div class="travel-order-item-date">2016-09-21</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
+                                    <div class="travel-order-item-state">已出行</div>
                                 </td>
                                 <td>
-                                    <div class="points-order-item-state">已兑换</div>
+                                    <div class="travel-order-item-other"></div>
                                 </td>
                             </tr>
                         </tbody>
-                        <tbody>
-                            <tr class="sep-row"></tr>
-                            <tr class="order-num-time-wrapper">
-                                <td colspan="5">
-                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
-                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
-                                </td>
-                            </tr>
-                            <tr class="order-detail">
-                                <td>
-                                    <a class="points-order-item-info" href="">
-                                        <img src="images/points-order-item.png">
-                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
-                                    </a> 
-                                </td>
-                                <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-num">1</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-state">已兑换</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr class="sep-row"></tr>
-                            <tr class="order-num-time-wrapper">
-                                <td colspan="5">
-                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
-                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
-                                </td>
-                            </tr>
-                            <tr class="order-detail">
-                                <td>
-                                    <a class="points-order-item-info" href="">
-                                        <img src="images/points-order-item.png">
-                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
-                                    </a> 
-                                </td>
-                                <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-num">1</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-state">已兑换</div>
-                                </td>
-                            </tr>
-                        </tbody>
-                        <tbody>
-                            <tr class="sep-row"></tr>
-                            <tr class="order-num-time-wrapper">
-                                <td colspan="5">
-                                    <span class="order-num">订单编号:<a href="">111123456789</a></span>
-                                    <span class="order-time">下订单时间：2016-09-20   10:25:36</span>
-                                </td>
-                            </tr>
-                            <tr class="order-detail">
-                                <td>
-                                    <a class="points-order-item-info" href="">
-                                        <img src="images/points-order-item.png">
-                                        <p>途牛新年礼包年定制台历途牛新年礼包+2017年台历途牛新年礼包</p>
-                                    </a> 
-                                </td>
-                                <td>
-                                    <div class="points-order-item-univalent">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-num">1</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-total">￥<span>199</span>积分</div>
-                                </td>
-                                <td>
-                                    <div class="points-order-item-state">已兑换</div>
-                                </td>
-                            </tr>
-                        </tbody>
+                        
                     </table>
-                    <table class="points-order-table-searchresult">
+                    <table class="travel-order-table-searchresult">
                       <thead>
                             <tr class="order-info">
                                 <th>订单信息</th>
@@ -444,6 +364,6 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <!-- 分页插件 -->
     <script type="text/javascript" src="lib/pagination/lib/jquery.pagination.js"></script>
-    <script type="text/javascript" src="js/person-center-points-order.js"></script>
+    <script type="text/javascript" src="js/person-center-travel-order.js"></script>
   </body>
 </html>

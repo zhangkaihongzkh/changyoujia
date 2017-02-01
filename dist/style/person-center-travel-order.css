@@ -539,74 +539,144 @@ input:focus {
 .person-center-points-main .person-center-points-description .points-description-wrapper li + li {
   border-top: 2px solid #e7e6e5;
 }
-#person-center-modify-password-content {
+#person-center-travel-order-content {
   background-color: #f0f0f0;
-  padding-bottom: 160px;
+  padding-bottom: 250px;
 }
-#person-center-modify-password-content .person-info-change-wrapper {
-  margin-top: 20px;
-  /* 修改表单 */
+#person-center-travel-order-content .person-center-travel-order-wrapper {
+  /* 分页 */
 }
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-title {
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title {
+  margin-top: 15px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title li {
+  display: inline-block;
+  padding-bottom: 15px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title li a {
+  padding: 0 35px;
+  color: #646464;
+  font-size: 16px;
+  font-weight: bold;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title li.active {
+  border-bottom: 2px solid #EF8B1D;
+  margin-bottom: -3px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title li.active a {
+  color: #EF8B1D;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-title li + li a {
+  border-left: 2px solid #d4d2d2;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table {
+  width: 100%;
+  border: none;
+  padding: 0;
+  /* 待付款订单 */
+  /* 已取消订单 */
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult thead,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table thead {
+  font-size: 14px;
+  color: #646464;
+  border-top: 2px solid #e7e6e5;
+  border-bottom: 2px solid #e7e6e5;
   background-color: #fff;
-  height: 50px;
-  line-height: 50px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult thead tr.order-info,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table thead tr.order-info {
+  background-color: #fff;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult thead tr.order-info th,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table thead tr.order-info th {
+  margin: 0;
+  text-align: center;
+  background-color: #fff;
+  line-ehight: 40px;
+  height: 40px;
+  width: 95px;
+  font-weight: normal;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult thead tr.order-info th:nth-of-type(1),
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table thead tr.order-info th:nth-of-type(1) {
+  width: 320px;
+  text-align: left;
+  padding-left: 20px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.sep-row,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.sep-row {
+  height: 10px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-num-time-wrapper,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-num-time-wrapper {
+  background-color: #fff;
+  text-align: left;
   border-bottom: 2px solid #f0f0f0;
 }
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-title h2 {
-  color: #EF8B1D;
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-num-time-wrapper td,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-num-time-wrapper td {
+  color: #646464;
   padding-left: 20px;
-  font-size: 14px;
+  line-height: 42px;
+  height: 42px;
 }
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail {
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-num-time-wrapper td span.order-num,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-num-time-wrapper td span.order-num {
+  margin-right: 35px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-num-time-wrapper td span.order-num a,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-num-time-wrapper td span.order-num a {
+  color: #646464;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail {
   background-color: #fff;
-  padding: 20px 20px 600px 20px;
 }
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form .form-control {
-  margin-bottom: 20px;
-  position: relative;
-}
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form .form-control label:nth-of-type(1) {
-  width: 85px;
-  color: #333333;
-  text-align: right;
-  display: inline-block;
-}
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form .form-control input {
-  border: 2px solid #d8d5d5;
-  border-radius: 5px;
-  color: #333333;
-  padding: 15px;
-  line-height: 10px;
-  height: 10px;
-  width: 255px;
-}
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form .form-control span {
-  color: #f13f3f;
-  font-size: 20px;
-  vertical-align: middle;
-}
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form .form-control #user-save {
-  margin-top: 15px;
-  background-color: #EF8B1D;
-  border-color: #EF8B1D;
-  color: #fff;
-  line-height: 44px;
-  height: 44px;
-  padding: 0 ;
-  cursor: pointer;
-  font-weight: normal;
-  font-size: 14px;
-  width: 200px;
-  display: inline-block;
-}
-#person-center-modify-password-content .person-info-change-wrapper .person-info-change-detail form label.error {
-  position: absolute;
-  left: 380px;
-  top: 12px;
-  background: url("../images/wrong.png") no-repeat 0px 0px;
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail td:nth-of-type(1),
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail td:nth-of-type(1) {
+  text-align: left;
   padding-left: 20px;
-  padding-bottom: 2px;
-  font-weight: bold;
-  color: #EA5200;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail td,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail td {
+  padding: 20px 0;
+  text-align: center;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail td a img,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail td a img {
+  width: 100px;
+  height: 100px;
+  float: left;
+  margin-right: 10px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail td a p,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail td a p {
+  padding-top: 15px;
+  color: #333333;
+  padding-right: 30px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody tr.order-detail td .travel-order-item-amount,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody tr.order-detail td .travel-order-item-amount {
+  color: #EF8B1D;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody.order-obligation-item .order-detail .travel-order-item-state,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody.order-obligation-item .order-detail .travel-order-item-state {
+  color: #EF8B1D;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody.order-obligation-item .order-detail .travel-order-item-other a,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody.order-obligation-item .order-detail .travel-order-item-other a {
+  border: 1px solid #EF8B1D;
+  color: #EF8B1D;
+  padding: 7px;
+  border-radius: 5px;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table-searchresult tbody.order-canceled-item .order-detail .travel-order-item-state,
+#person-center-travel-order-content .person-center-travel-order-wrapper .travel-order-table tbody.order-canceled-item .order-detail .travel-order-item-state {
+  color: #e71e1e;
+}
+#person-center-travel-order-content .person-center-travel-order-wrapper .pagination-wrapper {
+  margin-top: 40px;
+  text-align: right;
 }

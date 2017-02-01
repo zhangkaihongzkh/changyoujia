@@ -1,0 +1,148 @@
+//引入全局less
+@import "global";
+
+#person-center-travel-order-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 250px;
+	//订单区域
+	.person-center-travel-order-wrapper{
+		.travel-order-title{
+			margin-top: 15px;
+			li{
+				display: inline-block;
+				padding-bottom: 15px;
+				a{
+					padding: 0 35px;
+					color: #646464;
+					font-size: 16px;
+					font-weight: bold;
+				}
+			}
+			li.active{
+				border-bottom: 2px solid  @comBGC;
+				margin-bottom: -3px;
+				a{
+					color:@comBGC;
+				}
+			}
+			li + li{
+				a{
+					border-left: 2px solid #d4d2d2;
+				}
+			}
+		}
+		.travel-order-table-searchresult,
+		.travel-order-table{
+			width: 100%;
+			border: none;
+			padding: 0;
+			
+			//background-color: #fff;
+			thead{
+				font-size: 14px;
+				color: #646464;
+				border-top: 2px solid #e7e6e5;
+				border-bottom: 2px solid #e7e6e5;
+				background-color: #fff;
+				tr.order-info{
+					background-color: #fff;
+					th{
+						margin: 0;
+						text-align: center;
+						background-color: #fff;
+						line-ehight: 40px;
+						height: 40px;
+						width: 95px;
+						font-weight: normal;
+					}
+					th:nth-of-type(1){
+						width: 320px;
+						text-align: left;
+						padding-left: 20px;
+					}
+				}
+				
+			}
+			tbody{
+				//撑开距离
+				tr.sep-row{
+					height: 10px;	
+				}
+				tr.order-num-time-wrapper{
+					background-color: #fff;
+					text-align: left;
+					border-bottom: 2px solid @comCenterBGC;
+					td{
+						color: #646464;
+						padding-left: 20px;
+						line-height: 42px;
+						height: 42px;
+						span.order-num{
+							margin-right: 35px;
+							a{
+								color: #646464;
+							}
+						}
+					}
+				}
+				tr.order-detail{
+					background-color: #fff;
+					td:nth-of-type(1){
+						text-align: left;
+						padding-left: 20px;
+					}
+					td{
+						padding: 20px 0;
+						text-align: center;
+						a{
+							img{
+								width: 100px;
+								height: 100px;
+								float: left;
+								margin-right: 10px;
+							}
+							p{
+								padding-top: 15px;
+								color: #333333;
+								padding-right: 30px;
+							}
+						}
+						.travel-order-item-amount{
+							color: @comBGC;
+						}
+					}
+				}
+			}
+
+			/* 待付款订单 */
+			tbody.order-obligation-item{
+				.order-detail{
+					.travel-order-item-state{
+						color: @comBGC;
+					}
+					.travel-order-item-other{
+						a{
+							border: 1px solid @comBGC;
+							color: @comBGC;
+							padding: 7px;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+			/* 已取消订单 */
+			tbody.order-canceled-item{
+				.order-detail{
+					.travel-order-item-state{
+						color: #e71e1e;
+					}
+				}
+			}
+		}
+		/* 分页 */
+		.pagination-wrapper{
+			margin-top: 40px;
+			text-align: right;
+		}
+	}
+}
