@@ -17,7 +17,6 @@
 .color-change{
 	transition: color 0.25s ease, background-color 0.25s ease;
 	-webkit-transition: color 0.25s ease, background-color 0.25s ease;
-	
 } 
 
 body{
@@ -57,6 +56,12 @@ input{
     word-break: break-all;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: @comLine;
+}
+
+//阴影渐变
+.boxshadow(@xpx:1px,@ypx:3px,@blur:1px,@color:#D3D3D3){
+	-moz-box-shadow:@xpx @ypx @blur @color; -webkit-box-shadow:@xpx @ypx @blur @color; box-shadow:@xpx @ypx @blur @color;
+
 }
 
 /* 字体图标 */
