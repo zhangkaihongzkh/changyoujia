@@ -1,0 +1,105 @@
+//引入全局less
+@import "global";
+
+/* tab区域 */
+#travel-notes-list-tab{
+	background-color: #fff;
+	padding-bottom: 10px;
+	ul{
+		padding-top: 25px;
+		text-align: center;
+		li{
+			padding: 0 80px;
+			display: inline-block;
+			a{
+				display: block;
+				color: #333333;
+				font-size: 28px;
+				padding-bottom: 20px;
+			}
+		}
+		li.active{
+			a{
+				border-bottom: 4px solid @comBGC;
+			}
+		
+		}
+		li.send-instruction{
+			position: relative;
+			.send-instruction-bg{
+				text-align: center;
+				line-height: 32px;
+				position: absolute;
+				color: #fff;
+				right: -60px;
+				top: -10px;
+				width: 120px;
+				height: 42px;
+				background-image: url("../images/send-instruction.png");
+			}
+		}
+	}
+}
+
+/* 主要内容区域 */
+#travel-notes-list-content{
+	padding: 50px 0 100px 0;
+	background-color: @comContentBGC;
+	.travel-notes-list-wrapper{
+		li.notes-list-item{
+			float: left;
+			border-radius: 5px;
+			width: 320px;
+			overflow: hidden;
+			margin-bottom: 30px;
+			img{
+				display: block;
+			}
+			.notes-list-item-text-wrapper{
+				padding: 20px 10px;
+				background-color: #fff;
+				position: relative;
+				color: #333333;
+				/* 头像 */
+				.item-text-header{
+					top: -30px;
+					left: 10px;
+					position: absolute;
+					width: 60px;
+					border-radius: 50%;
+					border: 2px solid #fff;
+					img{
+						width: 100%;
+						border-radius: 50%;
+					}
+				}
+				p.item-text-title{
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				p.item-text-detail{
+					color: #909090;
+					span{
+						i{
+							padding-right: 5px;
+						}
+					}
+					span + span{
+						margin-left: 15px;
+					}
+				}
+			}
+		}
+		li:nth-child(3n+1),
+		li:nth-child(3n+2){
+			margin-right: 20px;
+		}
+	}
+	
+	/* 分页 */
+	.pagination-wrapper{
+		margin-top: 120px;
+		text-align: center;
+	}
+	
+}

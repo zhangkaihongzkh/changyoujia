@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+   
+    <title>游记列表-畅游家</title>
+    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+    <!-- 引入swiper插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" type="text/css" href="style/iconfont.css">
+    <!-- 分页插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/pagination/lib/pagination.css">
+    
+
+    <link rel="stylesheet" type="text/css" href="style/global.css">
+    <link rel="stylesheet" type="text/css" href="style/travel-notes-list.css">
+  </head>
+  <body>
+     
+    <!-- 导航栏区域 -->                                
+    <nav id="header">
+        <div class="comWidth clearfix">
+            <div class="logo fl"></div>
+            <ul class="navBar fl clearfix">
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="">国内游</a></li>
+                <li><a href="">国外游</a></li>
+                <li><a href="">周边游</a></li>
+                <li><a href="">户外游</a></li>
+                <li><a href="">定制游</a></li>
+                <li><a href="">酒店</a></li>
+                <li><a href="">门票</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">领队</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="" class="register">注册</a>
+                <a href="" class="login">登陆</a>
+            </div>
+        </div>
+    </nav>
+    <!-- /导航栏区域 --> 
+    
+    <!-- 轮播图区域 -->
+    <section id="main-ad">  
+        <div class="swiper-container main-ad-container">
+            <div class="swiper-wrapper  main-ad-wrapper">
+                <div class="swiper-slide ">
+                    <img src="images/home-banner-img1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-banner-img2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-banner-img3.png">
+                </div>
+            </div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main-ad-content">
+            <div class="content-text">
+                <h2>好想来一场说走就走的旅行</h2>
+                <p>带上背包以及你我的约定</p>
+                <a href="">查看详情</a>
+            </div>   
+        </div>
+    </section>
+    <!-- /轮播图区域 -->
+
+    <!-- tab区域 -->
+    <section id="travel-notes-list-tab">
+      <div class="comWidth">
+        <ul class="list-tab-wrapper">
+          <li class="active"><a href="">发现好游记</a></li>
+          <li class="send-instruction">
+            <a href="">我要发游记</a>
+            <div class="send-instruction-bg">发游记送优惠券</div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /tab区域 -->
+    
+    <!-- 主要内容区域 -->
+    <section id="travel-notes-list-content">
+      <div class="comWidth">
+        <div class="travel-notes-list-wrapper">
+          <ul class="notes-list-items-container clearfix" style="display: none;"> 
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+            <li class="notes-list-item">
+              <a href="">
+                <img src="images/travel-notes-list-item.png">
+                <div class="notes-list-item-text-wrapper">
+                  <div class="item-text-header">
+                    <img src="images/travel-notes-comment-head.png">
+                  </div>
+                  <p class="item-text-title">带上妹纸来三亚旅行吧</p>
+                  <p class="item-text-detail">
+                    <span><i class="iconfont icon-location"></i>三亚</span>
+                    <span><i class="iconfont icon-love"></i>20</span>
+                    <span><i class="iconfont icon-chat"></i>15</span>
+                    <span><i class="iconfont icon-time"></i>2016-10-16</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          </ul>
+          <ul class="notes-list-items-container-searchresult clearfix" ></ul>
+          <!-- 分页 -->
+          <!-- 分页按钮 -->
+          <div class="pagination-wrapper">
+              <ul class="pagination-container clearfix">
+                  <!-- <li class="pagination-prev-btn"><a href="">上一页</a></li>
+                  <li class="active"><a href="">1</a></li>
+                  <li class="pagination-next-btn"><a href="">下一页</a></li> -->
+              </ul>
+          </div>
+          <!-- /分页按钮 -->
+        </div>
+      </div>
+    </section>
+    <!-- /主要内容区域 -->
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="comWidth">
+                <div class="footer-main-link clearfix">
+                    <ul class="index-link">
+                        <h4>首页</h4>
+                        <li><a href="">单季热销</a></li>
+                        <li><a href="">精选特惠</a></li>
+                        <li><a href="">我们走过的那些风景</a></li>
+                        <li><a href="">那些我们都喜欢的故事</a></li>
+                    </ul>
+                    <ul class="travel-type">
+                        <h4>旅游方式</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="hotel">
+                        <h4>酒店</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="ticket">
+                        <h4>门票</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="about-us">
+                        <h4>关于我们</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                </div>
+                <div class="footer-friendly-link">
+                    <p>友情链接 </p>
+                    <ul class="clearfix">                            
+                        <li><a href="">绿野户外网俱乐部</a></li>
+                        <li><a href="">无忧户外</a></li>
+                        <li><a href="">蚂蜂窝</a></li>
+                        <li><a href="">中国户外资料网</a></li>
+                        <li><a href="">山野中国户外</a></li>
+                        <li><a href="">腾讯户外</a></li>
+                        <li><a href="">驴时代</a></li>
+                        <li><a href="">火山时代</a></li>
+                        <li><a href="">溜溜康巴网</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-description">
+            <div class="comWidth">
+                <p>成都起点户外旅行社 版权所有　蜀ICP备12016649号</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /底部 -->
+    
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- swiper插件 -->
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+    <!-- 分页插件 -->
+    <script type="text/javascript" src="lib/pagination/lib/jquery.pagination.js"></script>
+
+    <script type="text/javascript" src="js/travel-notes-list.js"></script>
+
+  </body>
+</html>
