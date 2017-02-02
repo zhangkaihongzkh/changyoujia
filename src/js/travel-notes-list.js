@@ -1,4 +1,25 @@
 $(function(){
+	//广告区域的轮播
+	(function(window){
+		
+		var mainAdSwiper = new Swiper ('#main-ad .swiper-container', {
+		    direction: 'horizontal',
+		    loop: true,
+		    simulateTouch:false,//鼠标无效
+		    speed:1000,//速度
+		    effect : 'fade',
+			fade: {
+			  crossFade: false,
+			},
+		    //autoplay:2000,//自动播放
+		    
+		    // 如果需要前进后退按钮
+		    nextButton: '#main-ad .swiper-button-next',
+		    prevButton: '#main-ad .swiper-button-prev',
+		    
+		})       
+	})(window);
+	
 	//游记列表
 	(function(window){
 		//这是一个非常简单的demo实例，让列表元素分页显示

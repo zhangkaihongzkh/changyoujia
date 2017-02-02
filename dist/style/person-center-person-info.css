@@ -562,6 +562,9 @@ input:focus {
   background-color: #fff;
   padding: 20px 20px 100px 20px;
 }
+#person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form {
+  /* 个性签名 */
+}
 #person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .form-control {
   margin-bottom: 20px;
   position: relative;
@@ -639,6 +642,9 @@ input:focus {
   font-size: 16px;
   width: 200px;
   display: inline-block;
+}
+#person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .user-signature label {
+  vertical-align: top;
 }
 #person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .e-mail-text {
   position: relative;
