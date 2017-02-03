@@ -175,7 +175,7 @@
 			.guess-you-like-text{
 				background-color: #fff;
 				padding: 10px 20px;
-				border: 2px solid #d0cdcd;
+				border: 2px solid transparent;
 				border-top: none;
 				p.main-text{
 					color: #333333;
@@ -202,6 +202,11 @@
 				}
 				p::after{
 					clear: both;content: "";display:block;
+				}
+			}
+			&:hover{
+				.guess-you-like-text{
+					border-color: #d0cdcd;
 				}
 			}
 		}

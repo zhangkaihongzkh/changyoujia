@@ -539,212 +539,98 @@ input:focus {
 .person-center-points-main .person-center-points-description .points-description-wrapper li + li {
   border-top: 2px solid #e7e6e5;
 }
-/* 订单信息部分 */
-#points-exchange-item-content {
-  background-color: #f0f0f0;
-  padding-bottom: 50px;
-}
-#points-exchange-item-content .points-exchange-header span {
-  display: inline-block;
-}
-#points-exchange-item-content .points-exchange-header .path-navigation {
-  padding: 10px 0 30px 0;
-  display: inline-block;
-}
-#points-exchange-item-content .points-exchange-header .path-navigation li {
-  display: inline-block;
-}
-#points-exchange-item-content .points-exchange-header .path-navigation li a {
-  color: #646464;
-}
-#points-exchange-item-content .points-exchange-header .path-navigation li + li:before {
-  content: '>';
-  color: #646464;
-  padding: 0 5px;
-}
-#points-exchange-item-content .points-exchange-header .path-navigation li.active {
-  color: #EF8B1D;
-  font-weight: bold;
-}
-#points-exchange-item-content #pointsExchangeDetailForm {
-  /* 订单收件人信息 */
-  /* 确认订单 */
-  /* 提交按钮 */
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info {
-  background-color: #fff;
-  padding-bottom: 25px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info h3 {
-  border-bottom: 2px solid #d8d5d5;
-  padding: 20px 0 20px 20px;
-  font-size: 16px;
-  font-weight: normal;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info h3 span {
-  color: #909090;
-  font-size: 14px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info .form-control {
-  padding-left: 20px;
-  margin-top: 20px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info .form-control label {
-  display: inline-block;
-  width: 85px;
-  text-align: right;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info .form-control input {
-  border: 2px solid #d8d5d5;
-  border-radius: 5px;
-  color: #333333;
-  padding: 15px;
-  line-height: 10px;
-  height: 10px;
-  width: 255px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info .form-control p {
-  display: inline-block;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .receiver-info .form-control p span {
-  color: #ef8c1d;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order {
-  margin-top: 50px;
-  background-color: #fff;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order h3 {
-  border-bottom: 2px solid #d8d5d5;
-  padding: 20px 0 20px 20px;
-  font-size: 16px;
-  font-weight: normal;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table {
+#leader-list-content {
   width: 100%;
-  border: none;
-  padding: 0;
+  background-image: url("../images/leader-list-bg.png");
+  background-color: #f0f0f0;
+  background-repeat: no-repeat;
+  /* 内容区域 */
 }
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table thead {
-  font-size: 14px;
-  color: #646464;
-  background-color: #fff;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table thead tr.order-info {
-  background-color: #fff;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table thead tr.order-info th {
-  margin: 0;
+#leader-list-content .leader-list-title {
   text-align: center;
-  background-color: #fff;
-  line-ehight: 40px;
-  height: 40px;
-  width: 95px;
-  font-weight: normal;
+  padding: 220px 0;
 }
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table thead tr.order-info th:nth-of-type(1) {
-  width: 320px;
-  text-align: left;
-  padding-left: 20px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table tbody tr.order-detail {
-  background-color: #fff;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table tbody tr.order-detail td:nth-of-type(1) {
-  text-align: left;
-  padding-left: 20px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table tbody tr.order-detail td {
-  padding: 20px 0;
-  text-align: center;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table tbody tr.order-detail td a img {
-  width: 100px;
-  height: 100px;
-  float: left;
-  margin-right: 10px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .comfirm-order .points-order-table tbody tr.order-detail td a p {
-  padding-top: 15px;
-  color: #333333;
-  padding-right: 30px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .points-exchange-submit-btn {
-  text-align: right;
-  margin-top: 20px;
-}
-#points-exchange-item-content #pointsExchangeDetailForm .points-exchange-submit-btn input {
-  padding: 15px 30px;
-  background-color: #EF8B1D;
-  display: inline-block;
-  cursor: pointer;
-  border-radius: 5px;
+#leader-list-content .leader-list-title h2 {
   font-weight: bold;
+  font-size: 36px;
   color: #fff;
 }
-/* 猜你喜欢部分 */
-#guess-you-like-content {
-  background-color: #f0f0f0;
+#leader-list-content .leader-list-wrapper .leader-list-filter-box {
+  background-color: #fff;
+  padding: 25px 30px;
+  -moz-box-shadow: 1px 3px 1px #aaa;
+  -webkit-box-shadow: 1px 3px 1px #aaa;
+  box-shadow: 1px 3px 1px #aaa;
 }
-#guess-you-like-content .guess-you-like-title {
+#leader-list-content .leader-list-wrapper .leader-list-filter-box .filter-control {
+  padding: 5px 0;
   color: #333333;
-  font-size: 16px;
-  padding-bottom: 20px;
 }
-#guess-you-like-content .guess-you-like-wrapper {
-  padding-bottom: 160px;
-}
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item {
-  width: 320px;
-  margin-bottom: 20px;
+#leader-list-content .leader-list-wrapper .leader-list-filter-box .filter-control .filter-name {
+  display: block;
+  width: 60px;
+  height: 35px;
+  line-height: 35px;
   float: left;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item img {
-  width: 100%;
-  display: block;
+#leader-list-content .leader-list-wrapper .leader-list-filter-box .filter-control .filter-content-wrapper {
+  padding-left: 60px;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text {
-  background-color: #fff;
-  padding: 10px 20px;
-  border: 2px solid transparent;
-  border-top: none;
+#leader-list-content .leader-list-wrapper .leader-list-filter-box .filter-control .filter-content-wrapper li {
+  padding: 8px 15px;
+  float: left;
+  cursor: pointer;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p.main-text {
-  color: #333333;
-  margin-bottom: 15px;
-  display: -webkit-box !important;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  word-break: break-all;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p {
-  display: block;
-  width: 100%;
-}
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p span {
-  display: inline-block;
+#leader-list-content .leader-list-wrapper .leader-list-filter-box .filter-control .filter-content-wrapper li.select {
   color: #EF8B1D;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p .item-price {
-  text-align: left;
+#leader-list-content .leader-list-container {
+  padding-top: 30px;
+  padding-bottom: 60px;
+  /* 分页 */
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p .item-link {
-  float: right;
-  text-align: right;
-  border: 2px solid #EF8B1D;
-  border-radius: 5px;
-  padding: 5px 20px;
+#leader-list-content .leader-list-container li.leader-list-items {
+  float: left;
+  width: 235px;
+  margin-left: 20px;
+  margin-bottom: 20px;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item .guess-you-like-text p::after {
-  clear: both;
-  content: "";
-  display: block;
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-img img {
+  width: 100%;
 }
-#guess-you-like-content .guess-you-like-wrapper li.guess-you-like-item:hover .guess-you-like-text {
-  border-color: #d0cdcd;
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text {
+  background-color: #fff;
+  border: 1px solid transparent;
+  border-top: none;
+  padding: 15px 0 15px 20px;
+  color: #909090;
 }
-#guess-you-like-content .guess-you-like-wrapper li:nth-child(3n+1),
-#guess-you-like-content .guess-you-like-wrapper li:nth-child(3n+2) {
-  margin-right: 20px;
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text .leader-item-name {
+  font-size: 20px;
+  color: #333333;
+  margin-bottom: 15px;
+}
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text .leader-item-name span {
+  font-size: 14px;
+  color: #909090;
+  margin-left: 20px;
+}
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text .leader-item-name span i {
+  padding-right: 5px;
+}
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text .leader-item-label {
+  margin-bottom: 5px;
+}
+#leader-list-content .leader-list-container li.leader-list-items .leader-items-text .leader-item-label span + span::before {
+  content: '、';
+}
+#leader-list-content .leader-list-container li.leader-list-items:hover .leader-items-text {
+  border-color: #c5c4c4;
+}
+#leader-list-content .leader-list-container li:nth-child(4n+1) {
+  margin-left: 0;
+}
+#leader-list-content .leader-list-container .pagination-wrapper {
+  margin-top: 40px;
+  text-align: center;
 }
