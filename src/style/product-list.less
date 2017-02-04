@@ -405,5 +405,60 @@
 				}
 			}
 		}
+
+		//领队排行榜
+		.top-ranking{
+			margin-top: 30px;
+			background-color: #fff; 
+			border-top: 4px solid @comBGC;
+			padding-bottom: 1px;
+			.top-ranking-title{
+				//border-top:#
+				position: relative;
+				text-align: center;
+				padding: 25px 10px;
+				h2{
+					color: @comBGC;
+					font-size: 20px;
+					font-weight: normal;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 100px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -60px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			.top-ranking-wrapper{
+				padding: 0 10px;
+				.boxshadow();
+				li.top-ranking-item{
+					float: left;
+					text-align: center;
+					margin-bottom: 10px;
+					img{
+						display: block;
+					}
+					p{
+						margin: 5px 0;
+					}
+				}
+				li:nth-child(2n+1){
+					margin-right: 10px;
+				}
+			}
+		}
 	}
 }

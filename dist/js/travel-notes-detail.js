@@ -49,13 +49,13 @@ $(function(){
 				});
 			}
 			//滑到留言区域隐藏锚链接
-			if($(window).scrollTop()<=750 || ($(window).scrollTop() >= travelNotesContentHeight + 300)){
+			if($(window).scrollTop()<=750 ){
 				$travelNotesAnchor.css({
 					'position':'absolute',
 					'left':-90,
 				});
 				$travelNotesAnchor.css({
-					'display':'none',
+					'display':'block',
 				});
 				
 			}
@@ -92,8 +92,6 @@ $(function(){
 		$(function(){  
 		  $('a[href*=#],area[href*=#]').click(function() {
 			var $parentNode = $(this).parent();
-			//移除active样式
-			$parentNode.addClass('active').siblings().removeClass('active');
 		    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
 		      var $target = $(this.hash);
 		      $target = $target.length && $target || $('[name=' + this.hash.slice(1) + ']');
