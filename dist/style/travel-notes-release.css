@@ -609,7 +609,7 @@ input:focus {
   padding-bottom: 50px;
 }
 #travel-notes-release-content .travel-notes-release-wrapper {
-  padding-top: 20px;
+  padding-top: 50px;
 }
 #travel-notes-release-content .travel-notes-release-wrapper form {
   /* 内容区域 */
@@ -621,6 +621,7 @@ input:focus {
   position: relative;
   border-top: 3px solid #EF8B1D;
   background-color: #fff;
+  margin-bottom: 50px;
   -moz-box-shadow: 1px 3px 1px #D3D3D3;
   -webkit-box-shadow: 1px 3px 1px #D3D3D3;
   box-shadow: 1px 3px 1px #D3D3D3;

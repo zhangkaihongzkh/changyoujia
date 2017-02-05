@@ -15,6 +15,11 @@
   </head>
   <body>
      
+
+ 
+    
+    
+
     <!-- 导航栏区域 -->                                
     <nav id="header">
         <div class="comWidth clearfix">
@@ -73,6 +78,21 @@
         <div class="travel-notes-release-wrapper">
           <form id="travelNotesReleaseForm">
             <div class="travel-notes-wrapper">
+              <div class="travel-notes-item">
+                <div class="close-btn">ｘ</div>
+                <div class="form-control">
+                  <label for="travel-notes-time">时间</label>
+                  <input type="text" name="travel-notes-time">
+                </div>
+                <div class="form-control">
+                  <label for="travel-notes-place">地点</label>
+                  <input type="text" name="travel-notes-place">
+                </div>
+                <div class="form-control notes-content">
+                  <label for="travel-notes-content">游记</label>
+                  <textarea name="travel-notes-content"></textarea>
+                </div>
+              </div>
               <div class="travel-notes-item">
                 <div class="close-btn">ｘ</div>
                 <div class="form-control">
@@ -168,7 +188,7 @@
     
 
     <script src="lib/jquery/jquery.min.js"></script>
-    <script type="text/javascript" src="js/travel-notes-detail.js"></script>
+    <script type="text/javascript" src="js/travel-notes-release.js"></script>
 
   </body>
 </html>
