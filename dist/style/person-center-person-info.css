@@ -646,6 +646,9 @@ input:focus {
 #person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .user-signature label {
   vertical-align: top;
 }
+#person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .user-signature span {
+  vertical-align: top;
+}
 #person-center-person-info-content .person-info-change-wrapper .person-info-change-detail form .e-mail-text {
   position: relative;
 }
