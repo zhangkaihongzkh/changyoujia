@@ -1,0 +1,627 @@
+//引入全局less
+@import "global";
+
+/*图片放大镜样式*/
+.jqzoom{float:left;border:none;position:relative;padding:0px;cursor:pointer;margin:0px;display:block;}
+.zoomdiv{z-index:100;position:absolute;top:0px;left:0px;width:400px;height:400px;background:#ffffff;border:1px solid #CCCCCC;display:none;text-align:center;overflow:hidden;}
+.jqZoomPup{z-index:10;visibility:hidden;position:absolute;top:0px;left:0px;width:20px;height:20px;border:1px solid #aaa;background:#ffffff /*url(../images/zoom.png) 50% center no-repeat*/;opacity: 0.5;-moz-opacity: 0.5;-khtml-opacity: 0.5;filter: alpha(Opacity=50);}
+
+/*图片小图预览列表*/
+.spec-preview{width:300px;height:300px;}
+
+.spec-scroll{clear:both;margin-top:10px;width:300px;}
+.spec-scroll .prev{float:left;margin-right:4px;}
+.spec-scroll .next{float:right;}
+.spec-scroll .prev,.spec-scroll .next{color:#B6B3AD;font-size:36px;font-weight:bold;display:block;font-family:"宋体";text-align:center;width:18px;height:50px; line-height:50px;background:#fff;cursor:pointer;text-decoration:none;}
+.spec-scroll .items{float:left;position:relative;width:250px;height:56px;overflow:hidden;}
+.spec-scroll .items ul{position:absolute;width:999999px;height:56px;}
+.spec-scroll .items ul {
+	li + li{
+		margin-left: 12px;
+	}
+}
+.spec-scroll .items ul li{float:left;width:50px;text-align:center; width: 48px;height: 48px;}
+.spec-scroll .items ul li img{cursor:pointer;border:1px solid #CCC;padding:2px;width: 100%;}
+.spec-scroll .items ul li img:hover{border:2px solid #FF6600;padding:1px;}
+
+
+
+/* 付款方式 */
+#product-represent-content{
+	background-color: @comContentBGC;
+	.product-represent-head-box{
+		padding: 20px;
+		background-color: #fff;
+		float: left;
+		.product-represent-prevew{
+			float: left;
+			width:320px;
+		}
+		.product-represent-detail{
+			float: right;
+			width: 640px;
+			.product-title{
+				font-size: 20px;
+				font-weight: bold;
+				line-height: 1.5;
+			}
+			.title-description{
+				color: @comBGC;
+				margin-top: 5px;
+			}
+			.text-control{
+				font-size: 16px;
+				margin-bottom: 15px;
+				.text-title{
+					width: 85px;
+					display: inline-block;
+				}
+				.current-money{
+					color: @comBGC;
+					font-size: 28px;
+					font-weight: bold;
+					margin-right: 10px;
+				}
+				.defore-money{
+					text-decoration: line-through;
+					color: #909090;
+				}
+				/* 优惠券样式 */
+				.event-discount{
+					font-size: 12px;
+					width: 80px;
+					height: 24px;
+					text-align: center;
+					line-height: 24px;
+					display: inline-block;
+					position: relative;
+					background: radial-gradient(rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 4px, #eb676a 4px);
+				    background-size: 12px 12px;
+				    background-position: 8px 0px;
+				    padding: 0 10px;
+				    z-index: 0;
+				    margin-right: 5px;
+				    color: #fff;
+				}
+				.event-discount::before{
+					background-color: #eb676a;
+				    content: '';
+				    position: absolute;
+				    top: 0;
+				    bottom: 0;
+				    left: 10px;
+				    right: 10px;
+				    z-index: -1;
+				}
+			}
+			.share-item{
+				span{
+					float: left;
+				}
+			}
+		}
+	}
+}
+
+#product-detail-content{
+	padding-top: 20px;
+	padding-bottom: 300px;
+	background-color: @comContentBGC;
+	/* 内容区域 */
+	.product-detail-main{
+		float: left;
+		width: @comMainWidth;
+		/* 选项卡 */
+		.product-detail-tabs{
+			background-color: #fff;
+			border-bottom: 2px solid @comBGC;
+			li{
+				float: left;
+				a{
+					display: block;
+					padding: 10px 40px;
+					font-size: 16px;
+					color: #333333;
+					cursor: pointer;
+				}
+			}
+			li.active{
+				background-color: @comBGC;
+				a{
+					color: #ffffff;
+				}
+			}
+		}
+		/* 活动亮点 */
+		.event-highlight{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			.event-highlight-content{
+				padding: 20px;
+				p{
+					line-height: 2;
+					color: #333333;
+				}
+			}
+		}
+		/* 产品描述 */
+		.product-description{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			.product-description-content{
+				padding: 20px;
+				p{
+					line-height: 2;
+					color: #333333;
+				}
+				p.personal-tailor{
+					span{
+						color: #005c99;
+					}
+				}
+				p.iron-group{
+					span{
+						color: @comBGC;
+					}
+				}
+			}
+		}
+		/* 活动行程 */
+		.travel-activity{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			.travel-activity-content{
+				position: relative;
+				padding: 20px;
+				.travel-activity-tabs{
+					float: left;
+					li{
+						margin-bottom: 20px;
+						a{
+							display: block;
+							width: 32px;
+							height: 32px;
+							line-height: 32px;
+							color: #909090;
+							text-align: center;
+							border-radius: 50%;
+							background-color: #e3e2df;
+						}
+					}
+					li.active{
+						a{
+							background-color: @comBGC;
+							color: #ffffff;
+						}
+					}
+				}
+				.travel-activity-items-wrapper{
+					width: 650px;
+					float: right;
+					.travel-activity-item{
+						padding-bottom: 10px;
+						h4{
+							padding: 10px 0;
+							color: @comBGC;
+							font-weight: bold;
+						}
+						p{
+							line-height: 2;
+						}
+					}
+					.travel-activity-item + .travel-activity-item{
+						border-top: 2px solid #eeeeee;
+					}
+				}
+			}
+		}
+		/* 活动费用 */
+		.activity-cost{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			.activity-cost-content{
+				padding: 20px;
+				.cost-contain,
+				.cost-not-contain{
+					.title{
+						color: @comBGC;
+						font-weight: bold;
+					}
+					ul{
+						padding: 10px 0 10px 15px;
+						li{
+							line-height: 2;
+							color: #333333;
+						}
+					}
+				}
+			}
+		}
+		/* 活动流程 */
+		.activity-process{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			.activity-process-content{
+				padding: 20px;
+				li{
+					line-height: 2;
+				}
+			}
+		}
+		/* 注意事项 */
+		.activity-attention{
+			background-color: #fff;
+			margin-bottom: 20px;
+			h3{
+				border-bottom: 2px solid #eeeeee;
+				padding: 20px 0 20px 20px;
+				color: #333333;
+				font-size: 20px;
+				i{
+					color: #909090;
+					padding-right: 5px;
+					font-size: 20px;
+				}
+			}
+			p{
+				padding: 20px 20px 0 20px;	
+			}
+			.activity-attention-content{
+				padding: 20px;	
+				li{
+					line-height: 2;
+				}
+			}
+		}
+	}
+	/* 侧边栏 */
+	.product-detail-aside{
+		width: @comAsideWidth;
+		float: right;
+		//通用热门活动
+		.hot-exchange{
+			background-color: #fff;
+			border-top: 4px solid #005B98;
+			padding-bottom: 50px;
+			-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+			/* 标题 */
+			.hot-exchange-title{
+				position: relative;
+				text-align: center;
+				padding: 25px 10px 16px 10px;
+				h2{
+					color: #005B98;
+					font-size: 20px;
+					font-weight: normal;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 80px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -50px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			/* 热门兑换内容区域 */
+			.hot-exchange-wrapper{
+				padding-left: 10px;
+				.hot-exchange-item + .hot-exchange-item{
+					border-top: 2px solid #E6E6E5;					
+				}
+				.hot-exchange-item{
+					position: relative;
+					padding: 10px 0;
+					img{
+						width: 80px;
+						height: 80px;
+						float: left;
+					}
+					a{
+						display: block;
+						color: #333333;
+						padding: 8px 10px 0 10px;
+						//多出部分省略号显示
+						display: -webkit-box !important;  
+		                overflow: hidden;  
+		                text-overflow: ellipsis;  
+		                word-break: break-all;  
+		                -webkit-box-orient: vertical;  
+		                -webkit-line-clamp: 3;
+					}
+				}
+				.hot-exchange-item::before{
+					
+					text-align: center;
+				  	width: 16px;
+				  	height: 16px;
+				  	background-color: #A9A9A9;
+				  	color: #000;
+				  	position: absolute;
+				  	left: 0px;
+				 	top: 10px;
+				}
+				.hot-item-text{
+					border-top: none;
+					position: relative;
+					a{
+						display: block;
+						color: #333333;
+						padding: 10px 10px 0 15px;
+						//多出部分省略号显示
+						display: -webkit-box !important;  
+		                overflow: hidden;  
+		                text-overflow: ellipsis;  
+		                word-break: break-all;  
+		                -webkit-box-orient: vertical;  
+		                -webkit-line-clamp: 1;
+					}
+				}
+				.hot-item-text::before{
+					content: '1';
+					text-align: center;
+				  	width: 16px;
+				  	height: 16px;
+				  	background-color: #A9A9A9;
+				  	color: #000;
+				  	position: absolute;
+				  	left: 0px;
+				 	top: 12px;
+				}
+				.hot-exchange-item:nth-of-type(1)::before{
+					content: '1';
+					background-color: #EA2121;
+					color: #fff;
+				}
+				.hot-exchange-item:nth-of-type(2)::before{
+					content: '2';
+					background-color: #EF8B1D;
+					color: #fff;
+				}
+				.hot-exchange-item:nth-of-type(3)::before{
+					content: '3';
+					background-color: #005c99;
+					color: #fff;
+				}
+				.hot-item-text:nth-of-type(4)::before{
+					content: '4';
+				}
+				.hot-item-text:nth-of-type(5)::before{
+					content: '5';
+				}
+				.hot-item-text:nth-of-type(6)::before{
+					content: '6';
+				}
+				.hot-item-text:nth-of-type(7)::before{
+					content: '7';
+				}
+				.hot-item-text:nth-of-type(8)::before{
+					content: '8';
+				}
+				.hot-item-text:nth-of-type(9)::before{
+					content: '9';
+				}
+				.hot-item-text:nth-of-type(10)::before{
+					content: '10';
+				}
+			}
+
+		}
+		//推荐视频
+		.recommended-videos{
+			margin-top: 20px;
+			background-color: #fff; 
+			border-top: 4px solid #834aeb;
+			padding-bottom: 1px;
+			.recommended-videos-title{
+				//border-top:#
+				position: relative;
+				text-align: center;
+				padding: 25px 10px;
+				h2{
+					color: #834aeb;
+					font-size: 20px;
+					font-weight: normal;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 80px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -50px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			.recommended-videos-wrapper{
+				.hot-activity-item{
+					display: block;
+					position: relative;
+					margin-bottom: 20px;
+					padding:0;
+					opacity: 0.9;
+					filter:alpha(opacity=90);
+					-moz-box-shadow:1px 3px 1px #D3D3D3; -webkit-box-shadow:1px 3px 1px #D3D3D3; box-shadow:1px 3px 1px #D3D3D3;
+
+					&:hover{
+						opacity: 1;
+						filter:alpha(opacity=100);
+					}
+					img{
+						display: block;
+						width: 100%;
+						//height: 150px;
+					}
+					.video-list-play-btn2{
+						position: absolute;
+						width: 36px;
+						height: 36px;
+						background: url('../images/video-list-play-btn2.png') center center no-repeat;
+						left: 50%;
+						top: 50%;
+						margin-top: -18px;
+						margin-left: -18px;
+					}
+					.hot-activity-item-text{
+						width: 100%;
+						text-align: center;
+						background-color: #834aeb;
+						p{
+							color: #fff;
+							height: 30px;
+							line-height: 30px;
+						}
+					}
+				}
+				//查看更多
+				a.hot-activity-more{
+					margin: 20px auto;
+					display: block;
+					width: 120px;
+					text-align: center;
+					border:1px solid #909090;
+					color: #909090;
+					padding: 8px 0;
+					.color-change;
+					&:hover{
+						background-color: #909090;
+						color: #fff;
+						.color-change;
+					}
+					/* &:hover{
+						background-color: #909090;
+						color: #fff;
+					} */
+				}
+			}
+		}
+
+		//领队排行榜
+		.top-ranking{
+			margin-top: 30px;
+			background-color: #fff; 
+			border-top: 4px solid @comBGC;
+			padding-bottom: 1px;
+			.top-ranking-title{
+				//border-top:#
+				position: relative;
+				text-align: center;
+				padding: 25px 10px;
+				h2{
+					color: @comBGC;
+					font-size: 20px;
+					font-weight: normal;
+					display: block;
+					position: absolute;
+					padding: 0 10px;
+					width: 100px;
+					height: 26px;
+					top: 50%;
+					left: 50%;					
+					margin-left: -60px;
+					margin-top: -13px;
+					display: block;
+					background-color: #fff;
+				}
+				
+				.hot-title-line{
+					height: 2px;
+					width: 100%;
+					background-color: #E6E6E5;
+					
+				}
+			}
+			.top-ranking-wrapper{
+				padding: 0 10px;
+				.boxshadow();
+				li.top-ranking-item{
+					float: left;
+					text-align: center;
+					margin-bottom: 10px;
+					img{
+						display: block;
+					}
+					p{
+						margin: 5px 0;
+					}
+				}
+				li:nth-child(2n+1){
+					margin-right: 10px;
+				}
+			}
+		}
+	}
+}
