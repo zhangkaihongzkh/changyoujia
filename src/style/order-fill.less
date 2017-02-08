@@ -1,0 +1,569 @@
+//引入全局less
+@import "global";
+
+#step-navigation-bar{
+	padding: 50px 0 100px 0;
+	background-color: @comOrderFillBGC;
+	.step-navigation-bar-wrapper{
+		li.navigation-bar-item{
+			position: relative;
+			float: left;
+			text-align: center;
+			p{
+				font-size: 20px;
+				color: #333333;
+				margin-bottom: 18px;
+			}
+			.item-step{
+				z-index: 100;
+				left: 20px;
+				position: absolute;
+				width: 28px;
+				height: 28px;
+				line-height: 28px;
+				border-radius: 50%;
+				color: #ffffff;
+				background-color: #adaaaa;
+				border:6px solid #dddbdb;
+				text-align: center;
+				margin: 0 auto;
+			}
+		}
+		li:nth-child(1),
+		li:nth-child(2),
+		li:nth-child(3){
+			margin-right: 226px;
+		}
+		li:nth-child(1)::after,
+		li:nth-child(2)::after,
+		li:nth-child(3)::after{
+			left: 50px;
+		    top: 58px;
+		    position: absolute;
+		    height: 12px;
+		    width: 280px;
+		    background-color: #dddbdb;
+		    content: '';
+		}
+		li.done{
+			p{
+				color: @comBGC;
+			}
+			.item-step{
+				background-color: @comBGC;
+				color: #ffffff;
+			}
+		}
+		li.done::after{
+			background-color: @comBGC;
+		}
+	}
+}
+
+#order-fill-content{
+	background-color: @comOrderFillBGC;
+	padding-bottom: 300px;
+	.order-fill-main{
+		width: 740px;
+		float: left;
+		/* 产品信息 */
+		.order-product-info{
+			background-color: #fff;
+			padding: 30px 20px 50px 20px;
+			margin-bottom: 30px;
+			.order-product-title{
+				color: #333333;
+				padding-bottom: 30px;
+				font-size: 16px;
+				font-weight: normal;
+				line-height: 1.8;
+				border-bottom: 2px solid #eeeeee;
+			}
+			.order-product-detail{
+				padding-top: 30px;
+				.text-control{
+					margin-bottom: 12px;
+					span.text-title{
+						display: inline-block;
+						text-align: right;
+						color: #333333;
+						min-width: 70px;
+					}
+					p{
+						color: #909090;
+						display: inline-block;
+						a{
+							color: #1d7bcb;
+							margin-left: 15px;
+						}
+						span.people-num{
+							color: #1d7bcb;
+						}
+					}
+				}
+				.remarks{
+					span{
+						vertical-align: top;
+					}
+					.text-content{
+						display: inline-block;
+						max-width: 585px;
+						padding: 15px 20px;
+						background-color: #edebeb;
+					}
+					p{
+						line-height: 1.8;
+					}
+				}
+			}
+		}
+		/* 游客信息 */
+		.tourist-info{
+			background-color: #fff;
+			padding: 20px 0 30px 0;
+			margin-bottom: 30px;
+			.tourist-info-title{
+				padding-left: 20px;
+				color: #333333;
+				font-size: 16px;
+				font-weight: normal;
+				border-bottom: 2px solid #eeeeee;
+				padding-bottom: 18px;
+				i{
+					font-size: 22px;
+					padding-right: 5px;
+				}
+				span{
+					line-height: 100%;
+					text-align: center;
+				}
+			}
+			.tourist-info-content{
+				padding: 20px;
+				.tourist-info-description{
+					background-color: #edebeb;
+					padding: 20px;
+					color: #909090;
+				}
+				.tourist-info-write{
+					margin-top: 20px;
+					padding: 25px;
+					background-color: #f5f5f5;
+					.tourist-info-num{
+						float: left;
+						text-align: center;
+						p:nth-of-type(1){
+							width: 55px;
+							display: block;
+							border:2px solid #d1d1d1;
+							border-bottom: none;
+							padding: 8px 0;
+							color: #333;
+							font-size: 16px;
+							span{
+								font-weight: bold;
+								font-size: 26px;
+							}
+						}
+						p:nth-of-type(2){
+							display: block;
+							color: #fff;
+							padding: 5px 0;
+						}
+					}
+					/* 详细信息 */
+					.tourist-info-detail{
+						float: right;
+						width: 560px;
+						.form-control{
+							margin-bottom: 20px;
+							position: relative;
+							label:nth-of-type(1){
+								min-width: 85px;
+								color: #333333;
+								text-align: right;
+								display: inline-block;
+							}
+							input{
+								border: 2px solid #d8d5d5;
+								border-radius: 5px;
+								color: #333333;
+								padding: 15px;
+								line-height: 10px;
+								height: 10px;
+								width: 245px;
+							}
+							span{
+								color: #f13f3f;
+								font-size: 20px;
+								vertical-align: middle;
+							}
+							select{
+								border: 2px solid #d8d5d5;
+								width: 280px;
+								padding: 10px 15px;
+								border-radius: 5px;
+
+							}
+							p.phone-text{
+								padding-left: 85px;
+								margin-top: 10px;
+								color: #909090;
+							}
+						}
+						/* 日期格式 */
+						.date-control{
+							select{
+								border: 2px solid #d8d5d5;
+								width: 84px;
+								padding: 10px 15px;
+								border-radius: 5px;
+							}
+							select + select{
+								margin-left: 10px;	
+							}
+						}
+						//错误信息提示
+						label.error {
+							position: absolute;
+							left: 370px;
+							top: 12px;
+							background:url("../images/wrong.png") no-repeat 0px 0px;
+
+							padding-left: 20px;
+
+							padding-bottom: 2px;
+
+							font-weight: bold;
+
+							color: #333333;
+						}
+					}
+				}
+				/* 成人票 */
+				.adult{
+					.tourist-info-num{
+						p:nth-of-type(2){
+							background-color: @comBGC;
+						}
+					}
+				}
+				.child{
+					.tourist-info-num{
+						p:nth-of-type(2){
+							background-color: #1d9ced;
+						}
+					}
+				}
+			}
+			/* 出游人确认 */
+			.tourist-info-confirm{
+				padding: 20px;
+				.confirm-title{
+					font-size: 16px;
+					font-weight: bold;
+					color: #333333;
+					margin-bottom: 15px;
+				}
+				.confirm-control{
+					vertical-align: middle;
+					line-height: 36px;
+					p{
+						float: left;
+
+					}
+					.radio-box{
+						float: right;
+						span{
+							display: inline-block;
+							line-height: 36px;
+							height: 36px;
+							text-align: center;
+							vertical-align: top;
+							padding: 0 10px;
+							font-size: 14px;
+						}
+					}
+				}
+				.confirm-description{
+					margin-top: 5px;
+					padding-top: 15px;
+					border-top: 2px solid #eeeeee;
+					p{
+						color: #909090;
+					}
+				}
+			}
+		}
+		/* 紧急联系人信息 */
+		.emergency-contact{
+			background-color: #fff;
+			padding: 20px 0 30px 0;
+			margin-bottom: 30px;
+			.emergency-contact-title{
+				padding-left: 20px;
+				color: #333333;
+				font-size: 16px;
+				font-weight: normal;
+				border-bottom: 2px solid #eeeeee;
+				padding-bottom: 18px;
+				i{
+					font-size: 22px;
+					padding-right: 5px;
+				}
+				span{
+					line-height: 100%;
+					text-align: center;
+				}
+			}
+			.emergency-contact-content{
+				width: 560px;
+				margin: 0 auto;
+				padding-top: 30px;
+				.form-control{
+					margin-bottom: 20px;
+					position: relative;
+					label:nth-of-type(1){
+						min-width: 85px;
+						color: #333333;
+						text-align: right;
+						display: inline-block;
+					}
+					input{
+						border: 2px solid #d8d5d5;
+						border-radius: 5px;
+						color: #333333;
+						padding: 15px;
+						line-height: 10px;
+						height: 10px;
+						width: 245px;
+					}
+					span{
+						color: #f13f3f;
+						font-size: 20px;
+						vertical-align: middle;
+					}
+					select{
+						border: 2px solid #d8d5d5;
+						width: 280px;
+						padding: 10px 15px;
+						border-radius: 5px;
+
+					}
+					p.phone-text{
+						padding-left: 85px;
+						margin-top: 10px;
+						color: #909090;
+					}
+				}
+				//错误信息提示
+				label.error {
+					position: absolute;
+					left: 370px;
+					top: 12px;
+					background:url("../images/wrong.png") no-repeat 0px 0px;
+
+					padding-left: 20px;
+
+					padding-bottom: 2px;
+
+					font-weight: bold;
+
+					color: #333333;
+				}
+				span.text-remind{
+					font-size: 14px;
+					color: #333333;
+				}
+			}
+		}
+		/* 接机服务 */
+		.pick-up-service{
+			background-color: #fff;
+			padding: 20px 0 30px 0;
+			margin-bottom: 30px;
+			.pick-up-service-title{
+				padding-left: 20px;
+				color: #333333;
+				font-size: 16px;
+				font-weight: normal;
+				border-bottom: 2px solid #eeeeee;
+				padding-bottom: 18px;
+				i{
+					font-size: 22px;
+					padding-right: 5px;
+					color: #333333;
+				}
+				span{
+					line-height: 100%;
+					text-align: center;
+				}
+			}
+			.pick-up-service-content{
+				padding: 20px;
+				.radio-box{
+					span{
+						display: inline-block;
+						line-height: 36px;
+						height: 36px;
+						text-align: center;
+						vertical-align: top;
+						padding: 0 10px;
+						font-size: 14px;
+					}
+				}
+				.pick-up-detail{
+					padding-top: 50px;
+					padding-left: 50px;
+					.form-control{
+						margin-bottom: 20px;
+						position: relative;
+						label:nth-of-type(1){
+							min-width: 85px;
+							color: #333333;
+							text-align: right;
+							display: inline-block;
+						}
+						input{
+							border: 2px solid #d8d5d5;
+							border-radius: 5px;
+							color: #333333;
+							padding: 15px;
+							line-height: 10px;
+							height: 10px;
+							width: 245px;
+						}
+						span{
+							color: @comBGC;
+							font-size: 14px;
+							vertical-align: middle;
+						}
+						select{
+							border: 2px solid #d8d5d5;
+							width: 138px;
+							padding: 10px 15px;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
+		/* 发票信息 */
+		.invoice-info{
+			background-color: #fff;
+			padding: 20px 0 30px 0;
+			margin-bottom: 30px;
+			.invoice-info-title{
+				padding-left: 20px;
+				color: #333333;
+				font-size: 16px;
+				font-weight: normal;
+				border-bottom: 2px solid #eeeeee;
+				padding-bottom: 18px;
+				i{
+					font-size: 22px;
+					padding-right: 5px;
+					color: #333333;
+				}
+				span{
+					line-height: 100%;
+					text-align: center;
+				}
+			}
+			.invoice-info-content{
+				padding: 20px;
+				.radio-box{
+					span{
+						display: inline-block;
+						line-height: 36px;
+						height: 36px;
+						text-align: center;
+						vertical-align: top;
+						padding: 0 10px;
+						font-size: 14px;
+					}
+				}
+				.invoice-info-detail{
+					padding-top: 50px;
+					padding-left: 50px;
+					.form-control{
+						margin-bottom: 20px;
+						position: relative;
+						label:nth-of-type(1){
+							min-width: 85px;
+							color: #333333;
+							text-align: right;
+							display: inline-block;
+						}
+						input{
+							border: 2px solid #d8d5d5;
+							border-radius: 5px;
+							color: #333333;
+							padding: 15px;
+							line-height: 10px;
+							height: 10px;
+							width: 245px;
+						}
+						span{
+							color: #333;
+							font-size: 14px;
+							vertical-align: middle;
+						}
+						select{
+							border: 2px solid #d8d5d5;
+							width: 138px;
+							padding: 10px 15px;
+							border-radius: 5px;
+						}
+					}
+				}
+			}
+		}
+	}
+	.order-fill-aside{
+		width: 240px;
+		float: right;
+	}
+}
+
+
+
+/* 通用RADIO */
+label {
+	display: inline;
+}
+
+.regular-radio {
+	display: none;
+}
+
+.regular-radio + label {
+	-webkit-appearance: none;
+	background-color: #f5f5f5;
+	border: 2px solid #cacece;
+	border-radius: 50px;
+	display: inline-block;
+	position: relative;
+	padding: 14px;
+}
+
+.regular-radio:checked + label:after {
+	content: ' ';
+	border-radius: 50%;
+	position: absolute;
+	background: @comBGC;
+	text-shadow: 0px;
+	width: 20px;
+	height: 20px;
+	left: 4px;
+	top: 4px;
+}
+
+.regular-radio:checked + label {
+	background-color: #e9ecee;
+	color: @comBGC;
+	border: 2px solid @comBGC;
+}
+
+
+
