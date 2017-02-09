@@ -1214,8 +1214,9 @@ label {
   float: right;
 }
 #order-fill-content .order-fill-main .amount .amount-submit-btn input {
+  font-weight: bold;
   display: block;
-  padding: 17px 120px;
+  padding: 17px 115px;
   border-radius: 5px;
   background-color: #EF8B1D;
   color: #fff;
