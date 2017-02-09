@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1486372354078'); /* IE9*/
-  src: url('iconfont.eot?t=1486372354078#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1486372354078') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1486372354078') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1486372354078#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1486618795939'); /* IE9*/
+  src: url('iconfont.eot?t=1486618795939#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1486618795939') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1486618795939') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1486618795939#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -45,7 +45,11 @@
 
 .icon-app:before { content: "\e62e"; }
 
+.icon-tag:before { content: "\e649"; }
+
 .icon-alert:before { content: "\e8f4"; }
+
+.icon-ticket:before { content: "\e7b6"; }
 
 .icon-cash:before { content: "\e667"; }
 

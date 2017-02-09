@@ -539,6 +539,70 @@ input:focus {
 .person-center-points-main .person-center-points-description .points-description-wrapper li + li {
   border-top: 2px solid #e7e6e5;
 }
+/* 通用RADIO */
+label {
+  display: inline;
+}
+.regular-radio {
+  display: none;
+}
+.regular-radio + label {
+  -webkit-appearance: none;
+  background-color: #f5f5f5;
+  border: 2px solid #cacece;
+  border-radius: 50px;
+  display: inline-block;
+  position: relative;
+  padding: 14px;
+}
+.regular-radio:checked + label:after {
+  content: ' ';
+  border-radius: 50%;
+  position: absolute;
+  background: #EF8B1D;
+  text-shadow: 0px;
+  width: 20px;
+  height: 20px;
+  left: 4px;
+  top: 4px;
+}
+.regular-radio:checked + label {
+  background-color: #e9ecee;
+  color: #EF8B1D;
+  border: 2px solid #EF8B1D;
+}
+/* 通用checkbox */
+label {
+  display: inline;
+}
+.regular-checkbox {
+  display: none;
+}
+.regular-checkbox + label {
+  background-color: #fafafa;
+  border: 1px solid #cacece;
+  padding: 11px;
+  border-radius: 3px;
+  display: inline-block;
+  position: relative;
+}
+.regular-checkbox:checked + label {
+  background-color: #e9ecee;
+  border-color: #EF8B1D;
+  color: #99a1a7;
+}
+.regular-checkbox:checked + label:after {
+  content: '\2714';
+  position: absolute;
+  top: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: #EF8B1D;
+}
 #step-navigation-bar {
   padding: 50px 0 100px 0;
   background-color: #f5f5f5;
@@ -596,6 +660,8 @@ input:focus {
 #order-fill-content {
   background-color: #f5f5f5;
   padding-bottom: 300px;
+  /* 主体内容 */
+  /* 侧边栏 */
 }
 #order-fill-content .order-fill-main {
   width: 740px;
@@ -605,6 +671,8 @@ input:focus {
   /* 紧急联系人信息 */
   /* 接机服务 */
   /* 发票信息 */
+  /* 优惠方案 */
+  /* 结算金额 */
 }
 #order-fill-content .order-fill-main .order-product-info {
   background-color: #fff;
@@ -1025,39 +1093,222 @@ input:focus {
   padding: 10px 15px;
   border-radius: 5px;
 }
+#order-fill-content .order-fill-main .discount-program {
+  background-color: #fff;
+  padding: 20px 0 30px 0;
+  margin-bottom: 30px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-title {
+  padding-left: 20px;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
+  border-bottom: 2px solid #eeeeee;
+  padding-bottom: 18px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-title i {
+  font-size: 22px;
+  padding-right: 5px;
+  color: #333333;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-title span {
+  line-height: 100%;
+  text-align: center;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table {
+  width: 100%;
+  /* 积分区域 */
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead {
+  font-size: 14px;
+  color: #646464;
+  background-color: #fff;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr {
+  background-color: #d8d5d5;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr th {
+  margin: 0;
+  text-align: left;
+  line-height: 40px;
+  height: 40px;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr th:nth-of-type(1) {
+  padding-left: 50px;
+  width: 160px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr th:nth-of-type(2) {
+  width: 240px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr th:nth-of-type(3) {
+  width: 190px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table thead tr th:nth-of-type(4) {
+  padding-right: 50px;
+  text-align: right;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr.sep-row {
+  height: 10px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr td {
+  padding: 5px 0;
+  margin: 0;
+  text-align: left;
+  font-weight: normal;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr td:nth-of-type(1) {
+  color: #333333;
+  padding-left: 50px;
+  width: 160px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr td:nth-of-type(2) {
+  width: 240px;
+  color: #1d7bcb;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr td:nth-of-type(3) {
+  width: 190px;
+  color: #EF8B1D;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table tbody tr td:nth-of-type(4) {
+  padding-right: 50px;
+  text-align: right;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table .integration td:nth-of-type(3) {
+  color: #333333;
+  position: relative;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table .integration td:nth-of-type(3) span {
+  position: absolute;
+  left: 75px;
+  top: 10px;
+  font-size: 16px;
+}
+#order-fill-content .order-fill-main .discount-program .discount-program-content table .integration td:nth-of-type(3) input {
+  display: inline-block;
+  border: 2px solid #646464;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  padding: 0 10px 0 20px;
+  line-height: 30px;
+}
+#order-fill-content .order-fill-main .amount {
+  background-color: #fff;
+  padding: 20px 20px 30px 20px;
+}
+#order-fill-content .order-fill-main .amount .amount-num {
+  float: left;
+}
+#order-fill-content .order-fill-main .amount .amount-num p {
+  color: #333333;
+  font-size: 16px;
+  vertical-align: middle;
+}
+#order-fill-content .order-fill-main .amount .amount-num p span {
+  font-size: 28px;
+  color: #EF8B1D;
+}
+#order-fill-content .order-fill-main .amount .amount-submit-btn {
+  float: right;
+}
+#order-fill-content .order-fill-main .amount .amount-submit-btn input {
+  display: block;
+  padding: 17px 120px;
+  border-radius: 5px;
+  background-color: #EF8B1D;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
 #order-fill-content .order-fill-aside {
   width: 240px;
   float: right;
+  border-top: 8px solid #EF8B1D;
+  background-color: #fff;
 }
-/* 通用RADIO */
-label {
-  display: inline;
+#order-fill-content .order-fill-aside h3.aside-title {
+  text-align: center;
+  margin: 25px auto;
+  color: #333333;
+  font-size: 16px;
+  font-weight: normal;
 }
-.regular-radio {
-  display: none;
+#order-fill-content .order-fill-aside .aside-items-wrapper li.aside-item {
+  padding: 0 18px;
 }
-.regular-radio + label {
-  -webkit-appearance: none;
-  background-color: #f5f5f5;
-  border: 2px solid #cacece;
-  border-radius: 50px;
-  display: inline-block;
-  position: relative;
-  padding: 14px;
+#order-fill-content .order-fill-aside .aside-items-wrapper li.aside-item h4 {
+  color: #909090;
+  font-weight: normal;
+  text-align: left;
+  font-size: 14px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eeeeee;
+  margin-bottom: 8px;
 }
-.regular-radio:checked + label:after {
-  content: ' ';
-  border-radius: 50%;
-  position: absolute;
-  background: #EF8B1D;
-  text-shadow: 0px;
-  width: 20px;
-  height: 20px;
-  left: 4px;
-  top: 4px;
+#order-fill-content .order-fill-aside .aside-items-wrapper li.aside-item p {
+  color: #333333;
+  margin-bottom: 18px;
 }
-.regular-radio:checked + label {
-  background-color: #e9ecee;
+#order-fill-content .order-fill-aside .aside-items-wrapper li.aside-item p span.total-price {
+  float: right;
   color: #EF8B1D;
-  border: 2px solid #EF8B1D;
 }
+#order-fill-content .order-fill-aside .aside-items-wrapper li + li {
+  border-top: 2px solid #eeeeee;
+}
+#order-fill-content .order-fill-aside .aside-submit {
+  background-color: #feedda;
+  text-align: center;
+  padding: 25px 0;
+}
+#order-fill-content .order-fill-aside .aside-submit p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+#order-fill-content .order-fill-aside .aside-submit p span {
+  color: #EF8B1D;
+}
+#order-fill-content .order-fill-aside .aside-submit a {
+  display: inline-block;
+  padding: 11px 48px;
+  background-color: #EF8B1D;
+  font-size: 16px;
+  font-size: bold;
+  color: #ffffff;
+}
+/* label input[type="radio"]{
+	display: none;
+}
+label .circle{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #f5f5f5;
+	border:5px solid #f5f5f5;
+}
+
+.radio-box{
+	label{
+		cursor: pointer;
+		display: inline-block;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 2px solid #d8d5d5;
+		&:checked{
+			border-color: @comBGC;
+			.circle{
+				background-color: @comBGC;
+			}
+		}
+	}
+	input:checked{
+		border-color: @comBGC;
+		.circle{
+			background-color: @comBGC;
+		}
+	}
+} */

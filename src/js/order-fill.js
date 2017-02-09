@@ -1,4 +1,5 @@
 $(function(){
+	
 	//表单校验
 	(function(window){
 		$().ready(function() {
@@ -53,5 +54,37 @@ $(function(){
 			});
 		});
 
+	})(window);
+
+	//接机服务选中事件
+	(function(window){
+		var $radioWrapper = $('.pick-up-service .radio-box');
+		var $radioInput = $radioWrapper.find('input');
+		var $pickUpDetail = $('.pick-up-service .pick-up-detail');//表单值
+		$radioInput.on('change',function(){
+			var $val = $(this).val();
+			//不需要接机
+			if($val == 1){
+				$pickUpDetail.css({'display':'none'});
+			}else if($val == 2){
+				$pickUpDetail.css({'display':'block'});
+			}
+		});
+	})(window);
+
+	//发票信息选中事件
+	(function(window){
+		var $radioWrapper = $('.invoice-info .radio-box');
+		var $radioInput = $radioWrapper.find('input');
+		var $invoiceInfoDetail = $('.invoice-info .invoice-info-detail');//表单值
+		$radioInput.on('change',function(){
+			var $val = $(this).val();
+			//不需要接机
+			if($val == 1){
+				$invoiceInfoDetail.css({'display':'none'});
+			}else if($val == 2){
+				$invoiceInfoDetail.css({'display':'block'});
+			}
+		});
 	})(window);
 });
