@@ -208,48 +208,67 @@ input{
 			border-radius: 5px;
 			left: 50%;
 			bottom: 0; 
+			font-size: 0;
 			/* 选择地点 */
 			.select-place{
-				position: absolute;
-				left: 20px;
-				top: 35px;
+				width: 100px;
 				color: #fff;
+				display: inline-block;
+				font-size: 16px;
+				cursor: pointer;
+				position: relative;
 				.select-place-arrow{
-					position: absolute;
-					cursor: pointer;
+					margin-left: 10px;
+					display: inline-block;
 					left: 45px;
 					top: 6px;
 					width: 14px;
 					height: 8px;
 					background: url(../images/arrow.png) no-repeat center center;
 				}
-				/* 城市选择
+				/* 城市选择 */
 				.select-place-item{
+					display: none;
 					position: absolute;
-					left: 0;
-					top: 0;
-					width: 250px;
-					border: 1px solid @comBGC; 
-					background-color: @comBGC;
-					padding: 10px 15px;
+					left: -22px;
+    				top: 30px;
+					padding-top: 11px;
+					width: 100px;
+					background-image: url("../images/home-city-select.png");
+					background-repeat: no-repeat;
 					border-radius: 5px;
-					li{
-						float: left;
-						cursor: pointer;
+					.boxshadow();
+					ul{
+						background-color: #fff;
+						padding: 10px 0 ;
+						li{
+							font-size: 16px;
+							padding: 10px 0 10px 15px;
+							color: #333333;
+							cursor: pointer;
+							&:hover{
+								background-color: @comBGC;
+								color: #fff;
+							}
+						}
+						li.selected{
+							display: none;
+						}
 					}
-				} */
+					
+				} 
 			}
 			#search-input{
 				padding: 18px;
-				margin-left: 80px;
-				width: 764px;
+				width: 750px;
 				border-radius: 5px;
+				display: inline-block;
 			}
 			#search-btn{
 				cursor: pointer;
 				position: absolute;
 				right: 24px;
-				top: 17px;
+				top: 18px;
 				width: 54px;
 				height: 54px;
 				background: url(../images/search.png) no-repeat center center;
@@ -283,6 +302,26 @@ input{
 		.main-ad-wrapper{
 			height: 600px;
 			img{
+			}
+		}
+	}
+}
+
+/* 搜索无结果 */
+#not-find{
+	background-color: #ebeaea;
+	.not-find-wrapper{
+		padding: 60px;
+		text-align: center;
+		img{
+			display: block;
+			margin: 0 auto;
+		}
+		p{
+			margin-top: 20px;
+			color: #333333;
+			span{
+				margin: 0 10px;
 			}
 		}
 	}

@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+  <head>
+    <meta charset="utf-8">
+ 
+    <title>首页 搜索无结果-畅游家</title>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- 引入swiper插件 -->
+    <link rel="stylesheet" type="text/css" href="lib/swiper/swiper.min.css">
+    <!-- 引入字体图标 -->
+    <link rel="stylesheet" type="text/css" href="style/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="style/global.css">
+    <link rel="stylesheet" type="text/css" href="style/home.css">
+  </head>
+  <body>
+     
+    <!-- 导航栏区域 -->                                
+    <nav id="header">
+        <div class="comWidth clearfix">
+            <div class="logo fl"></div>
+            <ul class="navBar fl clearfix">
+                <li class="active"><a href="">首页</a></li>
+                <li><a href="">国内游</a></li>
+                <li><a href="">国外游</a></li>
+                <li><a href="">周边游</a></li>
+                <li><a href="">户外游</a></li>
+                <li><a href="">定制游</a></li>
+                <li><a href="">酒店</a></li>
+                <li><a href="">门票</a></li>
+                <li><a href="">视频</a></li>
+                <li><a href="">领队</a></li>
+                <li><a href="">关于我们</a></li>
+                <li><a href="">加入我们</a></li>
+            </ul>
+            <div class="header-right">
+                <a href="" class="register">注册</a>
+                <a href="" class="login">登陆</a>
+            </div>
+        </div>
+    </nav>
+    <!-- /导航栏区域 --> 
+
+    <!-- 侧边栏区域 -->
+    <section id="sidebar">
+        <ul class="sidebar-list">
+            <li class="sidebar-app"><i class="iconfont icon-app"></i></li>
+            <li class="sidebar-user">
+                <a href="">
+                    <i class="iconfont icon-user"></i>
+                </a>
+                 <div class="user-center">
+                    <p>个人中心</p>
+                </div>
+            </li>
+            <li class="sidebar-users"><a href=""><i class="iconfont icon-users"></i></a></li>
+            <li class="sidebar-note"><a href=""><i class="iconfont icon-note"></i></a></li>
+  
+            <li class="sidebar-phone">
+                <i class="iconfont icon-phone"></i>
+                <div class="contact-phone">
+                   <div class="contact-text">
+                        <p>客服热线</p>
+                        <p>400-600-6300</p>
+                        <p>工作时间 (9:00-17:00)</p>
+                   </div>
+                </div>
+            </li>
+            <li class="sidebar-wechat"><i class="iconfont icon-wechat"></i></li>
+            <li></li>
+            <li class="sidebar-top"><a href=""><i class="iconfont icon-top"></i></a></li>
+            <li class="sidebar-close"><i class="iconfont icon-x"></i></li>
+        </ul>
+        <ul class="sidebar-list-down">
+            <li class="sidebar-down"><i class="iconfont">&#xe602;</i></li>
+        </ul>
+    </section>
+    <!-- /侧边栏区域 -->
+
+    <!-- 轮播图区域 -->
+    <section id="main-ad">  
+        <div class="swiper-container main-ad-container">
+            <div class="swiper-wrapper  main-ad-wrapper">
+                <div class="swiper-slide ">
+                    <img src="images/home-banner-img1.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-banner-img2.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/home-banner-img3.png">
+                </div>
+            </div>
+            
+            <!-- 如果需要导航按钮 -->
+            <div class="btn">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+        <div class="main-ad-content">
+            <div class="content-text">
+                <h2>好想来一场说走就走的旅行</h2>
+                <p>带上背包以及你我的约定</p>
+                <a href="">查看详情</a>
+            </div>   
+            <!-- 搜索框 -->
+            <div class="searchbox">
+                <!-- /地点选择 -->
+                <form id="search-form" action="" method="post"> 
+                    <!-- 地点选择 -->
+                    <div class="select-place">
+                        <div class="select-place-name">
+                            <span class="city-name">成都</span>
+                            <span class="select-place-arrow"></span>
+                            <div class="select-place-item">
+                                <ul>
+                                    <li class="selected">成都</li>
+                                    <li>昆明</li>
+                                    <li>杭州</li>
+                                    <li>上海</li>
+                                    <li>北京</li>
+                                    <li>成都成都</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <input type="text" name="search-input" placeholder="搜索相关门票酒店目的地" id="search-input">
+                    <input type="submit" name="search-btn" id="search-btn" value="">
+                </form>
+            </div>
+            <!-- /搜索框 -->
+        </div>
+    </section>
+    <!-- /轮播图区域 -->
+
+    <!-- 搜索无结果 -->
+    <section id="not-find">
+        <div class="comWidth">
+            <div class="not-find-wrapper">
+                <img src="images/not-find.png">
+                <p>很抱歉！没找到与<span>“nnnnhhkkk”</span>相关的商品哦，要不您换个关键词我帮您再找找看！</p>
+            </div>
+        </div>
+    </section>
+    <!-- /搜索无结果 -->
+
+    <!-- 特点介绍 -->
+    <section id="feature">
+        <div class="comWidth">
+            <div class="feature-title">
+                <h2>我们只做一件事：带你去最好玩的地方</h2>
+                <p>We just do one thing: Taking you to the most funny place</p>
+            </div>
+            <div class="feature-content clearfix">
+                <div class="feature-description">
+                     <div class="description-img description-img1"></div>
+                     <h3>最佳旅游线路</h3>
+                     <p>最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 </p>
+                </div>
+                <div class="feature-description">
+                     <div class="description-img description-img2"></div>
+                     <h3>最佳旅游线路</h3>
+                     <p>最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 </p>
+                 </div>
+                <div class="feature-description">
+                     <div class="description-img description-img3"></div>
+                     <h3>最佳旅游线路</h3>
+                     <p>最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 最佳旅游线路去为我们一行6点半就已经到了西湖， 这里已经有很多人了。朝阳中的断桥，别有一番景色 </p>
+                 </div>
+            </div>
+        </div>
+    </section>
+    <!-- /特点介绍 -->
+
+    <!-- 单季热销 -->
+    <section id="single-hot">
+        <div class="comWidth">
+            <div class="single-hot-title">
+                <h2>单季热销</h2>
+                <div class="title-line"></div>
+            </div>
+            <!-- 单季热销轮播区域 -->
+            <div class="single-hot-content clearfix">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="single-hot-item">
+                                <a href=""><img src="images/single-hot1.jpg"></a>
+                                <div class="single-hot-item-text">
+                                    <p>穿越沙漠嘹亮的灯塔魅力 之城靓丽身影</p>
+                                    <span>¥1998元</span>
+                                </div>
+                            </div>
+                            <div class="single-hot-item">
+                                <a href=""><img src="images/single-hot2.jpg"></a>
+                                <div class="single-hot-item-text">
+                                    <p>穿越沙漠嘹亮的灯塔魅力 之城靓丽身影</p>
+                                    <span>¥1998元</span>
+                                </div>
+                            </div>
+                            <div class="single-hot-item">
+                                <a href=""><img src="images/single-hot3.jpg"></a>
+                                <div class="single-hot-item-text">
+                                    <p>穿越沙漠嘹亮的灯塔魅力 之城靓丽身影</p>
+                                    <span>¥1998元</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-hot-item">
+                                <a href=""><img src="images/single-hot2.jpg"></a>
+                                <div class="single-hot-item-text">
+                                    <p>穿越沙漠嘹亮的灯塔魅力 之城靓丽身影</p>
+                                    <span>¥1998元</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="single-hot-item">
+                                <a href=""><img src="images/single-hot3.jpg"></a>
+                                <div class="single-hot-item-text">
+                                    <p>穿越沙漠嘹亮的灯塔魅力 之城靓丽身影</p>
+                                    <span>¥1998元</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /单季热销轮播区域 -->
+            
+            <!-- 如果需要分页器 -->
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <!-- /单季热销 -->
+    
+    <!-- 精选优惠 -->
+    <section id="careful-chosen">
+        <div class="comWidth">
+            <div class="careful-chosen-title">
+                <h2>精选优惠</h2>
+                <div class="title-line"></div>
+            </div>
+            <!-- 精选优惠轮播区域 -->
+            <div class="careful-chosen-content clearfix">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide clearfix">
+                            <div class="careful-chosen-item-top careful-chosen-item">
+                                <img src="images/careful-chosen1.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>黄山风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="careful-chosen-item-right careful-chosen-item">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>贵州风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                                <img src="images/careful-chosen2.jpg">
+                            </div>
+                            <div class="careful-chosen-item-left careful-chosen-item">
+                                <img src="images/careful-chosen3.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>乌镇风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide clearfix">
+                            <div class="careful-chosen-item-top careful-chosen-item">
+                                <img src="images/careful-chosen1.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>黄山风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="careful-chosen-item-right careful-chosen-item">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>贵州风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                                <img src="images/careful-chosen2.jpg">
+                            </div>
+                            <div class="careful-chosen-item-left careful-chosen-item">
+                                <img src="images/careful-chosen3.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>乌镇风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide clearfix">
+                            <div class="careful-chosen-item-top careful-chosen-item">
+                                <img src="images/careful-chosen1.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>黄山风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="careful-chosen-item-right careful-chosen-item">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>贵州风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                                <img src="images/careful-chosen2.jpg">
+                            </div>
+                            <div class="careful-chosen-item-left careful-chosen-item">
+                                <img src="images/careful-chosen3.jpg">
+                                <div class="careful-chosen-item-content">
+                                    <div class="careful-chosen-item-text">
+                                        <h3>乌镇风景区</h3>
+                                        <p>这是一个风景旖旎的地方，在这梦幻的地方，试想清晨醒来，烟雾缭绕，清风徐徐,这是一个风景旖旎的地方。</p>
+                                        <a href="">查看更多</a>
+                                    </div>
+                                    <div class="careful-chosen-item-reserve clearfix">
+                                        <a href="">立即预定</a>
+                                        <p>¥1999元</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>    
+            <!-- /精选优惠轮播区域 -->
+        </div>
+        <!-- 轮播按钮区域按钮 -->
+        <div class="btn">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- /精选优惠 -->
+    
+    <!-- 走过的风景 -->
+    <section id="through-scenery">
+        <div class="comWidth">
+            <div class="through-scenery-title">
+                <h2>我们走过的那些风景</h2>
+                <div class="title-line"></div>
+            </div>
+            <!-- 如果需要分页器 -->
+            <div class="through-scenery-pagination ">
+                <div class="through-place-type clearfix">
+                    <p>国内游</p>
+                    <p>国外游</p>
+                    <p>周边游</p>
+                    <p>户外徒步游</p>
+                </div>
+                <div class="through-place-line"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="through-scenery-content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="through-scenery-top clearfix">
+                                <div class="scenery-top-left">
+                                    <a href="">
+                                        <img src="images/through-scenery1.png">
+                                        <h3>云南</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-top-right">
+                                    <a href="">
+                                        <img src="images/through-scenery2.png">
+                                        <h3>安徽</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="through-scenery-bottom clearfix">
+                                <div class="scenery-bottom-left">
+                                     <a href="">
+                                        <img src="images/through-scenery3.png">
+                                        <h3>新疆</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-middle">
+                                     <a href="">
+                                        <img src="images/through-scenery4.png">
+                                        <h3>浙江</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-right">
+                                     <a href="">
+                                        <img src="images/through-scenery5.png">
+                                        <h3>杭州</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="through-scenery-top clearfix">
+                                <div class="scenery-top-left">
+                                    <a href="">
+                                        <img src="images/through-scenery1.png">
+                                        <h3>云南</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-top-right">
+                                    <a href="">
+                                        <img src="images/through-scenery2.png">
+                                        <h3>安徽</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="through-scenery-bottom clearfix">
+                                <div class="scenery-bottom-left">
+                                     <a href="">
+                                        <img src="images/through-scenery3.png">
+                                        <h3>新疆</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-middle">
+                                     <a href="">
+                                        <img src="images/through-scenery4.png">
+                                        <h3>浙江</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-right">
+                                     <a href="">
+                                        <img src="images/through-scenery5.png">
+                                        <h3>杭州</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="through-scenery-top clearfix">
+                                <div class="scenery-top-left">
+                                    <a href="">
+                                        <img src="images/through-scenery1.png">
+                                        <h3>云南</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-top-right">
+                                    <a href="">
+                                        <img src="images/through-scenery2.png">
+                                        <h3>安徽</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="through-scenery-bottom clearfix">
+                                <div class="scenery-bottom-left">
+                                     <a href="">
+                                        <img src="images/through-scenery3.png">
+                                        <h3>新疆</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-middle">
+                                     <a href="">
+                                        <img src="images/through-scenery4.png">
+                                        <h3>浙江</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-right">
+                                     <a href="">
+                                        <img src="images/through-scenery5.png">
+                                        <h3>杭州</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="through-scenery-top clearfix">
+                                <div class="scenery-top-left">
+                                    <a href="">
+                                        <img src="images/through-scenery1.png">
+                                        <h3>云南</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-top-right">
+                                    <a href="">
+                                        <img src="images/through-scenery2.png">
+                                        <h3>安徽</h3>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="through-scenery-bottom clearfix">
+                                <div class="scenery-bottom-left">
+                                     <a href="">
+                                        <img src="images/through-scenery3.png">
+                                        <h3>新疆</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-middle">
+                                     <a href="">
+                                        <img src="images/through-scenery4.png">
+                                        <h3>浙江</h3>
+                                    </a>
+                                </div>
+                                <div class="scenery-bottom-right">
+                                     <a href="">
+                                        <img src="images/through-scenery5.png">
+                                        <h3>杭州</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- /走过的风景 -->
+
+    <!-- 游记 -->
+    <section id="travel-notes">
+        <div class="comWidth">
+            <div class="travel-notes-title">
+                <h2>那些我们都喜欢的故事儿</h2>
+                <div class="title-line"></div>
+            </div>
+            <!-- 游记轮播区域 -->
+            <div class="travel-notes-content">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/travel-notes.png">
+                                <div class="travel-notes-text-wrapper">
+                                    <div class="travel-notes-text-title">
+                                        <h3>我们的心中都有一个温暖的地方</h3>
+                                        <div class="travel-notes-head-box">
+                                            <img src="images/travel-notes-comment-head.png">
+                                            <p>七月与安生</p>
+                                        </div>
+                                    </div>
+                                    <div class="travel-notes-text-detail">
+                                        <p class="notes-text-wrapper">
+                                            <span class="notes-text-location"><i class="iconfont icon-location"></i>加拿大•温哥华</span>
+                                             <span class="notes-text-time"><i class="iconfont icon-time"></i>2016-10-16</span>
+                                        </p>
+                                        <p class="notes-text-content">我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅</p>
+                                        <span class="see-more">[查看更多]</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/travel-notes.png">
+                                <div class="travel-notes-text-wrapper">
+                                    <div class="travel-notes-text-title">
+                                        <h3>我们的心中都有一个温暖的地方</h3>
+                                        <div class="travel-notes-head-box">
+                                            <img src="images/travel-notes-comment-head.png">
+                                            <p>七月与安生</p>
+                                        </div>
+                                    </div>
+                                    <div class="travel-notes-text-detail">
+                                        <p class="notes-text-wrapper">
+                                            <span class="notes-text-location"><i class="iconfont icon-location"></i>加拿大•温哥华</span>
+                                             <span class="notes-text-time"><i class="iconfont icon-time"></i>2016-10-16</span>
+                                        </p>
+                                        <p class="notes-text-content">我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅</p>
+                                        <span class="see-more">[查看更多]</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                         <div class="swiper-slide">
+                            <a href="">
+                                <img src="images/travel-notes.png">
+                                <div class="travel-notes-text-wrapper">
+                                    <div class="travel-notes-text-title">
+                                        <h3>我们的心中都有一个温暖的地方</h3>
+                                        <div class="travel-notes-head-box">
+                                            <img src="images/travel-notes-comment-head.png">
+                                            <p>七月与安生</p>
+                                        </div>
+                                    </div>
+                                    <div class="travel-notes-text-detail">
+                                        <p class="notes-text-wrapper">
+                                            <span class="notes-text-location"><i class="iconfont icon-location"></i>加拿大•温哥华</span>
+                                             <span class="notes-text-time"><i class="iconfont icon-time"></i>2016-10-16</span>
+                                        </p>
+                                        <p class="notes-text-content">我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅我是一个普通的上班族，一个很偶然的机会，在朋友的介绍之下加入木鸟房东的大家庭，因为享受跟父母一起住的时光，正好将手里仅有的一套两居室空房出租。房子本来是留着结婚用的，正好将手里仅有的租里仅</p>
+                                        <span class="see-more">[查看更多]</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- 如果需要分页器 -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <!-- /游记轮播区域 -->
+        </div>  
+    </section>
+    <!-- /游记 -->
+
+    <!-- 领队 -->
+    <section id="team-leader">
+        <div class="comWidth">
+            <div class="team-leader-title">
+                <h2>我们的领队和车师傅们</h2>
+                <div class="title-line"></div>
+            </div>
+            <div class="team-leader-content">
+                <!-- 领队轮播区域 -->
+                 <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader2.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader2.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader2.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="team-leader-wrapper" href="">
+                                <img src="images/home-leader.png" alt="">
+                                <div class="team-leader-text">
+                                    <h2>淼淼</h2>
+                                    <p>分站：杭州</p>
+                                    <p>擅长：运动、运动</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 领队轮播区域 -->
+        </div> 
+        <!-- 轮播按钮区域按钮 -->
+        <div class="btn">
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+    </section>
+    <!-- /领队 -->
+
+    <!-- 底部 -->
+    <footer id="footer">
+        <div class="footer-wrapper">
+            <div class="comWidth">
+                <div class="footer-main-link clearfix">
+                    <ul class="index-link">
+                        <h4>首页</h4>
+                        <li><a href="">单季热销</a></li>
+                        <li><a href="">精选特惠</a></li>
+                        <li><a href="">我们走过的那些风景</a></li>
+                        <li><a href="">那些我们都喜欢的故事</a></li>
+                    </ul>
+                    <ul class="travel-type">
+                        <h4>旅游方式</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="hotel">
+                        <h4>酒店</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="ticket">
+                        <h4>门票</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                    <ul class="about-us">
+                        <h4>关于我们</h4>
+                        <li><a href="">国内游</a></li>
+                        <li><a href="">国外游</a></li>
+                        <li><a href="">周边游</a></li>
+                        <li><a href="">户外游</a></li>
+                    </ul>
+                </div>
+                <div class="footer-friendly-link">
+                    <p>友情链接 </p>
+                    <ul class="clearfix">                            
+                        <li><a href="">绿野户外网俱乐部</a></li>
+                        <li><a href="">无忧户外</a></li>
+                        <li><a href="">蚂蜂窝</a></li>
+                        <li><a href="">中国户外资料网</a></li>
+                        <li><a href="">山野中国户外</a></li>
+                        <li><a href="">腾讯户外</a></li>
+                        <li><a href="">驴时代</a></li>
+                        <li><a href="">火山时代</a></li>
+                        <li><a href="">溜溜康巴网</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-description">
+            <div class="comWidth">
+                <p>成都起点户外旅行社 版权所有　蜀ICP备12016649号</p>
+            </div>
+        </div>
+    </footer>
+    <!-- /底部 -->
+
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <!-- swiper插件 -->
+    <script type="text/javascript" src="lib/swiper/swiper.min.js"></script>
+    <script type="text/javascript" src="js/home.js"></script>
+  </body>
+</html>

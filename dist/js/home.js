@@ -1,4 +1,27 @@
 $(function(){
+	//城市选择dom操作
+	(function(window){
+		//获取到城市选择区域
+		var $selectPlaceWrapper = $('#main-ad .select-place');
+		var $selectPlaceName = $selectPlaceWrapper.find('.select-place-name');//城市
+		var $cityName = $selectPlaceWrapper.find('.city-name');//当前选中的城市
+		var $selectPlaceItemWrapper = $selectPlaceWrapper.find('.select-place-item');//其他城市
+		var $selectPlaceItem = $selectPlaceItemWrapper.find('li');//每一个城市
+		$selectPlaceName.hover(function(){
+			$selectPlaceItemWrapper.stop().slideDown();
+		},function(){
+			$selectPlaceItemWrapper.stop().slideUp();
+		});
+		$selectPlaceItem.on('click',function(){
+			var $this = $(this);
+			var $currentCityName = $this.html();
+			console.log($currentCityName);
+			$this.addClass('selected').siblings().removeClass('selected');//移除选中城市的名称
+			$cityName.html($currentCityName);
+		});
+
+	})(window);
+
 	//广告区域的轮播
 	(function(window){
 		
