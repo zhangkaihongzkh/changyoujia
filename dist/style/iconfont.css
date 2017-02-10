@@ -1,10 +1,10 @@
 
 @font-face {font-family: "iconfont";
-  src: url('iconfont.eot?t=1486618795939'); /* IE9*/
-  src: url('iconfont.eot?t=1486618795939#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('iconfont.woff?t=1486618795939') format('woff'), /* chrome, firefox */
-  url('iconfont.ttf?t=1486618795939') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-  url('iconfont.svg?t=1486618795939#iconfont') format('svg'); /* iOS 4.1- */
+  src: url('iconfont.eot?t=1486727317494'); /* IE9*/
+  src: url('iconfont.eot?t=1486727317494#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('iconfont.woff?t=1486727317494') format('woff'), /* chrome, firefox */
+  url('iconfont.ttf?t=1486727317494') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('iconfont.svg?t=1486727317494#iconfont') format('svg'); /* iOS 4.1- */
 }
 
 .iconfont {
@@ -37,6 +37,8 @@
 
 .icon-calendar:before { content: "\e72b"; }
 
+.icon-medal:before { content: "\e70e"; }
+
 .icon-chat:before { content: "\e629"; }
 
 .icon-love:before { content: "\e643"; }
@@ -56,6 +58,8 @@
 .icon-note:before { content: "\e739"; }
 
 .icon-order:before { content: "\e60d"; }
+
+.icon-message:before { content: "\eee0"; }
 
 .icon-route:before { content: "\e69d"; }
 

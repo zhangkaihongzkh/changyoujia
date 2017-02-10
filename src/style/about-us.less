@@ -1,0 +1,456 @@
+//引入全局less
+@import "global";
+
+/* banner区域 */
+#about-us-banner{
+	width: 100%;
+	height: 620px;
+	background: url("../images/about-us-banner.png") no-repeat center center;
+	.comWidth{
+		position: relative;
+		.text-area{	
+			position: absolute;
+			right: -48px;
+			top: 310px;
+			p{
+				font-size: 36px;
+				color: #ffffff;
+				font-weight: bold;
+				
+				span{
+					font-size: 72px;
+					color: #ffc029;
+				}
+			}
+			p.nth-p{
+				text-indent: 48px;
+			}
+		}
+	}
+}
+
+/* 公司简介 */
+#company-profile{
+	.company-profile-content{
+		position: relative;
+		.company-img{
+			.boxshadow();
+			position: absolute;
+			float: left;
+			top: -90px;
+			left: 0;
+			border:40px solid #ffffff;
+			img{
+				width: 100%;
+			}
+		}
+		.company-description{
+			width: 570px;
+			float: right;
+			padding-top: 40px;
+			padding-bottom: 140px;
+			.description-head{
+				padding-left: 20px;
+				border-left: 4px solid #969696;
+				margin-bottom: 60px;
+				h3{
+					margin-bottom: 20px;
+					font-size: 28px;
+					color: #333333;
+					font-weight: bold;
+				}
+				p{
+					color: #333333;
+					font-size: 16px;
+				}
+			}
+			.description-content{
+				p{
+					color: #333333;
+					line-height: 2;
+				}
+			}
+		}
+	}
+}
+
+/* 发展历程 */
+#development-history{
+	width: 100%;
+	background: url("../images/about-us-service-contents-bg.png") no-repeat center center;
+	padding-bottom:50px;
+	.development-history-content{
+		.content-title{
+			padding: 30px 0;
+			text-align: center;
+			color: #ffffff;
+			h3{
+				font-size: 28px;
+			}
+			.content-title-line{
+				width: 70px;
+				height: 4px;
+				background-color: #fff;
+				margin: 15px auto;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+		.main-content{
+			position: relative;
+			border:10px solid #ffffff;
+			img{
+				width: 100%;
+				display: block;
+			}
+			.content-item{
+				color: #ffffff;
+				position: absolute;
+				&:hover{
+					.round{
+						background-color:@comBGC;
+						transition: background-color 0.2s;
+						-moz-transition: background-color 0.2s; /* Firefox 4 */
+						-webkit-transition: background-color 0.2s; /* Safari 和 Chrome */
+						-o-transition: background-color 0.2s; /* Opera */
+					}
+					.item-text{
+						color: @comBGC;
+						transition: color 0.2s;
+						-moz-transition: color 0.2s; /* Firefox 4 */
+						-webkit-transition: color 0.2s; /* Safari 和 Chrome */
+						-o-transition: color 0.2s; /* Opera */
+					}
+				}
+				.round{
+					cursor: pointer;
+					width: 38px;
+					height: 38px;
+					border-radius: 50%;
+					background-color: #3294f4;
+					transition: background-color 0.2s;
+					-moz-transition: background-color 0.2s; /* Firefox 4 */
+					-webkit-transition: background-color 0.2s; /* Safari 和 Chrome */
+					-o-transition: background-color 0.2s; /* Opera */
+				}
+				.item-text{
+					min-width: 340px;
+					position: absolute;
+					transition: color 0.2s;
+					-moz-transition: color 0.2s; /* Firefox 4 */
+					-webkit-transition: color 0.2s; /* Safari 和 Chrome */
+					-o-transition: color 0.2s; /* Opera */
+					h4{
+						font-size: 18px;
+						margin-bottom: 10px;
+					}
+					p{
+						font-size: 16px;
+						line-height: 2;
+					}
+				}
+			}
+			/* 第一步 */
+			.first{
+				left: 35px;
+    			top: 104px;
+    			.item-text{
+    				left: 75px;
+    				top: -60px;
+    			}
+			}
+			/* 第二步 */
+			.second{
+				left: 100px;
+    			top: 270px;
+    			.item-text{
+    				left: 60px;
+    				top: -11px;
+    			}
+			}
+			/* 第三步 */
+			.third{
+				right: 220px;
+    			top: 145px;
+    			.item-text{
+    				left: 0;
+   					top: 60px;
+    			}
+			}
+			/* 第四步 */
+			.fourth{
+				right: 402px;
+    			top: 326px;
+    			.item-text{
+    				left: 50px;
+   	 				top: 24px;
+    			}
+			}
+			
+		}
+	}
+}
+
+/* 员工风采 */
+#staff-style{
+	width: 100%;
+	background: url("../images/about-us-staff-style-bg.png") repeat-y center center;
+	.staff-style-content{
+		.content-title{
+			padding: 30px 0;
+			text-align: center;
+			color: #333333;
+			h3{
+				font-size: 28px;
+			}
+			.content-title-line{
+				width: 70px;
+				height: 4px;
+				background-color: #333333;
+				margin: 15px auto;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+		/* 员工风采内容区域 */
+		.main-content{
+			height: 600px;
+			position: relative;
+			.staff-item{
+				position: absolute;
+				display: block;
+				border-radius: 50%;
+				overflow: hidden;
+				&:hover{
+					.staff-item-text{
+						top: 0;
+					}	
+				}
+				img{
+					display: block;
+					width: 100%;
+				}
+				.staff-item-text{
+					background-color: rgba(239,139,29,0.9);
+					width: 100%;
+					height: 100%;
+					position: absolute;
+					left: 0;
+					text-align: center;
+					color: #ffffff;
+					font-weight: bold;
+					-webkit-transition: top .4s ease;
+    				transition: top .4s ease;
+				}
+			}
+			/* 大头像 */
+			.big-item{
+				width: 110px;
+				height: 110px;
+
+				.staff-item-text{
+					top: 110px;
+					h4{
+						font-size: 20px;
+						margin-top: 20px;
+					}
+					p{
+						font-size: 16px;
+						margin-top: 10px;
+					}
+				}	
+			}
+			/* 小头像 */
+			.small-item{
+				width: 80px;
+				height: 80px;
+				.staff-item-text{
+					top: -80px;
+					h4{
+						font-size: 18px;
+						margin-top: 15px;
+					}
+					p{
+						font-size: 14px;
+						margin-top: 5px;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* 加入我们 */
+#join-us{
+	width: 100%;
+	background: url("../images/about-us-join-us-bg1.png") no-repeat top center;
+	padding-bottom: 150px;
+	.content-title{
+		padding: 30px 0;
+		text-align: center;
+		color: #333333;
+		h3{
+			font-size: 28px;
+		}
+		.content-title-line{
+			width: 70px;
+			height: 4px;
+			background-color: #333333;
+			margin: 15px auto;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+	.main-content{
+		background-color: #ffffff;
+		padding: 45px 40px 45px 60px;
+		.boxshadow();
+		.join-us-tabs{
+			float: left;
+			li{
+				font-size: 20px;
+				cursor: pointer;
+				padding: 15px 40px;
+				background-color: #fff;
+				color: #c2b3a5;
+				border:1px solid #c2b3a5;
+			}
+			li.active{
+				color: #fff;
+				border-color: @comBGC;
+				background-color: @comBGC;
+			}
+			li + li{
+				margin-top: 75px;
+			}
+		}
+		.tabs-content{
+			float: right;
+			width: 675px;
+			.item-detail{
+				margin-bottom: 20px;
+				h3{
+					color: @comBGC;
+					margin-bottom: 25px;
+					i{
+						font-size: 26px;
+						padding-right: 15px;
+					}
+					span{
+						display: inline-block;
+						font-size: 20px;
+						font-weight: normal;
+						position: relative;
+					}
+					span::after{
+						content: '';
+						position: absolute;
+						width: 25px;
+						height: 4px;
+						background-color: @comBGC;
+						bottom: -5px;
+						left: 0;
+					}
+				}
+				ul{
+					padding-left: 42px;
+					li{
+						padding-left: 25px;
+						line-height: 2;
+						margin-bottom: 8px;
+						position: relative;
+						color: #333333;
+						span{
+							color: #000000;
+						}
+					}
+					li::before{
+						content: '';
+						width: 10px;
+						height: 10px;
+						background-color: #909090;
+						position: absolute;
+						top: 9px;
+						left: 0;
+						transform:rotate(45deg);
+						-ms-transform:rotate(45deg); 	/* IE 9 */
+						-moz-transform:rotate(45deg); 	/* Firefox */
+						-webkit-transform:rotate(45deg); /* Safari 和 Chrome */
+						-o-transform:rotate(45deg); 	/* Opera */
+					}
+				}
+			}
+		}
+	}
+
+	
+}
+
+#contact-us{
+	background-color: #f2f1ef;
+	padding-bottom: 45px;
+	.contact-us-content{
+		.content-title{
+			padding: 30px 0;
+			text-align: center;
+			color: #333333;
+			h3{
+				font-size: 28px;
+			}
+			.content-title-line{
+				width: 70px;
+				height: 4px;
+				background-color: #333333;
+				margin: 15px auto;
+			}
+			p{
+				font-size: 16px;
+			}
+		}
+		.main-content{
+			li{
+				background-color: #fff;
+				margin-bottom: 40px;
+				width: 410px;
+				float: left;
+				padding-top: 40px;
+				padding-left: 70px;
+				padding-bottom: 40px;
+				transition: box-shadow .5s;
+			    -moz-transition: box-shadow .5s;
+			    -webkit-transition: box-shadow .5s;
+			    -o-transition: box-shadow .5s;
+			    &:hover{
+			    	box-shadow: 0 2px 6px #ccc;
+			    	transition: box-shadow .5s;
+				    -moz-transition: box-shadow .5s;
+				    -webkit-transition: box-shadow .5s;
+				    -o-transition: box-shadow .5s;
+			    }
+				.item-img{
+					float: left;
+					width: 50px;
+				}
+				.item-text{
+					font-size: 28px;
+					width: 330px;
+					float: right;
+					h4{
+						font-weight: normal;
+						color: #333333;
+
+					}
+					p{
+						color: #909090;
+					}
+				}
+			}
+			li:nth-of-type(odd){
+				margin-right: 40px;
+			}
+		}
+	}
+}
