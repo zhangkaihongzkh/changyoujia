@@ -215,6 +215,24 @@ input:focus {
   position: relative;
   /* 城市选择 */
 }
+#main-ad .main-ad-content .searchbox .select-place:hover .select-place-arrow {
+  transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  /* Firefox 4 */
+  -webkit-transition: transform 0.2s;
+  /* Safari 和 Chrome */
+  -o-transition: transform 0.2s;
+  /* Opera */
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -webkit-transform: rotate(180deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(180deg);
+  /* Opera */
+}
 #main-ad .main-ad-content .searchbox .select-place .select-place-arrow {
   margin-left: 10px;
   display: inline-block;
@@ -227,8 +245,8 @@ input:focus {
 #main-ad .main-ad-content .searchbox .select-place .select-place-item {
   display: none;
   position: absolute;
-  left: -22px;
-  top: 30px;
+  left: -20px;
+  top: 20px;
   padding-top: 11px;
   width: 100px;
   background-image: url("../images/home-city-select.png");
@@ -586,13 +604,13 @@ input:focus {
   /* 内容区域 */
 }
 #leader-list-content .leader-list-title {
-  text-align: center;
-  padding: 220px 0;
+  padding: 110px 0 190px 0;
 }
-#leader-list-content .leader-list-title h2 {
-  font-weight: bold;
-  font-size: 36px;
-  color: #fff;
+#leader-list-content .leader-list-title .leader-list-title-bg {
+  margin: 0 auto;
+  width: 831px;
+  height: 229px;
+  background: url("../images/leader-list-title.png") no-repeat top center;
 }
 #leader-list-content .leader-list-wrapper .leader-list-filter-box {
   background-color: #fff;
@@ -633,6 +651,9 @@ input:focus {
   width: 235px;
   margin-left: 20px;
   margin-bottom: 20px;
+  -moz-box-shadow: 0px 0px 1px 1px #e0e0e0;
+  -webkit-box-shadow: 0px 0px 1px 1px #e0e0e0;
+  box-shadow: 0px 0px 1px 1px #e0e0e0;
 }
 #leader-list-content .leader-list-container li.leader-list-items .leader-items-img img {
   width: 100%;

@@ -5,13 +5,17 @@ $(function(){
 		var $selectPlaceWrapper = $('#main-ad .select-place');
 		var $selectPlaceName = $selectPlaceWrapper.find('.select-place-name');//城市
 		var $cityName = $selectPlaceWrapper.find('.city-name');//当前选中的城市
+		var $arrow = $selectPlaceWrapper.find('.select-place-arrow');//箭头
 		var $selectPlaceItemWrapper = $selectPlaceWrapper.find('.select-place-item');//其他城市
 		var $selectPlaceItem = $selectPlaceItemWrapper.find('li');//每一个城市
+		
 		$selectPlaceName.hover(function(){
 			$selectPlaceItemWrapper.stop().slideDown();
+			
 		},function(){
 			$selectPlaceItemWrapper.stop().slideUp();
 		});
+		
 		$selectPlaceItem.on('click',function(){
 			var $this = $(this);
 			var $currentCityName = $this.html();
