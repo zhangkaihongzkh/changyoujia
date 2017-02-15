@@ -615,6 +615,9 @@ input:focus {
   color: #646464;
   padding: 0 5px;
 }
+#leader-info-content .path-navigation li:last-child {
+  color: #EF8B1D;
+}
 #leader-info-content .leader-info-wrapper {
   padding: 60px 25px 60px 80px;
   background-image: url('../images/leader-info-bg.png');

@@ -596,35 +596,35 @@ input:focus {
 .person-center-points-main .person-center-points-description .points-description-wrapper li + li {
   border-top: 2px solid #e7e6e5;
 }
-#leader-info-content {
+#car-master-info-content {
   background-color: #f0f0f0;
-  padding-bottom: 50px;
+  padding-bottom: 20px;
   /* 领队信息 */
 }
-#leader-info-content .path-navigation {
+#car-master-info-content .path-navigation {
   padding: 20px 0;
 }
-#leader-info-content .path-navigation li {
+#car-master-info-content .path-navigation li {
   display: inline-block;
 }
-#leader-info-content .path-navigation li a {
+#car-master-info-content .path-navigation li a {
   color: #646464;
 }
-#leader-info-content .path-navigation li + li:before {
+#car-master-info-content .path-navigation li + li:before {
   content: '>';
   color: #646464;
   padding: 0 5px;
 }
-#leader-info-content .path-navigation li:last-child {
+#car-master-info-content .path-navigation li:last-child {
   color: #EF8B1D;
 }
-#leader-info-content .leader-info-wrapper {
+#car-master-info-content .car-master-info-wrapper {
   padding: 60px 25px 60px 80px;
   background-image: url('../images/leader-info-bg.png');
   background-color: #fff;
   background-repeat: no-repeat;
 }
-#leader-info-content .leader-info-wrapper .leader-info-img {
+#car-master-info-content .car-master-info-wrapper .car-master-info-img {
   float: left;
   width: 300px;
   border: 20px solid #fff;
@@ -632,45 +632,45 @@ input:focus {
   -webkit-box-shadow: 3px 3px 1px #D3D3D3;
   box-shadow: 3px 3px 1px #D3D3D3;
 }
-#leader-info-content .leader-info-wrapper .leader-info-img img {
+#car-master-info-content .car-master-info-wrapper .car-master-info-img img {
   display: block;
   width: 100%;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text {
   float: right;
   width: 530px;
   /* 印象 */
 }
-#leader-info-content .leader-info-wrapper .leader-info-text h3 {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text h3 {
   font-size: 28px;
   letter-spacing: 15px;
   margin: 40px 0 20px 0;
   color: #333333;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text p.leader-info-signature {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text p.car-master-info-signature {
   font-size: 20px;
   color: #333333;
   line-height: 1.5;
   border-bottom: 1px solid #b0b0b0;
   padding-bottom: 40px;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text p.leader-info-signature span {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text p.car-master-info-signature span {
   color: #909090;
   font-size: 36px;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text p.leader-info-parameter {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text p.car-master-info-parameter {
   margin: 35px 0 25px 0;
   color: #333333;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text p.leader-info-parameter span {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text p.car-master-info-parameter span {
   margin-right: 20px;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text p.leader-info-parameter span i {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text p.car-master-info-parameter span i {
   color: #EF8B1D;
   padding-right: 5px;
   font-size: 20px;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text .leader-info-impression li {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text .car-master-info-impression li {
   padding: 10px 20px;
   float: left;
   color: #fff;
@@ -678,65 +678,134 @@ input:focus {
   margin-right: 20px;
   margin-bottom: 10px;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text .leader-info-impression li:nth-child(3n+1) {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text .car-master-info-impression li:nth-child(3n+1) {
   background-color: #82d1e4;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text .leader-info-impression li:nth-child(3n+2) {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text .car-master-info-impression li:nth-child(3n+2) {
   background-color: #EF8B1D;
 }
-#leader-info-content .leader-info-wrapper .leader-info-text .leader-info-impression li:nth-child(3n) {
+#car-master-info-content .car-master-info-wrapper .car-master-info-text .car-master-info-impression li:nth-child(3n) {
   background-color: #f67c89;
 }
+/* 车师傅展示区域 */
+#car-master-show {
+  background-color: #f0f0f0;
+  padding-bottom: 20px;
+}
+#car-master-show .car-master-show-content {
+  background-color: #fff;
+  padding: 20px;
+}
+#car-master-show .car-master-show-content li.car-master-show-item {
+  float: left;
+}
+#car-master-show .car-master-show-content li.car-master-show-item img {
+  display: block;
+}
+#car-master-show .car-master-show-content li + li {
+  margin-left: 15px;
+}
+/* 添加标签 */
+#car-master-add-tags-content {
+  background-color: #f0f0f0;
+  padding-bottom: 20px;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper {
+  padding: 20px 5px 20px 25px;
+  background-color: #fff;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-title {
+  margin: 0 auto;
+  width: 185px;
+  height: 18px;
+  background-image: url("../images/leader-add-tags-title.png");
+  margin-bottom: 25px;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .add-tags-wrapper a.add-tags-button,
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .add-tags-wrapper li.add-tags-item {
+  float: left;
+  line-height: 40px;
+  height: 40px;
+  padding: 0 25px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  background-color: #dcdbdb;
+  color: #646464;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .add-tags-wrapper li.selected:nth-child(3n) {
+  color: #fff;
+  background-color: #EF8B1D;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .add-tags-wrapper li.selected:nth-child(3n+1) {
+  color: #fff;
+  background-color: #f67c89;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .add-tags-wrapper li.selected:nth-child(3n+2) {
+  color: #fff;
+  background-color: #82d1e4;
+}
+#car-master-add-tags-content .car-master-add-tags-wrapper .car-master-add-tags-text .tags-submit-btn {
+  text-align: center;
+  width: 160px;
+  display: block;
+  padding: 15px 0;
+  background-color: #EF8B1D;
+  color: #fff;
+  margin: 15px auto 5px auto;
+  border-radius: 5px;
+}
 /* 内容部分 */
-#leader-person-data-content {
+#car-master-person-data-content {
   background-color: #f0f0f0;
   padding-bottom: 190px;
 }
-#leader-person-data-content .leader-person-data-wrapper {
+#car-master-person-data-content .car-master-person-data-wrapper {
   background-color: #fff;
   padding-bottom: 55px;
   /* 主要内容区域 */
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title {
   padding-top: 15px;
   border-bottom: 2px solid #f8f3e9;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title li {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title li {
   display: inline-block;
   padding-bottom: 15px;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title li a {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title li a {
   padding: 0 35px;
   color: #646464;
   font-size: 16px;
   font-weight: normal;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title li.active {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title li.active {
   border-bottom: 2px solid #EF8B1D;
   margin-bottom: -3px;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title li.active a {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title li.active a {
   color: #EF8B1D;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-line-title li + li a {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-line-title li + li a {
   border-left: 2px solid #d4d2d2;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-person-data-container .leader-person-data-detail {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-person-data-container .car-master-person-data-detail {
   margin-top: 40px;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-person-data-container .leader-person-data-detail h3 {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-person-data-container .car-master-person-data-detail h3 {
   border-left: 3px solid #EF8B1D;
   padding-left: 15px;
   font-size: 16px;
   font-weight: normal;
   margin-bottom: 30px;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-person-data-container .leader-person-data-detail dl {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-person-data-container .car-master-person-data-detail dl {
   padding-left: 20px;
   font-size: 14px;
   line-height: 2;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-person-data-container .leader-person-data-detail dl dt {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-person-data-container .car-master-person-data-detail dl dt {
   display: inline-block;
   max-width: 65px;
   width: 65px;
@@ -744,7 +813,7 @@ input:focus {
   color: #909090;
   vertical-align: top;
 }
-#leader-person-data-content .leader-person-data-wrapper .leader-person-data-container .leader-person-data-detail dl dd {
+#car-master-person-data-content .car-master-person-data-wrapper .car-master-person-data-container .car-master-person-data-detail dl dd {
   display: inline-block;
   max-width: 500px;
   color: #333333;

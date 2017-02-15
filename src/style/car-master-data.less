@@ -1,9 +1,9 @@
 //引入全局less
 @import "global";
 
-#leader-info-content{
+#car-master-info-content{
 	background-color: @comCenterBGC;
-	padding-bottom: 50px;
+	padding-bottom: 20px;
 	.path-navigation{
 		padding: 20px 0;
 		li{
@@ -22,12 +22,12 @@
 		}
 	}
 	/* 领队信息 */
-	.leader-info-wrapper{
+	.car-master-info-wrapper{
 		padding: 60px 25px 60px 80px;
 		background-image: url('../images/leader-info-bg.png');
 		background-color: #fff;
 		background-repeat: no-repeat;
-		.leader-info-img{
+		.car-master-info-img{
 			float: left;
 			width: 300px;
 			border: 20px solid #fff;
@@ -38,7 +38,7 @@
 				width: 100%;
 			}
 		}
-		.leader-info-text{
+		.car-master-info-text{
 			float: right;
 			width: 530px;
 			h3{
@@ -47,7 +47,7 @@
 				margin: 40px 0 20px 0;
 				color: #333333;
 			}
-			p.leader-info-signature{
+			p.car-master-info-signature{
 				font-size: 20px;
 				color: #333333;
 				line-height: 1.5;
@@ -58,7 +58,7 @@
 					font-size: 36px;
 				}
 			}
-			p.leader-info-parameter{
+			p.car-master-info-parameter{
 				margin: 35px 0 25px 0;
 				color: #333333;
 				span{
@@ -71,7 +71,7 @@
 				}
 			}
 			/* 印象 */
-			.leader-info-impression{
+			.car-master-info-impression{
 				li{
 					padding:10px 20px;
 					float: left;
@@ -95,14 +95,89 @@
 	}
 }
 
+/* 车师傅展示区域 */
+#car-master-show{
+	background-color: @comCenterBGC;
+	padding-bottom: 20px;
+	.car-master-show-content{
+		background-color: #fff;
+		padding: 20px;
+		li.car-master-show-item{
+			float: left;
+			img{
+				display: block;
+			}
+		}
+		li + li{
+			margin-left: 15px;
+		}
+	}
+}
+
+/* 添加标签 */
+#car-master-add-tags-content{
+	background-color: @comCenterBGC;
+	padding-bottom: 20px;
+	.car-master-add-tags-wrapper{
+		padding: 20px 5px 20px 25px;
+		background-color: #fff;
+		.car-master-add-tags-title{
+			margin: 0 auto;
+			width: 185px;
+			height: 18px;
+			background-image: url("../images/leader-add-tags-title.png");
+			margin-bottom: 25px;
+		}
+		.car-master-add-tags-text{
+			.add-tags-wrapper{
+				a.add-tags-button,
+				li.add-tags-item{
+					float: left;
+					line-height: 40px;
+					height: 40px;
+					padding: 0 25px;
+					margin-right: 19px;
+					margin-bottom: 20px;
+					cursor: pointer;
+					border-radius: 5px;
+					background-color: #dcdbdb;
+					color: #646464;
+				}
+				li.selected:nth-child(3n){
+					color: #fff;
+					background-color: @comBGC;
+				}
+				li.selected:nth-child(3n+1){
+					color: #fff;
+					background-color: #f67c89;
+				}
+				li.selected:nth-child(3n+2){
+					color: #fff;
+					background-color: #82d1e4;
+				}
+			}
+			.tags-submit-btn{
+				text-align: center;
+				width: 160px;
+				display: block;
+				padding: 15px 0;
+				background-color: @comBGC;
+				color: #fff;
+				margin:15px auto 5px auto;
+				border-radius: 5px;
+			}
+		}
+	}
+}
+
 /* 内容部分 */
-#leader-person-data-content{
+#car-master-person-data-content{
 	background-color: @comCenterBGC;
 	padding-bottom: 190px;
-	.leader-person-data-wrapper{
+	.car-master-person-data-wrapper{
 		background-color: #fff;
 		padding-bottom: 55px;
-		.leader-line-title{
+		.car-master-line-title{
 			padding-top: 15px;
 			border-bottom: 2px solid  @comContentBGC;
 			li{
@@ -129,8 +204,8 @@
 			}
 		}
 		/* 主要内容区域 */
-		.leader-person-data-container{
-			.leader-person-data-detail{
+		.car-master-person-data-container{
+			.car-master-person-data-detail{
 				margin-top: 40px;
 				h3{
 					border-left: 3px solid @comBGC;
