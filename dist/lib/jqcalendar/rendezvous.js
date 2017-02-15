@@ -748,7 +748,7 @@
 				openDatepicker();
 			}
 		}
-/*www.sucaijiayuan.com*/
+
 		var onRequestToFocus = function(event) {
 			$input.find('input').first().focus();
 		}

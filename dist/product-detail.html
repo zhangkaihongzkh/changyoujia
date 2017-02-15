@@ -9,8 +9,7 @@
     <!-- 引入字体图标 -->
     <link rel="stylesheet" type="text/css" href="style/iconfont.css">
     
-    <!-- 引入日历插件 -->
-    <link rel="stylesheet" type="text/css" href="lib/jqcalendar/rendezvous.css">
+    
     
 
     <link rel="stylesheet" type="text/css" href="style/global.css">
@@ -48,7 +47,7 @@
 
     <section id="product-represent-content">
       <div class="comWidth clearfix">
-        <div class="product-represent-head-box">
+        <div class="product-represent-head-box ">
           <div class="product-represent-prevew">
             <div id="preview" class="spec-preview"> <span class="jqzoom"><img jqimg="images/product-represent-item-lg.png" src="images/product-represent-item-md.png" /></span> </div>
             <!--缩图开始-->
@@ -91,24 +90,202 @@
               <span class="text-title">交通工具：</span>
               <span class="rendezvous-place">飞机、汽车</span>
             </p>
-            <p class="text-control">
+            <p class="text-control payment">
               <span class="text-title">付款方式：</span>
-              <span class="rendezvous-place">飞机、汽车</span>
+              <span class="alipay">支付宝</span>
+              <span class="credit-card">信用卡</span>
+              <span class="E-bank">网银支付</span>
+              <span class="bank-card">银行汇款</span>
             </p>
             <p class="text-control share-item">
               <span class="text-title">分享到：</span>
-              <span><div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a></div></span>
-              <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{},"image":{"viewList":["tqq","qzone","tqf","tsina","renren","bdhome"],"viewText":"分享到：","viewSize":"24"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["tqq","qzone","tqf","tsina","renren","bdhome"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
+              <div class="bdsharebuttonbox"><a href="#" class="bds_more" data-cmd="more"></a><a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a><a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a><a href="#" class="bds_tqf" data-cmd="tqf" title="分享到腾讯朋友"></a><a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a><a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"></a><a href="#" class="bds_bdhome" data-cmd="bdhome" title="分享到百度新首页"></a></div>
+              <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
             </p>
           </div>
         </div>
       </div>
     </section>
+    
+    <!-- 日历下单区域 -->
+    <section id="product-order-content">
+      <div class="comWidth">
+        <div class="product-order-box">
+          <div class="product-order-wrapper clearfix">
+            <div class="calendar-box"> 
+             <div class="rendezvous-popup" style="display: block;"> 
+              <div class="rendezvous-datepicker"> 
+               <nav class="rendezvous-datepicker-navigation"> 
+                <button class="rendezvous-datepicker-navigation-action rendezvous-datepicker-navigation-previous" title="上一月"> &laquo;</button> 
+                <button class="rendezvous-datepicker-navigation-action rendezvous-datepicker-navigation-up" title="选择月份"> 二月 2017</button> 
+                <button class="rendezvous-datepicker-navigation-action rendezvous-datepicker-navigation-next" title="下一月"> &raquo;</button> 
+               </nav> 
+               <section class="rendezvous-datepicker-calendar"> 
+                <header class="rendezvous-datepicker-calendar-header"> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期一"> 一 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期二"> 二 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期三"> 三 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期四"> 四 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期五"> 五 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期六"> 六 </abbr> 
+                 <abbr class="rendezvous-datepicker-calendar-title rendezvous-datepicker-calendar-week-day" title="星期日"> 日 </abbr> 
+                </header> 
+                <div class="rendezvous-datepicker-calendar-body"> 
+                 <span class="rendezvous-datepicker-calendar-dummy-value rendezvous-datepicker-calendar-day"> </span> 
+                 <span class="rendezvous-datepicker-calendar-dummy-value rendezvous-datepicker-calendar-day"> </span> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 1 
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 2
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 3
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 4
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 5
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 6
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 7
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 8
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 9
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 10
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 11
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 12
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 13
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 14
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-selected-value rendezvous-datepicker-calendar-day"> 15
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 16
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 17
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 18
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 19
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 20
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 21
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 22
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 23
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 24
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 25
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 26
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 27
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                 <button class="rendezvous-datepicker-calendar-value rendezvous-datepicker-calendar-day"> 28
+                  <div class="price">
+                   ￥25789
+                  </div></button> 
+                </div> 
+               </section> 
+              </div> 
+             </div> 
+            </div>
+            <div class="order-detail">
+              <h3>请选择出发日期</h3>
+              <form id="orderForm">
+                <div class="select-control">
+                  <select class="travel-date">
+                    <option>请选择出发日期</option>
+                  </select>
+                </div>
+                <div class="select-control">
+                  <select class="adult-num">
+                    <option>请选择人数</option>
+                  </select>
+                  <span>成人</span>
+                </div>
+                <div class="select-control">
+                  <select class="child-num">
+                    <option>请选择人数</option>
+                  </select>
+                  <span>儿童（身高1.4m以下）</span>
+                </div>
+                <input type="submit" name="" value="立即购买" class="order-submit-btn">
+              </form>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <!-- /日历下单区域 -->
+        
+        
 
     <!-- 列表主体内容 -->
     <section id="product-detail-content">
       <div class="comWidth clearfix">
-        <main class="product-detail-main">                                                                
+        <main class="product-detail-main">            
           <ul class="product-detail-tabs clearfix">
             <li class="active"><a>亮点</a></li>
             <li><a>产品描述</a></li>
@@ -446,8 +623,7 @@
     <script src="lib/jquery/jquery.min.js"></script>
     <!-- 放大镜插件 -->
     <script type="text/javascript" src="lib/jqzoom/jquery.jqzoom.js"></script>
-    <!-- 日历控件，需要先引入jq -->
-    <script type="text/javascript" src="lib/jqcalendar/rendezvous.js"></script>
+
 
     <script type="text/javascript" src="js/product-detail.js"></script>
 

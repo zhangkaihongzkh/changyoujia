@@ -698,6 +698,132 @@ input:focus {
   border: 2px solid #FF6600;
   padding: 1px;
 }
+/* 日历样式 */
+.rendezvous-input {
+  text-align: left;
+}
+.rendezvous-popup {
+  z-index: 100;
+}
+.rendezvous-datepicker {
+  width: 36rem;
+  font-size: 0.9rem;
+  cursor: default;
+  background-color: #fff;
+}
+.rendezvous-datepicker * {
+  box-sizing: border-box;
+  background: none;
+  border: 0 none;
+  padding: 0;
+  margin: 0;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-family: "microsoft yahei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+.rendezvous-datepicker button::-moz-focus-inner,
+.rendezvous-datepicker input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+.rendezvous-datepicker-navigation {
+  background-color: #EF8B1D;
+}
+.rendezvous-datepicker-navigation-action {
+  height: 2.2em;
+  line-height: 2.2em;
+  display: block;
+  float: left;
+  text-align: center;
+  color: #fff;
+}
+.rendezvous-datepicker-navigation-action:hover {
+  background-color: #efb41d;
+}
+.rendezvous-datepicker-navigation-previous,
+.rendezvous-datepicker-navigation-next {
+  width: 25%;
+}
+.rendezvous-datepicker-navigation-up {
+  width: 50%;
+}
+.rendezvous-datepicker-calendar {
+  border: 1px solid rgba(0, 0, 0, 0.18);
+  border-top: 0 none;
+}
+.rendezvous-datepicker-calendar-header {
+  padding: 0.35em 0;
+  background-color: #eeeeee;
+}
+.rendezvous-datepicker-calendar-body {
+  margin-top: 0.35em;
+  margin-bottom: 0.3em;
+}
+.rendezvous-datepicker-calendar-title {
+  display: block;
+  float: left;
+  padding: 0 0.28em;
+  color: #666;
+}
+.rendezvous-datepicker-calendar-value,
+.rendezvous-datepicker-calendar-dummy-value,
+.rendezvous-datepicker-calendar-selected-value {
+  display: block;
+  float: left;
+  padding: 0 0.28em;
+  color: #222;
+}
+.rendezvous-datepicker-calendar-value {
+  background-color: #f9f9f9;
+}
+.rendezvous-datepicker-calendar-value:hover {
+  color: #000;
+  background-color: #ececec;
+}
+.rendezvous-datepicker-calendar-selected-value {
+  background-color: #efefef;
+}
+.rendezvous-datepicker-calendar-selected-value:hover {
+  color: #000;
+  background-color: #dfdfdf;
+}
+.rendezvous-datepicker-calendar-week-day,
+.rendezvous-datepicker-calendar-day {
+  width: 13.28571%;
+  margin: 0.5% 0.1%;
+}
+.rendezvous-datepicker-calendar-week-day {
+  height: 1.5em;
+  line-height: 1.5em;
+  text-align: center;
+}
+.rendezvous-datepicker-calendar-day {
+  height: 3.6em;
+  line-height: 1.6em;
+  text-align: center;
+}
+.rendezvous-datepicker-calendar-day .price {
+  margin-top: 10px;
+  color: #EF8B1D;
+}
+.rendezvous-datepicker-calendar-month {
+  width: 31.33333%;
+  margin: 1%;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.rendezvous-datepicker-calendar-year {
+  width: 48%;
+  margin: 1%;
+  height: 1.8em;
+  line-height: 1.8em;
+  text-align: center;
+}
+.rendezvous-datepicker-clear {
+  clear: both;
+}
 /* 付款方式 */
 #product-represent-content {
   background-color: #f8f3e9;
@@ -714,6 +840,7 @@ input:focus {
 #product-represent-content .product-represent-head-box .product-represent-detail {
   float: right;
   width: 640px;
+  /* 支付方式 */
 }
 #product-represent-content .product-represent-head-box .product-represent-detail .product-title {
   font-size: 20px;
@@ -769,8 +896,86 @@ input:focus {
   right: 10px;
   z-index: -1;
 }
+#product-represent-content .product-represent-head-box .product-represent-detail .payment .text-title {
+  float: left;
+}
+#product-represent-content .product-represent-head-box .product-represent-detail .payment .alipay {
+  padding-left: 25px;
+  background: url('../images/product-zhifubao.png') left top no-repeat;
+}
+#product-represent-content .product-represent-head-box .product-represent-detail .payment .credit-card {
+  padding-left: 25px;
+  background: url('../images/product-credit-card.png') left top no-repeat;
+}
+#product-represent-content .product-represent-head-box .product-represent-detail .payment .E-bank {
+  padding-left: 25px;
+  background: url('../images/product-E-bank.png') left top no-repeat;
+}
+#product-represent-content .product-represent-head-box .product-represent-detail .payment .bank-card {
+  padding-left: 25px;
+  background: url('../images/product-bank-card.png') left top no-repeat;
+}
 #product-represent-content .product-represent-head-box .product-represent-detail .share-item span {
   float: left;
+}
+/* 订单填写 */
+#product-order-content {
+  background-color: #f8f3e9;
+}
+#product-order-content .product-order-box {
+  padding: 20px;
+  background-color: #fff;
+}
+#product-order-content .product-order-box .product-order-wrapper {
+  box-sizing: border-box;
+  border: 2px solid #EF8B1D;
+  padding: 12px 7px;
+}
+#product-order-content .product-order-box .product-order-wrapper .calendar-box {
+  width: 560px;
+  float: left;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail {
+  width: 350px;
+  float: right;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail h3 {
+  padding: 10px 0;
+  color: #EF8B1D;
+  font-size: 20px;
+  text-align: center;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail .select-control {
+  margin-bottom: 30px;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail .select-control span {
+  margin-left: 20px;
+  font-size: 16px;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail select {
+  border-radius: 5px;
+  padding: 15px 20px;
+  color: #333333;
+  font-size: 14px;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail select.travel-date {
+  width: 100%;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail select.adult-num {
+  width: 290px;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail select.child-num {
+  width: 160px;
+}
+#product-order-content .product-order-box .product-order-wrapper .order-detail .order-submit-btn {
+  width: 100%;
+  background-color: #EF8B1D;
+  color: #fff;
+  padding: 20px 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
 }
 #product-detail-content {
   padding-top: 20px;

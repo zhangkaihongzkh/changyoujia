@@ -25,6 +25,152 @@
 .spec-scroll .items ul li img:hover{border:2px solid #FF6600;padding:1px;}
 
 
+/* 日历样式 */
+.rendezvous-input {
+	text-align: left
+}
+
+.rendezvous-popup {
+	z-index: 100
+}
+
+.rendezvous-datepicker {
+	width: 36rem;
+	font-size: 0.9rem;
+	cursor: default;
+	background-color: #fff;
+}
+
+.rendezvous-datepicker * {
+	box-sizing: border-box;
+	background: none;
+	border: 0 none;
+	padding: 0;
+	margin: 0;
+	font-size: 1em;
+	line-height: 1.2em;
+	font-family: "microsoft yahei","Helvetica Neue",Helvetica,Arial,sans-serif;
+	overflow: hidden
+}
+
+.rendezvous-datepicker button::-moz-focus-inner,.rendezvous-datepicker input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+
+.rendezvous-datepicker-navigation {
+	background-color: @comBGC;
+}
+
+.rendezvous-datepicker-navigation-action {
+	height: 2.2em;
+	line-height: 2.2em;
+	display: block;
+	float: left;
+	text-align: center;
+	color: #fff
+}
+
+.rendezvous-datepicker-navigation-action:hover {
+	background-color: #efb41d;
+}
+
+.rendezvous-datepicker-navigation-previous,.rendezvous-datepicker-navigation-next {
+	width: 25%
+}
+
+.rendezvous-datepicker-navigation-up {
+	width: 50%
+}
+
+.rendezvous-datepicker-calendar {
+	border: 1px solid rgba(0,0,0,0.18);
+	border-top: 0 none
+}
+
+.rendezvous-datepicker-calendar-header {
+	padding: 0.35em 0;
+	background-color: #eeeeee;
+}
+
+.rendezvous-datepicker-calendar-body {
+	margin-top: 0.35em;
+	margin-bottom: 0.3em
+}
+
+.rendezvous-datepicker-calendar-title {
+	display: block;
+	float: left;
+	padding: 0 0.28em;
+	color: #666;
+
+}
+
+.rendezvous-datepicker-calendar-value,.rendezvous-datepicker-calendar-dummy-value,.rendezvous-datepicker-calendar-selected-value {
+	display: block;
+	float: left;
+	padding: 0 0.28em;
+	color: #222
+}
+
+.rendezvous-datepicker-calendar-value {
+	background-color: #f9f9f9
+}
+
+.rendezvous-datepicker-calendar-value:hover {
+	color: #000;
+	background-color: #ececec
+}
+
+.rendezvous-datepicker-calendar-selected-value {
+	background-color: #efefef
+}
+
+.rendezvous-datepicker-calendar-selected-value:hover {
+	color: #000;
+	background-color: #dfdfdf
+}
+
+.rendezvous-datepicker-calendar-week-day,.rendezvous-datepicker-calendar-day {
+	width: 13.28571%;
+	margin: 0.5% 0.1%;
+}
+
+.rendezvous-datepicker-calendar-week-day {
+	height: 1.5em;
+	line-height: 1.5em;
+	text-align: center
+}
+
+.rendezvous-datepicker-calendar-day {
+	height: 3.6em;
+	line-height: 1.6em;
+	text-align: center
+}
+.rendezvous-datepicker-calendar-day .price{
+	margin-top: 10px;
+	color: @comBGC;
+}
+
+.rendezvous-datepicker-calendar-month {
+	width: 31.33333%;
+	margin: 1%;
+	height: 1.8em;
+	line-height: 1.8em;
+	text-align: center
+}
+
+.rendezvous-datepicker-calendar-year {
+	width: 48%;
+	margin: 1%;
+	height: 1.8em;
+	line-height: 1.8em;
+	text-align: center
+}
+
+.rendezvous-datepicker-clear {
+	clear: both
+}
 
 /* 付款方式 */
 #product-represent-content{
@@ -94,6 +240,29 @@
 				    z-index: -1;
 				}
 			}
+			/* 支付方式 */
+			.payment{
+				.text-title{
+					float: left;
+				}
+				.alipay{
+					padding-left: 25px;
+					background: url('../images/product-zhifubao.png') left top no-repeat;
+				}
+				.credit-card{
+					padding-left: 25px;
+					background: url('../images/product-credit-card.png') left top no-repeat;
+				}
+				.E-bank{
+					padding-left: 25px;
+					background: url('../images/product-E-bank.png') left top no-repeat;
+				}
+				.bank-card{
+					padding-left: 25px;
+					background: url('../images/product-bank-card.png') left top no-repeat;
+				}
+				
+			}
 			.share-item{
 				span{
 					float: left;
@@ -102,6 +271,67 @@
 		}
 	}
 }
+/* 订单填写 */
+#product-order-content{
+	background-color: @comContentBGC;
+	.product-order-box{
+		padding: 20px;
+		background-color: #fff;
+		.product-order-wrapper{
+			box-sizing: border-box;
+			border:2px solid @comBGC;
+			padding: 12px 7px;
+			.calendar-box{
+				width: 560px;
+				float: left;
+			}
+			.order-detail{
+				 width: 350px;
+				 float: right;
+				 h3{
+				 	padding: 10px 0;
+				 	color: @comBGC;
+				 	font-size: 20px;
+				 	text-align: center;
+				 }
+				 .select-control{
+				 	margin-bottom: 30px;
+				 	span{
+						margin-left: 20px;
+						font-size: 16px;
+					}
+				 }
+				 select{
+				 	border-radius: 5px;
+				 	padding: 15px 20px;
+				 	color: #333333;
+				 	font-size: 14px;
+	
+				 }
+				 select.travel-date{
+				 	width: 100%;
+				 }
+				 select.adult-num{
+				 	width: 290px;
+				 }
+				 select.child-num{
+				 	width: 160px;
+				 }
+				 .order-submit-btn{
+				 	width: 100%;
+				 	background-color: @comBGC;
+				 	color: #fff;
+				 	padding: 20px 0;
+				 	border-radius: 5px;
+				 	cursor: pointer;
+				 	font-size: 18px;
+				 	font-weight: bold;
+				 }
+			}
+		}
+	}
+}
+
 
 #product-detail-content{
 	padding-top: 20px;
