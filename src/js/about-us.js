@@ -9,50 +9,6 @@ function tabs(tabId, tabNum){
 }
 $(function(){
 	//动态修改员工风采区域的位置
-	(function(window){
-		
-		var $bigItem = $('#staff-style .big-item');//获取到每一个员工大item
-		var $smallItem = $('#staff-style .small-item');//获取到每一个员工大item
-		var $bigItemNum = $bigItem.length;	//大的个数
-		var $smallItemNum = $smallItem.length;	//大的个数
-		$bigItem.each(function(){
-			var $this = $(this);//当前对象
-			var $idx = $(this).index();
-			var $width = $(this).width();//宽度
-			var $height = $(this).height();//高度
-			//console.log($idx);
-			if($idx % 2 == 1){//奇数
-				$this.css({
-					"left": (($idx)%6 * ($this.width() - 30)) + 'px',
-					"top": $idx * ($height +30) + 'px',
-				});
-			} else if($idx % 2 == 0){//偶数
-				$this.css({
-					"right": (($idx)%6 * ($this.width() + 30)) + 'px',
-					"top": $idx * ($height -30) + 'px',
-				});
-			}
-
-		});
-		$smallItem.each(function(){
-			var $this = $(this);//当前对象
-			var $idx = $(this).index() - $bigItemNum;
-			var $width = $(this).width();//宽度
-			var $height = $(this).height();//高度
-			//console.log($idx);
-			if($idx % 2 == 0){//奇数
-				$this.css({
-					"left": (($idx)%5 * ($this.width()+ 60 )) + 'px',
-					"top": $idx * ($height +15) + 'px',
-				});
-			} else if($idx % 2 == 1){//偶数
-				$this.css({
-					"left": (($idx)%5 * ($this.width()+ 60 )) + 'px',
-					"top": $idx * ($height -15) + 'px',
-				});
-			}
-		});
-	})(window);
 
 	//加入我们选项卡
 	(function(window){
