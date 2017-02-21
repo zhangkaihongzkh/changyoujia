@@ -8,7 +8,6 @@ function tabs(tabId, tabNum){
 	$(tabId + " .tabcon").eq(tabNum).show();
 }
 $(function(){
-	//动态修改员工风采区域的位置
 
 	//加入我们选项卡
 	(function(window){

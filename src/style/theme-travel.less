@@ -1,0 +1,241 @@
+//引入全局less
+@import "global";
+
+@comContentColor1:#e28301;//内容第一版颜色
+@comContentColor2:#fdb840;//内容第二版颜色
+@comContentColor3:#fa5974;//内容第三版颜色
+@comContentColor4:#25b2e0;//内容第四版颜色
+@comContentColor5:#60aa59;//内容第五版颜色
+
+/* banner */
+#theme-travel-banner{
+	background: url('../images/theme-travel-banner.png') no-repeat top center;
+	width: 100%;
+	height: 610px;
+	background-color: #f8f3e9;
+}	
+
+.comSection{
+	padding-bottom: 20px;
+	.theme-travel-content{
+		position: relative;
+		/* 通用标题部分 */
+		.content-title{
+			text-align: center;
+			padding: 40px 0;
+			position: relative;
+			color: #fff;
+			span{
+				font-size: 60px;
+				line-height: 60px;
+				height: 60px;
+				text-align: center;
+				vertical-align: top;
+			}
+			.title-text{
+				display: inline-block;
+				margin: 0 20px;
+				h4{
+					font-size: 28px;
+					font-weight: normal;
+				}
+				p{
+					color: #ffffff;
+					font-size: 20px;
+				}
+			}
+		}
+		.content-title::before{
+			left: 220px;
+    		top: 70px;
+			content: '';
+			height: 2px;
+			width: 140px;
+			position: absolute;
+			background-color: #fff;
+		}
+		.content-title::after{
+			right: 220px;
+    		top: 70px;
+			content: '';
+			height: 2px;
+			width: 140px;
+			position: absolute;
+			background-color: #fff;
+		}
+		.theme-travel-item{
+			overflow: hidden;
+			float: left;
+			border-radius: 8px;
+			width: 320px;
+			background-color: #fff;
+			margin-right: 20px;
+			margin-bottom: 30px;
+
+			transition: box-shadow .5s;
+		    -moz-transition: box-shadow .5s;
+		    -webkit-transition: box-shadow .5s;
+		    -o-transition: box-shadow .5s;
+		    &:hover{
+		    	box-shadow: 0 2px 6px #ccc;
+		    	transition: box-shadow .5s;
+			    -moz-transition: box-shadow .5s;
+			    -webkit-transition: box-shadow .5s;
+			    -o-transition: box-shadow .5s;
+		    }
+			.theme-travel-item-text{
+				padding:20px 130px 20px 10px;
+				position: relative;
+				p{
+					color: #333;
+					letter-spacing: 1px;
+					line-height: 1.5;
+				}
+				span{
+					position: absolute;
+					left: 235px;
+					top:25px;
+					color: @comBGC;
+					font-weight: bold;
+					font-size: 16px;
+				}
+			}
+		}
+		.theme-travel-item:nth-of-type(3n){
+			margin-right: 0;
+		}
+	}
+	//分页器样式
+	.swiper-pagination{
+		width: @comWidth;
+		text-align: center;
+		position: relative;
+		margin-bottom: 40px;
+		.swiper-pagination-bullet{
+			min-width: 100px;
+			min-height: 36px;
+			line-height: 36px;
+			margin: 0 5px;
+			color: #000000;
+			font-size: 18px;
+			background-color: transparent;
+			text-align: center;
+		}
+		.swiper-pagination-bullet-active{
+			color: #ffffff;
+			background-color: #ffffff;
+			border-radius: 5px;
+		}
+	}
+}
+
+/* 第一块内容区域 */
+#section-one{
+	background-color: #f8f3e9;
+	/* 标题区域 */
+	.content-title{
+		color: @comContentColor1;
+		.title-text{
+			p{
+				color: #f3ad4e;
+			}
+		}
+	}
+	.content-title::before,.content-title::after{
+		background-color:  @comContentColor1;
+	}
+	/* 分页部分 */
+	.swiper-pagination{
+		.swiper-pagination-bullet-active{
+			background-color: @comContentColor1;
+		}
+	}
+}
+
+/* 第二块内容区域 */
+#section-two{
+	background-color: #fdb840;
+	/* 标题区域 */
+	.content-title{
+		.title-text{
+			p{
+				color: #fee2b0;
+			}
+		}
+	}
+	
+	/* 分页部分 */
+	.swiper-pagination{
+		.swiper-pagination-bullet-active{
+			//ackground-color: @ff;
+			color: @comContentColor2;
+		}
+	}
+}
+
+/* 第三块内容区域 */
+#section-three{
+	background-color: #e6e4e1;
+	/* 标题区域 */
+	.content-title{
+		color: @comContentColor3;
+		.title-text{
+			p{
+				color: #f3ad4e;
+			}
+		}
+	}
+	.content-title::before,.content-title::after{
+		background-color:  @comContentColor3;
+	}
+	/* 分页部分 */
+	.swiper-pagination{
+		.swiper-pagination-bullet-active{
+			background-color: @comContentColor3;
+		}
+	}
+}
+
+/* 第四块内容区域 */
+#section-four{
+	background-color: #25b2e0;
+	/* 标题区域 */
+	.content-title{
+		.title-text{
+			p{
+				color: #b4ecfe;
+			}
+		}
+	}
+	
+	/* 分页部分 */
+	.swiper-pagination{
+		.swiper-pagination-bullet-active{
+			//ackground-color: @ff;
+			color: @comContentColor4;
+		}
+	}
+}
+
+/* 第五块内容区域 */
+#section-five{
+	background-color: #f8f3e9;
+	/* 标题区域 */
+	.content-title{
+		color: @comContentColor5;
+		.title-text{
+			p{
+				color: #a8d7a4;
+			}
+		}
+	}
+	.content-title::before,.content-title::after{
+		background-color:  @comContentColor5;
+	}
+	/* 分页部分 */
+	.swiper-pagination{
+		.swiper-pagination-bullet-active{
+			background-color: @comContentColor5;
+		}
+	}
+}
