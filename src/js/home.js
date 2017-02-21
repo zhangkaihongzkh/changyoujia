@@ -153,6 +153,9 @@ $(function(){
 
 	//走过区域轮播
 	(function(window){
+		//数据名称                                                          
+		var dataName = ['国内游','国外游','周边游','户外徒步游'];
+
 		var throughScenerySwiper = new Swiper ('#through-scenery .swiper-container', {
 		    direction: 'horizontal',
 		    loop: true,
@@ -162,8 +165,12 @@ $(function(){
 		    paginationClickable :true,
 		    speed:500,//速度
 		    simulateTouch:false,//鼠标无效
-		    //自定义分页器
-
+		    
+		    //自定义分页器内容
+		    paginationBulletRender: function (swiper, index, className) {
+		    	//修改内容
+	            return '<span class="' + className + '">' + dataName[index] + '</span>';
+	        },
 		  });    
 	})(window);
 

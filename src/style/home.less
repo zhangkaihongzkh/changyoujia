@@ -404,7 +404,7 @@
 	padding-bottom: 110px;
 	background-color: #fff;
 	.through-scenery-title{
-		margin-bottom: 80px;
+		margin-bottom: 130px;
 		h2{
 			font-size: 28px;
 			text-align: center;
@@ -419,50 +419,60 @@
 	.through-scenery-pagination{
 		position: relative;
 		top: -50px;
-		.through-place-type{
-			padding-left: 355px;
-			margin-bottom: 20px;
-			p{
-				float: left;
-				display: block;
-				text-align: center;
-				font-size: 20px;
-			}
-			p + p{
-				margin-left: 15px;
-			} 
-		}
+		
 		//下划线
-		.through-place-line{
-			position: absolute;
-			top: 53px;
-			left: 50%;
-			margin-left: -110px;
-			z-index: 1;
-			border-bottom: 1px dashed #8F8F8F;
-			width: 220px;
+		.pagination-line{
+			width: 321px;
+			border-bottom: 2px dashed #909090;
+			margin: 0 auto;
+			margin-bottom: -64px;
 		}
-		//轮播按钮样式
 		.swiper-pagination{
 			width: @comWidth;
 			text-align: center;
+			position: relative;
 			.swiper-pagination-bullet{
-				z-index: 2;
-				margin: 0 30px;
-				width: 8px;
-				height: 8px;
-				border: 2px solid #8F8F8F;
-				color: @comBGC;
+				position: relative;
+				min-width: 100px;
+				min-height: 36px;
+				line-height: 36px;
+				margin: 0 5px;
+				color: #000000;
+				font-size: 18px;
+				background-color: transparent;
+				text-align: center;
+				opacity: 1;
+				filter:Alpha(opacity=100);
+			}
+			//圆点
+			.swiper-pagination-bullet::after{
+				position: absolute;
+				content: '';
+				width: 6px;
+				height: 6px;
+				background-color: #909090;
 				border-radius: 50%;
-				background-color: #8F8F8F;
+				top: 60px;
+    			left: 45px;
 			}
 			.swiper-pagination-bullet-active{
+				color: @comBGC;
+				font-weight: bold;
+				background-color: #ffffff;
+				border-radius: 5px;
+			}
+			.swiper-pagination-bullet-active::after{
 				width: 10px;
 				height: 10px;
 				background-color: @comBGC;
-				border-color: @comBGC;
+				top: 58px;
+    			left: 43px;
 			}
+
 		}
+		
+		
+	
 	}
 	/* 走过的风景轮播内容 */
 	.through-scenery-content{

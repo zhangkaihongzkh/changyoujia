@@ -704,10 +704,12 @@ input:focus {
   min-height: 36px;
   line-height: 36px;
   margin: 0 5px;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   background-color: transparent;
   text-align: center;
+  opacity: 1;
+  filter: alpha(opacity=100);
 }
 .comSection .swiper-pagination .swiper-pagination-bullet-active {
   color: #ffffff;
@@ -730,8 +732,12 @@ input:focus {
 #section-one .content-title::after {
   background-color: #e28301;
 }
+#section-one .swiper-pagination .swiper-pagination-bullet {
+  color: #646464;
+}
 #section-one .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #e28301;
+  color: #ffffff;
 }
 /* 第二块内容区域 */
 #section-two {
@@ -761,8 +767,12 @@ input:focus {
 #section-three .content-title::after {
   background-color: #fa5974;
 }
+#section-three .swiper-pagination .swiper-pagination-bullet {
+  color: #646464;
+}
 #section-three .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #fa5974;
+  color: #ffffff;
 }
 /* 第四块内容区域 */
 #section-four {
@@ -792,6 +802,10 @@ input:focus {
 #section-five .content-title::after {
   background-color: #60aa59;
 }
+#section-five .swiper-pagination .swiper-pagination-bullet {
+  color: #646464;
+}
 #section-five .swiper-pagination .swiper-pagination-bullet-active {
   background-color: #60aa59;
+  color: #ffffff;
 }

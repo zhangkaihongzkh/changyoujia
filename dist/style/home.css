@@ -959,7 +959,7 @@ input:focus {
   /* 走过的风景轮播内容 */
 }
 #through-scenery .through-scenery-title {
-  margin-bottom: 80px;
+  margin-bottom: 130px;
 }
 #through-scenery .through-scenery-title h2 {
   text-align: center;
@@ -972,47 +972,52 @@ input:focus {
   position: relative;
   top: -50px;
 }
-#through-scenery .through-scenery-pagination .through-place-type {
-  padding-left: 355px;
-  margin-bottom: 20px;
-}
-#through-scenery .through-scenery-pagination .through-place-type p {
-  float: left;
-  display: block;
-  text-align: center;
-  font-size: 20px;
-}
-#through-scenery .through-scenery-pagination .through-place-type p + p {
-  margin-left: 15px;
-}
-#through-scenery .through-scenery-pagination .through-place-line {
-  position: absolute;
-  top: 53px;
-  left: 50%;
-  margin-left: -110px;
-  z-index: 1;
-  border-bottom: 1px dashed #8F8F8F;
-  width: 220px;
+#through-scenery .through-scenery-pagination .pagination-line {
+  width: 321px;
+  border-bottom: 2px dashed #909090;
+  margin: 0 auto;
+  margin-bottom: -64px;
 }
 #through-scenery .through-scenery-pagination .swiper-pagination {
   width: 1000px;
   text-align: center;
+  position: relative;
 }
 #through-scenery .through-scenery-pagination .swiper-pagination .swiper-pagination-bullet {
-  z-index: 2;
-  margin: 0 30px;
-  width: 8px;
-  height: 8px;
-  border: 2px solid #8F8F8F;
-  color: #EF8B1D;
+  position: relative;
+  min-width: 100px;
+  min-height: 36px;
+  line-height: 36px;
+  margin: 0 5px;
+  color: #000000;
+  font-size: 18px;
+  background-color: transparent;
+  text-align: center;
+  opacity: 1;
+  filter: alpha(opacity=100);
+}
+#through-scenery .through-scenery-pagination .swiper-pagination .swiper-pagination-bullet::after {
+  position: absolute;
+  content: '';
+  width: 6px;
+  height: 6px;
+  background-color: #909090;
   border-radius: 50%;
-  background-color: #8F8F8F;
+  top: 60px;
+  left: 45px;
 }
 #through-scenery .through-scenery-pagination .swiper-pagination .swiper-pagination-bullet-active {
+  color: #EF8B1D;
+  font-weight: bold;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+#through-scenery .through-scenery-pagination .swiper-pagination .swiper-pagination-bullet-active::after {
   width: 10px;
   height: 10px;
   background-color: #EF8B1D;
-  border-color: #EF8B1D;
+  top: 58px;
+  left: 43px;
 }
 #through-scenery .through-scenery-content {
   position: relative;
