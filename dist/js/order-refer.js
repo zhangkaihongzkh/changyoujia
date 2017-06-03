@@ -96,4 +96,25 @@ $(function() {
             }
         });
     })(window);
+
+    //确认订单弹出层
+    (function(window) {
+        //获取到确认订单按钮
+        var $confirmBtn = $("#order-refer-content .amount-submit-btn");
+        //console.log($confirmBtn);
+        $confirmBtn.click(function() {
+    
+            layer.confirm('请在新开网上储蓄卡页面完成付款后再做选择', {
+                btn: ['已完成充值', '充值遇到问题'] //按钮
+            }, function() {
+                layer.msg('充值成功！', { icon: 1 });
+            }, function() {
+                layer.msg('您可以通过以下方式联系我们', {
+                    time: 20000, //20s后自动关闭
+                    btn: ['拨打人工电话 xxx', '重新充值']
+                });
+            });
+        });
+
+    })(window);
 });
