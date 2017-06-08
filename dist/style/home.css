@@ -691,6 +691,25 @@ input:focus {
 #sidebar .sidebar-list-down {
   display: none;
 }
+/* 左侧侧边栏区域 */
+#sidebar-left {
+  position: fixed;
+  top: 100px;
+  left: 20px;
+  z-index: 999;
+}
+#sidebar-left .sidebar-left-container-anchor li {
+  padding: 15px 10px;
+}
+#sidebar-left .sidebar-left-container-anchor li a {
+  color: #646464;
+}
+#sidebar-left .sidebar-left-container-anchor li.active {
+  background-color: #EF8B1D;
+}
+#sidebar-left .sidebar-left-container-anchor li.active a {
+  color: #fff;
+}
 /* 特点介绍 */
 #feature {
   padding-top: 50px;

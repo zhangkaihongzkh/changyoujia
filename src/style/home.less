@@ -100,7 +100,27 @@
 	}
 }
 
-
+/* 左侧侧边栏区域 */
+#sidebar-left{
+	position: fixed;
+	top: 100px;
+	left: 20px;
+	z-index: 999;
+	.sidebar-left-container-anchor{
+		li{
+			padding: 15px 10px;
+			a{
+				color: #646464;
+			}
+		}
+		li.active{
+			a{
+				color: #fff;
+			}
+			background-color: @comBGC;
+		}
+	}
+}
 
 
 /* 特点介绍 */
