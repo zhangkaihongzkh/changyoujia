@@ -140,7 +140,10 @@ $(function() {
 
 
 
-        
+        //一开始设置为隐藏
+        $HomeAnchor.css({
+            'display': 'none',
+        });
 
 
         // 监听导航栏事件 
@@ -148,7 +151,7 @@ $(function() {
 
             anchorTop = $HomeAnchor.offset().top;
             dTop = $(document).scrollTop();
-            console.log(dTop);
+            //console.log(dTop);
             //滑到对应区域过度
             $homeSideBaritem.each(function() {
                 var m = $(this);
@@ -180,13 +183,13 @@ $(function() {
                 });
             }
             //滚动到一定区域展现导航栏
-             if ($(window).scrollTop() <= 600) {
-                 
-                 $HomeAnchor.css({
-                     'display': 'none',
-                 });
+            if ($(window).scrollTop() <= 600) {
 
-             }
+                $HomeAnchor.css({
+                    'display': 'none',
+                });
+
+            }
         });
     })(window);
 

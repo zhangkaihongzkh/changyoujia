@@ -694,6 +694,7 @@ input:focus {
 /* 左侧侧边栏区域 */
 #sidebar-left {
   position: fixed;
+  z-index: -1;
   top: 100px;
   left: 20px;
   z-index: 999;
