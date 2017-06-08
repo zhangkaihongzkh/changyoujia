@@ -701,14 +701,19 @@ input:focus {
 }
 #sidebar-left .sidebar-left-container-anchor li {
   padding: 15px 10px;
+  cursor: pointer;
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
 }
 #sidebar-left .sidebar-left-container-anchor li a {
   color: #646464;
 }
-#sidebar-left .sidebar-left-container-anchor li.active {
+#sidebar-left .sidebar-left-container-anchor li:hover {
+  transition: color 0.25s ease, background-color 0.25s ease;
+  -webkit-transition: color 0.25s ease, background-color 0.25s ease;
   background-color: #EF8B1D;
 }
-#sidebar-left .sidebar-left-container-anchor li.active a {
+#sidebar-left .sidebar-left-container-anchor li:hover a {
   color: #fff;
 }
 /* 特点介绍 */

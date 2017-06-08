@@ -145,6 +145,27 @@ $(function() {
             'display': 'none',
         });
 
+        //刷新时重定位
+        if ($(window).scrollTop() > 600) {
+            //console.log(anchorLeft);
+            //	修改为绝对定位，兼容不同分辨率用户，位置通过初始化获取到
+            $HomeAnchor.css({
+                'display': 'block',
+            });
+            var anchorLeft = $HomeAnchor.offset().left;
+            $HomeAnchor.css({
+                'position': 'fixed',
+                'left': anchorLeft
+            });
+        }
+        //滚动到一定区域展现导航栏
+        if ($(window).scrollTop() <= 600) {
+
+            $HomeAnchor.css({
+                'display': 'none',
+            });
+
+        }
 
         // 监听导航栏事件 
         $(window).scroll(function() {
@@ -153,22 +174,22 @@ $(function() {
             dTop = $(document).scrollTop();
             //console.log(dTop);
             //滑到对应区域过度
-            $homeSideBaritem.each(function() {
-                var m = $(this);
-                //注意：m.offset().top代表每一个item的顶部位置
-                if (dTop > m.offset().top - 100) {
-                    currentId = '#' + m.attr('id');
-                    //console.log(currentId);
-                } else {
-                    return false;
-                }
-            });
-            //根据滑动距离修改锚链接的active样式
-            var currentLink = $HomeAnchor.find('.active');
-            if (currentLink && currentLink.attr("href") != currentId) {
-                currentLink.removeClass('active');
-                $HomeAnchor.find("[href=" + currentId + "]").parent().addClass('active');
-            }
+            /* $homeSideBaritem.each(function() {
+                 var m = $(this);
+                 //注意：m.offset().top代表每一个item的顶部位置
+                 if (dTop > m.offset().top - 100) {
+                     currentId = '#' + m.attr('id');
+                     //console.log(currentId);
+                 } else {
+                     return false;
+                 }
+             });
+             //根据滑动距离修改锚链接的active样式
+             var currentLink = $HomeAnchor.find('.active');
+             if (currentLink && currentLink.attr("href") != currentId) {
+                 currentLink.removeClass('active');
+                 $HomeAnchor.find("[href=" + currentId + "]").parent().addClass('active');
+             }*/
 
             if ($(window).scrollTop() > 600) {
                 //console.log(anchorLeft);
@@ -193,7 +214,7 @@ $(function() {
         });
     })(window);
 
-    //锚链接跳转
+    /*//锚链接跳转
     (function(window) {
         $(function() {   
             $('a[href*=#],area[href*=#]').click(function() {
@@ -209,7 +230,7 @@ $(function() {
                 }  
             });
         })
-    })(window);
+    })(window);*/
 
     //单季热销轮播区域
     (function(window) {
